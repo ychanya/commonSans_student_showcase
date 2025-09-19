@@ -5,13 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fanshawe's Industry Night 2026</title>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.8.3/plyr.css" />
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/grid.css">
+    <!-- <link rel="stylesheet" href="css/grid.css"> -->
 </head>
 
 <body>
     <h1 class="hidden">Welcome to Fanshawe's Industry Night 2026</h1>
-    <header></header>
+    <header id="main-header" class="">
+        <h2 class="hidden">Main Navigation</h2>
+
+        <img src="images/fanshawe_white_logo.png" alt="Fanshawe College Logo" class="fanshawe-nav-logo">
+
+        <img src="images/menu.png" alt="Mobile Menu" id="mobileMenuBtn" class="mobile-menu cursor-pointer">
+
+        <!-- Mobile Menu -->
+        <nav id="mobileMenu" class="hidden">
+
+            <button id="closeMobileMenuBtn">&times;</button>
+
+            <ul>
+                <li><a href="#">Event</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Portfolios</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section id="heroSection">
             <h2 class="hidden">Hero Section</h2>
@@ -21,17 +41,36 @@
             <h2 class="hidden">Industry Night Information</h2>
             <div id="eventInvitation">
                 <h3>Event Invitation</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique.</p>
                 <button>Button</button><!-- define the buttons -->
                 <button>Button</button><!-- define the buttons -->
             </div>
             <div>
                 <h3>What it is all about?</h3>
-                <video></video>
+
+                <div id="video-container" class="video-wrapper">
+                    <video controls preload="metadata" poster="images/placeholder.jpg">
+                        <source src="video/video.mp4" type="video/mp4">
+                        <source> <!-- Backup video link -->
+                        <p>Your browser does not support HTML5 video. Please update your browser to the latest version.
+                        </p>
+                    </video>
+                </div>
+
                 <ul>
-                    <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p></li>
-                    <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p></li>
-                    <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p></li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique.</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique.</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                            elementum tristique.</p>
+                    </li>
                 </ul>
             </div>
             <div>
@@ -45,7 +84,7 @@
                 <div>
                     <h4>4:30 PM - 6:00 PM</h4>
                 </div>
-                 <div>
+                <div>
                     <h4>6:00 PM - 7:00 PM</h4>
                 </div>
                 <div>
@@ -59,18 +98,19 @@
         <section id="studentProjectExhibit">
             <h2>Student Project Exhibit</h2>
             <img>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique.</p>
         </section>
         <section id="interactiveMediaDesign">
             <h2>Interactive Media Design</h2>
 
-                <img>
-                <p></p>
-                <img>
-                <img>
-                <img>
-                <img>
-                <button>Button</button><!-- define the button -->
+            <img>
+            <p></p>
+            <img>
+            <img>
+            <img>
+            <img>
+            <button>Button</button><!-- define the button -->
         </section>
         <section id="ourTeam">
             <h2>Our Team</h2>
@@ -90,6 +130,7 @@
                     <li><a>"icon" Front-End</a></li>
                     <li><a>"icon" Back-End</a></li>
                     <li><a>"icon" PM</a></li><!-- should it say project manager? -->
+                    <!-- U r right! it's better to avoid the abbreviation -->
                 </ul>
             </nav>
             <ul>
@@ -130,7 +171,7 @@
                 <li><a>"Instagram Icon"</a></li>
                 <li><a>"X Icon"</a></li>
                 <li><a>"LinkedIn Icon"</a></li>
-                <li><a>"Youtube Icon"</a></li>    
+                <li><a>"Youtube Icon"</a></li>
             </ul>
         </div>
         <nav>
@@ -145,7 +186,8 @@
     </footer>
 
 
-
+    <script src="js/mobileMenu.js"></script>
+    <script src="https://cdn.plyr.io/3.8.3/plyr.js"></script>
     <script src="js/main.js"></script>
 </body>
 
