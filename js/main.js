@@ -1,5 +1,20 @@
 console.log("JS file connected");
 
+// Video Player
+const player = new Plyr("video", {
+    controls: [
+        "play-large", 
+        "play", 
+        "progress", 
+        "current-time", 
+        "mute", 
+        "volume", 
+        "settings", 
+        "pip",
+        "fullscreen"
+    ]
+});
+
 // Student Portfolio Dynamic Code
 const studentList = document.querySelector("#student-list");
 const students = [

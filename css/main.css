@@ -1,0 +1,84 @@
+/*
+Style Name: Industry Night Site
+Description: Styling layouts and components
+Authors: Hansini Chetan Dhameliya [ Harlowe ], Chanya Chumdee 
+Version: 1.0
+Tags: Let's styling!!!
+*/
+
+/* ___________________________________________
+
+       CSS Guide
+___________________________________________ */
+
+/*  01.Reset
+    02.Utility classes
+    03.Mobile Menu
+    04.Video Styling
+
+/* ------------- Reset -------------*/
+
+/* button {
+    background: none;
+    border: none;
+    font-family: inherit;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+} */
+
+/* ------------- Utility classes -------------*/
+
+.hidden {
+    display: none;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* ------------- Mobile Menu -------------*/
+header {
+    background-color: #c70000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav button {
+    font-size: 20px;
+    color: #c70000;
+}
+
+.fanshawe-nav-logo {
+    width: 200px;
+}
+
+.mobile-menu {
+    width: 40px;
+}
+
+@media (min-width: 48em) {
+.mobile-menu {
+    display: none;
+}
+}
+
+/* ------------- Video Styling -------------*/
+
+.video-wrapper {
+    width: 400px;
+    height: auto;
+}
+
+.plyr {
+    border-radius: 20px;
+} 
+
+:root {
+  --plyr-color-main: #c70000;
+  --plyr-video-controls-background: linear-gradient(rgba(0, 0, 0, 0), rgba(158, 0, 0, 0.75));
+  --plyr-control-icon-size: 20px;
+  --plyr-control-radius: 20px;
+  --plyr-font-family: Helvetica, Arial, Sans-serif;
+}
