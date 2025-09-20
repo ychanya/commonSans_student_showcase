@@ -14,7 +14,8 @@ ___________________________________________ */
 /*  01.Reset
     02.Utility classes
     03.Mobile Menu
-    04.Video Styling
+    04.Desktop Menu
+    05.Video Styling
 
 /* ------------- Reset -------------*/
 
@@ -27,12 +28,16 @@ ___________________________________________ */
     cursor: pointer;
 } */
 
+a {
+   text-decoration: none;
+}
+
 /* ------------- Utility classes -------------*/
 
 .hidden {
     display: none;
 }
-.cursor-pointer {
+.cursorPointer {
     cursor: pointer;
 }
 
@@ -42,7 +47,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 nav button {
@@ -50,24 +54,76 @@ nav button {
     color: #c70000;
 }
 
-.fanshawe-nav-logo {
+.fanshaweNavLogo {
     width: 200px;
 }
 
-.mobile-menu {
+.mobileIcon {
     width: 40px;
 }
 
-@media (min-width: 48em) {
-.mobile-menu {
+@media screen and (min-width: 48em) {
+.mobileIcon {
     display: none;
 }
+}
+                                           
+#mobileMenu {
+    background-color: #c70000;
+    position: absolute;
+    inset: 0;
+    width: 100vw;
+    height: 50vh;
+    z-index: 100;  
+
+    /* Animated mobile menu */
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Display mobile menu */
+#mobileMenu.open {
+    transform: translateY(0);
+}
+
+#mobileMenu ul {
+  list-style: none;
+}
+
+#mobileMenu li {
+  margin: 30px;
+}
+
+#mobileMenu a {
+  color: white;
+}
+
+/* ------------- Desktop Menu -------------*/
+
+#desktopMenu {
+    display: none;
+}
+
+@media screen and (min-width: 64em) {
+#desktopMenu {
+    display: block;
+}
+}
+
+#desktopMenu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;    
+}
+
+#desktopMenu a {
+  color: white;
 }
 
 /* ------------- Video Styling -------------*/
 
-.video-wrapper {
-    width: 400px;
+.videoWrapper {
     height: auto;
 }
 
