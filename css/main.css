@@ -16,6 +16,8 @@ ___________________________________________ */
     03.Mobile Menu
     04.Desktop Menu
     05.Video Styling
+    06. Hero Animation
+    07. Event Section
 
 /* ------------- Reset -------------*/
 
@@ -32,6 +34,21 @@ a {
    text-decoration: none;
 }
 
+body {
+   margin: 0;
+   padding: 0;
+   color: #626262;
+   font-family: 'Sanchez', serif;
+   animation: bugfix infinite 1s;
+   -webkit-animation: bugfix infinite 1s;
+   font-size: 16px;
+}
+
+h1, h2, h3, h4, p {
+   margin: 0;
+   padding: 0;
+}
+
 /* ------------- Utility classes -------------*/
 
 .hidden {
@@ -42,6 +59,12 @@ a {
 }
 
 /* ------------- Mobile Menu -------------*/
+
+.head {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 header {
     background-color: #c70000;
     /* display: flex;
@@ -151,4 +174,54 @@ nav button {
   --plyr-control-icon-size: 20px;
   --plyr-control-radius: 20px;
   --plyr-font-family: Helvetica, Arial, Sans-serif;
+}
+
+/* ------------- Hero Animation -------------*/
+
+#heroSection {
+    margin: 0;
+}
+
+.hero_animation h3 {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    height: fit-content;
+}
+
+.hero_animation {
+    display: grid;
+    grid-column: span 4;
+    height: 31.25rem;
+    border: 2px solid #000;
+}
+
+.hero_animation > * {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+/* ------------- Event Section -------------*/
+
+#eventSection {
+    margin: 0;
+    
+}
+
+#eventInvitation {
+    display: grid;
+    grid-column: span 4;
+    background-color: #d3d3d3;
+
+}
+
+.invitationText {
+    background-color: #ffffff;
+    grid-column: span 4;
+    text-align: center;
+        margin: 2rem 1rem;
+}
+
+.invitationButtons {
+    grid-column: 2 / span 2;
 }
