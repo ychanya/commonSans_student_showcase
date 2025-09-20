@@ -4,13 +4,12 @@ const mobileMenuBtn = document.querySelector("#mobileMenuBtn");
 const closeMobileMenuBtn = document.querySelector("#closeMobileMenuBtn");
 
 function toggleMobileMenu() {
-
     const mobileMenu = document.querySelector("#mobileMenu");
 
-    if(mobileMenu.classList.contains("hidden")) {
-        mobileMenu.classList.remove("hidden");
+    if (mobileMenu.classList.contains("open")) {
+        mobileMenu.classList.remove("open");
     } else {
-        mobileMenu.classList.add("hidden");
+        mobileMenu.classList.add("open") 
     }
 }
 

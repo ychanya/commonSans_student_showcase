@@ -12,18 +12,28 @@
 
 <body>
     <h1 class="hidden">Welcome to Fanshawe's Industry Night 2026</h1>
-    <header id="main-header" class="">
+    <header>
         <h2 class="hidden">Main Navigation</h2>
 
-        <img src="images/fanshawe_white_logo.png" alt="Fanshawe College Logo" class="fanshawe-nav-logo">
+        <a href="index.html">
+            <img src="images/fanshawe_white_logo.png" alt="Fanshawe College Logo" class="fanshaweNavLogo">
+        </a>
 
-        <img src="images/menu.png" alt="Mobile Menu" id="mobileMenuBtn" class="mobile-menu cursor-pointer">
+        <!-- Desktop Nav -->
+        <nav id="desktopMenu">
+            <ul>
+                <li><a href="#">Event</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Portfolios</a></li>
+            </ul>
+        </nav>
 
-        <!-- Mobile Menu -->
-        <nav id="mobileMenu" class="hidden">
+        <img id="mobileMenuBtn" src="images/menu.png" alt="Mobile Menu" class="mobileIcon cursorPointer">
 
+        <!-- Mobile Nav -->
+        <nav id="mobileMenu">
             <button id="closeMobileMenuBtn">&times;</button>
-
             <ul>
                 <li><a href="#">Event</a></li>
                 <li><a href="#">Projects</a></li>
@@ -32,6 +42,7 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section id="heroSection">
             <h2 class="hidden">Hero Section</h2>
@@ -49,10 +60,10 @@
             <div>
                 <h3>What it is all about?</h3>
 
-                <div id="video-container" class="video-wrapper">
+                <div id="videoContainer" class="videoWrapper">
                     <video controls preload="metadata" poster="images/placeholder.jpg">
                         <source src="video/video.mp4" type="video/mp4">
-                        <source> <!-- Backup video link -->
+                        <source> <!-- Backup video link ??-->
                         <p>Your browser does not support HTML5 video. Please update your browser to the latest version.
                         </p>
                     </video>
@@ -154,7 +165,8 @@
             <h2 class="hidden">Testimonials</h2>
             <article>
                 <h3>Marco</h3>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique."</p>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                    tristique."</p>
                 <img>
             </article>
         </section>
