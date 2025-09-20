@@ -54,7 +54,7 @@ ___________________________________________ */
    }
 
    .logo { grid-column: 2 / span 1;}
-   nav { grid-column: 3 / span 1;}
+   .main-nav { grid-column: 3 / span 1;}
 
    .one-item, .two-items, .three-items, .four-items {
       display: grid;
@@ -88,7 +88,7 @@ ___________________________________________ */
       }
 
       .logo { grid-column: 1 / span 1;}
-      nav { grid-column: 2 / span 5;}
+     .main-nav { grid-column: 2 / span 5;}
 
       .sm-one-item, 
       .sm-two-items, 
@@ -131,7 +131,7 @@ ___________________________________________ */
       }
 
       .logo { grid-column: 1 / span 1;}
-      nav { grid-column: 2/ span 5;}
+      .main-nav { grid-column: 2/ span 5;}
 
       .md-one-item, 
       .md-two-items, 
@@ -176,7 +176,7 @@ ___________________________________________ */
          }
 
          .logo { grid-column: 1 / span 1;}
-         nav { grid-column:2 / span 5;}
+         .main-nav { grid-column:2 / span 5;}
       
       .lg-one-item, 
       .lg-two-items, 
