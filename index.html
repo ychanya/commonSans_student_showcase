@@ -7,20 +7,20 @@
     <title>Fanshawe's Industry Night 2026</title>
     <link rel="stylesheet" href="https://cdn.plyr.io/3.8.3/plyr.css" />
     <link rel="stylesheet" href="css/main.css">
-    <!-- <link rel="stylesheet" href="css/grid.css"> -->
+    <link rel="stylesheet" href="css/grid.css">
 </head>
 
 <body>
     <h1 class="hidden">Welcome to Fanshawe's Industry Night 2026</h1>
-    <header>
+    <header class="head">
         <h2 class="hidden">Main Navigation</h2>
 
-        <a href="index.html">
+        <a href="index.html" class="logo">
             <img src="images/fanshawe_white_logo.png" alt="Fanshawe College Logo" class="fanshaweNavLogo">
         </a>
 
         <!-- Desktop Nav -->
-        <nav id="desktopMenu">
+        <nav id="desktopMenu" class="main-nav">
             <ul>
                 <li><a href="#">Event</a></li>
                 <li><a href="#">Projects</a></li>
@@ -29,7 +29,9 @@
             </ul>
         </nav>
 
-        <img id="mobileMenuBtn" src="images/menu.png" alt="Mobile Menu" class="mobileIcon cursorPointer">
+        <div class="mobileIconWrapper main-nav">
+            <img id="mobileMenuBtn" src="images/menu.png" alt="Mobile Menu" class="mobileIcon cursorPointer">
+        </div>
 
         <!-- Mobile Nav -->
         <nav id="mobileMenu">

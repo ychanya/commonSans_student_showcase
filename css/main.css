@@ -44,9 +44,9 @@ a {
 /* ------------- Mobile Menu -------------*/
 header {
     background-color: #c70000;
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
 }
 
 nav button {
@@ -62,7 +62,16 @@ nav button {
     width: 40px;
 }
 
-@media screen and (min-width: 48em) {
+.mobileIconWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding: 0 20px 0 0;
+}
+
+
+@media screen and (min-width: 64em) {
 .mobileIcon {
     display: none;
 }
@@ -98,7 +107,7 @@ nav button {
   color: white;
 }
 
-/* ------------- Desktop Menu -------------*/
+/* ------------- Tablet & Desktop Menu -------------*/
 
 #desktopMenu {
     display: none;
@@ -111,9 +120,14 @@ nav button {
 }
 
 #desktopMenu ul {
+    height:100%;
+    margin: 0;
+    padding: 0 50px 0 0;
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    justify-content: end;
+    align-items: center;
+    gap: 60px;
     list-style: none;    
 }
 
