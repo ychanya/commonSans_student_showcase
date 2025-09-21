@@ -46,7 +46,7 @@ ___________________________________________ */
 
    /*------------ Grid Items mobile ------------*/
 
-   .head, main > *, .foot {
+   .head, .main > *, .foot {
       display: grid;
       grid-template-columns: 1fr repeat(2, minmax(0, 24em)) 1fr;
       margin-left: var(--gap-size);
@@ -88,7 +88,7 @@ ___________________________________________ */
       }
 
       .logo { grid-column: 1 / span 1;}
-     .main-nav { grid-column: 2 / span 5;}
+      .main-nav { grid-column: 2 / span 5;}
 
       .sm-one-item, 
       .sm-two-items, 
@@ -164,19 +164,19 @@ ___________________________________________ */
    _____________________________________ */
 
       @media  screen and (min-width: 120em) {
-         .site { max-width: none;}
+      .site { max-width: none;}
 
-         .mobile {display: none;}
-         .tablet {display: none;}
-         .desktop {display: block;}
+      .mobile {display: none;}
+      .tablet {display: none;}
+      .desktop {display: block;}
 
-         .head, .main > *, .foot {
-            display: grid;
-            grid-template-columns: 1fr repeat(4, minmax(auto,20em)) 1fr;
-         }
+      .head, .main > *, .foot {
+         display: grid;
+         grid-template-columns: 1fr repeat(4, minmax(auto,20em)) 1fr;
+      }
 
-         .logo { grid-column: 1 / span 1;}
-         .main-nav { grid-column:2 / span 5;}
+      .logo { grid-column: 1 / span 1;}
+      .main-nav { grid-column:2 / span 5;}
       
       .lg-one-item, 
       .lg-two-items, 
