@@ -38,7 +38,7 @@ ___________________________________________ */
 
    /*------------ Start mobile ------------*/
 
-   .site {max-width: 48em; }
+   .site {max-width: 25.75em; }
 
    .mobile {display: block;}
    .tablet {display: none;}
@@ -75,8 +75,8 @@ ___________________________________________ */
    01-c. Mobile Landscape
    _____________________________________ */
 
-   @media screen and (min-width: 48em) { 
-      .site { max-width: 63.99em;}
+   @media screen and (min-width: 25.75em) { 
+      .site { max-width: 47.99em;}
 
       .mobile {display: block;}
       .tablet {display: none;}
@@ -118,7 +118,7 @@ ___________________________________________ */
    01-d. Tablet
    _____________________________________ */
 
-   @media screen and (min-width: 64em) {
+   @media screen and (min-width: 48em) {
       .site { max-width: 119.99em;}
 
       .mobile {display: none;}
@@ -163,7 +163,7 @@ ___________________________________________ */
    01-e. Small Desktop & Up
    _____________________________________ */
 
-      @media  screen and (min-width: 120em) {
+      @media  screen and (min-width: 75em) {
       .site { max-width: none;}
 
       .mobile {display: none;}
