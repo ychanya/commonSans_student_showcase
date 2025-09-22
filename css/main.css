@@ -256,7 +256,7 @@ nav button {
     margin-top: 3rem;
 }
 
-.eventInformation h3 {
+.eventInformation h2 {
     margin-bottom: 1rem;
     text-align: center;
     color: #D03D33;
@@ -270,9 +270,3 @@ nav button {
     list-style-type: disc;
 }
 
-@media screen and (min-width: 120em) {
-    .event_video_details {
-        display: flex;
-        justify-content: space-around;
-    }
-}
