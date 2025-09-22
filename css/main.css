@@ -30,6 +30,17 @@ ___________________________________________ */
     cursor: pointer;
 } */
 
+li {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 a {
    text-decoration: none;
 }
@@ -38,7 +49,7 @@ body {
    margin: 0;
    padding: 0;
    color: #626262;
-   font-family: 'Sanchez', serif;
+   font-family: "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;
    animation: bugfix infinite 1s;
    -webkit-animation: bugfix infinite 1s;
    font-size: 16px;
@@ -193,16 +204,14 @@ nav button {
 }
 
 .hero_animation {
-    display: grid;
-    grid-column: span 4;
     height: 31.25rem;
     border: 2px solid #000;
 }
 
-.hero_animation > * {
+/* .hero_animation > * {
     grid-column: 1;
     grid-row: 1;
-}
+} */
 
 /* ------------- Event Section -------------*/
 
@@ -211,20 +220,59 @@ nav button {
     
 }
 
-#eventInvitation {
-    display: grid;
-    grid-column: span 4;
+.eventInvitation {
     background-color: #d3d3d3;
-
+    padding: 2rem;
 }
+
 
 .invitationText {
     background-color: #ffffff;
-    grid-column: span 4;
     text-align: center;
-        margin: 2rem 1rem;
+    margin: 2rem 1rem;
+    padding: .5rem;
+}
+
+.invitationText h3 {
+    color: #D03D33;
 }
 
 .invitationButtons {
-    grid-column: 2 / span 2;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.brandButtons {
+    padding: .3rem 1rem;
+    background-color: #D03D33;
+    color: #ffffff;
+    border: 0px solid;
+    border-radius: .2rem;
+    font-size: .8rem;
+}
+
+.eventInformation {
+    margin-top: 3rem;
+}
+
+.eventInformation h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #D03D33;
+}
+
+.marginUl {
+    margin-left: 2rem;
+}
+
+.listStyleLi {
+    list-style-type: disc;
+}
+
+@media screen and (min-width: 120em) {
+    .event_video_details {
+        display: flex;
+        justify-content: space-around;
+    }
 }

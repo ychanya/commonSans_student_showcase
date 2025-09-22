@@ -49,13 +49,13 @@
     <main class="main">
         <section id="heroSection">
             <h2 class="hidden">Hero Section</h2>
-            <div class="hero_animation">
+            <div class="hero_animation full">
                 <h3>Hero Animation</h3>
             </div>
         </section>
         <section id="eventSection">
             <h2 class="hidden">Industry Night Information</h2>
-            <div id="eventInvitation">
+            <div class="eventInvitation full">
                 <div class="invitationText">
                     <h3>Event Invitation</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
@@ -63,36 +63,39 @@
                         tristique.</p>
                 </div>
                 <div class="invitationButtons">
-                    <button>Button</button><!-- define the buttons -->
-                    <button>Button</button><!-- define the buttons -->
+                    <button class="brandButtons">Button</button><!-- define the buttons -->
+                    <button class="brandButtons">Button</button><!-- define the buttons -->
                 </div>
             </div>
-            <div>
+
+            <div class="eventInformation full">
                 <h3>What it is all about?</h3>
+                <div class="event_video_details">
+                    <div id="videoContainer" class="videoWrapper">
+                        <video controls preload="metadata" poster="images/placeholder.jpg">
+                            <source src="video/video.mp4" type="video/mp4">
+                            <source> <!-- Backup video link ??-->
+                            <p>Your browser does not support HTML5 video. Please update your browser to the latest version.
+                            </p>
+                        </video>
+                    </div>
 
-                <div id="videoContainer" class="videoWrapper">
-                    <video controls preload="metadata" poster="images/placeholder.jpg">
-                        <source src="video/video.mp4" type="video/mp4">
-                        <source> <!-- Backup video link ??-->
-                        <p>Your browser does not support HTML5 video. Please update your browser to the latest version.
-                        </p>
-                    </video>
+                    <ul class="marginUl">
+                        <li class="listStyleLi">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique.</p>
+                        </li>
+                        <li class="listStyleLi">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique.</p>
+                        </li>
+                        <li class="listStyleLi">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+                                elementum tristique.</p>
+                        </li>
+                    </ul>
+
                 </div>
-
-                <ul>
-                    <li>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
-                            elementum tristique.</p>
-                    </li>
-                    <li>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
-                            elementum tristique.</p>
-                    </li>
-                    <li>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
-                            elementum tristique.</p>
-                    </li>
-                </ul>
             </div>
             <div>
                 <h3>Event Details</h3>
