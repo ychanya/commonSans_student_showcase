@@ -18,6 +18,7 @@ ___________________________________________ */
     05.Video Styling
     06. Hero Animation
     07. Event Section
+    08. Placeholder Images
 
 /* ------------- Reset -------------*/
 
@@ -108,7 +109,7 @@ nav button {
     padding-right: 1.875em;
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 75em) {
 .mobileIcon {
     display: none;
 }
@@ -150,7 +151,7 @@ nav button {
     display: none;
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 75em) {
 #desktopMenu {
     display: block;
 }
@@ -270,3 +271,78 @@ nav button {
     list-style-type: disc;
 }
 
+/* ------------- Placeholder Images -------------*/
+
+.SPEImg, .IMDImg, .IMDSmallImg, .OTImg, .studentAvatarImg, .testimonialAvatarImg {
+    background-color: #d9d9d9;
+    border-radius: 8px;
+}
+
+.SPEImg, .IMDImg {
+    width: 372px;
+    height: 329px;
+}
+
+.IMDSmallImg, .OTImg {
+    width: 178px;
+    height: 158px;
+}
+
+.studentAvatarImg{
+    width: 41px;
+    height: 41px;
+}
+
+.testimonialAvatarImg {
+    width: 71px;
+    height: 71px;
+}
+
+@media screen and (min-width: 25.75em) {
+    .SPEImg, .IMDImg {
+        width: 372px;
+        height: 329px;
+    }
+}
+@media screen and (min-width: 48em) {
+    .SPEImg, .IMDImg {
+        width: 576px;
+        height: 479px;
+    }
+
+    .IMDSmallImg, .OTImg {
+        width: 336px;
+        height: 243px;
+    }
+
+    .studentAvatarImg{
+        width: 45px;
+        height: 45px;
+    } 
+    
+    .testimonialAvatarImg {
+        width: 77px;
+        height: 77px;
+    }    
+}
+@media  screen and (min-width: 75em) {
+    .SPEImg, .IMDImg {
+        width: 509px;
+        height: 450px;
+    }
+
+    .IMDSmallImg, .OTImg {
+        width: 255px;
+        height: 225px;
+    }
+
+    .studentAvatarImg{
+        width: 50px;
+        height: 50px;
+    }  
+    
+    .testimonialAvatarImg {
+        width: 84px;
+        height: 84px;
+    } 
+}
