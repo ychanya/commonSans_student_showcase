@@ -54,7 +54,6 @@ body {
    font-family: "Gotham", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
    animation: bugfix infinite 1s;
    -webkit-animation: bugfix infinite 1s;
-    font-size: 14px;
 }
 
 h1, h2, h3, h4, p {
@@ -76,8 +75,12 @@ h1, h2, h3, h4, p {
 
 /* ------------- General Styles  -------------*/
 
+html {
+    font-size: 14px;
+}
+
 @media screen and (min-width: 48em) {
-   body {
+   html {
       font-size: 100%;
    }
 }
