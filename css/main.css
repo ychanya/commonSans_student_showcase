@@ -11,14 +11,15 @@ Tags: Let's styling!!!
        CSS Guide
 ___________________________________________ */
 
-/*  01.Reset
-    02.Utility classes
-    03.Mobile Menu
-    04.Desktop Menu
-    05.Video Styling
-    06. Hero Animation
-    07. Event Section
-    08. Placeholder Images
+/*  01. Reset
+    02. Utility classes
+    03. General Styles
+    04. Mobile Menu
+    05. Desktop Menu
+    06. Video Styling
+    07. Hero Animation
+    08. Event Section
+    09. Placeholder Images
 
 /* ------------- Reset -------------*/
 
@@ -50,10 +51,10 @@ body {
    margin: 0;
    padding: 0;
    color: #626262;
-   font-family: "Gotham", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-family: "Gotham", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
    animation: bugfix infinite 1s;
    -webkit-animation: bugfix infinite 1s;
-   font-size: 16px;
+    font-size: 14px;
 }
 
 h1, h2, h3, h4, p {
@@ -68,6 +69,17 @@ h1, h2, h3, h4, p {
 }
 .cursorPointer {
     cursor: pointer;
+}
+.font-bold {
+    font-weight: 600;
+}
+
+/* ------------- General Styles  -------------*/
+
+@media screen and (min-width: 48em) {
+   body {
+      font-size: 100%;
+   }
 }
 
 /* ------------- Mobile Menu -------------*/
@@ -217,31 +229,63 @@ nav button {
 /* ------------- Event Section -------------*/
 
 #eventSection {
-    margin: 0;
-    
+    margin: 0; 
 }
 
 .eventInvitation {
-    background-color: #d3d3d3;
-    padding: 2rem;
+    background-image: url(../images/Pattern-grey\ on\ white-subtle.jpg);
+    background-size: cover;
+    padding: 2rem 0 4rem 0;
 }
 
 
 .invitationText {
     background-color: #ffffff;
+    border: 3px solid #F1F1F1;
     text-align: center;
     margin: 2rem 1rem;
-    padding: .5rem;
+    padding: 2rem 1.5rem;
 }
 
 .invitationText h3 {
     color: #D03D33;
 }
 
-.invitationButtons {
-    display: flex;
-    justify-content: space-around;
-    justify-items: center;
+.invitationText p {
+    margin-bottom: 0.625em;
+    line-height: 1.5em;
+}
+
+#invitation-subHeader {
+    font-size: 16px;
+  }
+
+@media screen and (min-width: 48em) {
+  .invitationText h3 {
+    font-size: 30px;
+  }
+  .invitationText p {
+    font-size: 18px;
+  }
+  .invitationText {
+    margin: 4rem 3rem;
+    padding: 3rem 4rem;
+  }
+  #invitation-subHeader {
+    font-size: 20px;
+  }
+
+}
+@media screen and (min-width: 64em) {
+  .invitationText h3 {
+    font-size: 40px;
+  }
+  .invitationText p {
+    font-size: 22px;
+  }
+  #invitation-subHeader {
+    font-size: 24px;
+  }
 }
 
 .brandButtons {
@@ -249,10 +293,20 @@ nav button {
     background-color: #D03D33;
     color: #ffffff;
     border: 0px solid;
-    border-radius: .2rem;
+    border-radius: 0.625rem;
     font-size: .8rem;
+    width: 8.5rem;
+    height: 3rem;
+    font: inherit;
+    font-size: 0.875rem;
 }
 
+.invitationButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.375rem;
+}
 .eventInformation {
     margin-top: 3rem;
 }
