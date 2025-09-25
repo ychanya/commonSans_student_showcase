@@ -119,7 +119,7 @@ nav button {
 
 .fanshaweNavLogo {
     width: 15.25em;
-    padding-left: 1em;
+    padding-left: 2em;
 }
 
 .mobileIcon {
@@ -145,7 +145,7 @@ nav button {
     position: absolute;
     inset: 0;
     width: 100vw;
-    height: 50vh;
+    height: 40vh;
     z-index: 100;  
 
     /* Animated mobile menu */
@@ -406,7 +406,7 @@ span {
 /* ------------- Footer -------------*/
 
 footer {
-    background-color: #c70000;
+    background-color: #D03D33;
     padding: 5em;
     color: #ffffff;
     font-size: 0.875em;
