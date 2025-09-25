@@ -54,6 +54,7 @@ body {
    font-family: "Gotham", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
    animation: bugfix infinite 1s;
    -webkit-animation: bugfix infinite 1s;
+   font-size: 16px;
 }
 
 h1, h2, h3, h4, p {
