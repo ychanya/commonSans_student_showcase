@@ -19,7 +19,8 @@ ___________________________________________ */
     06. Video Styling
     07. Hero Animation
     08. Event Section
-    09. Placeholder Images
+    09. Event Details Section
+    10. Placeholder Images
 
 /* ------------- Reset -------------*/
 
@@ -277,6 +278,9 @@ nav button {
   h2 {
     font-size: 30px;
   }
+  h4 {
+    font-size: 22px;
+  }
 }
 
 @media screen and (min-width: 75em) {
@@ -291,6 +295,9 @@ nav button {
   }
   h2 {
     font-size: 40px;
+  }
+   h4 {
+    font-size: 24px;
   }
 }
 
@@ -340,6 +347,47 @@ nav button {
 .listStyleLi {
     list-style-type: disc;
 }
+
+/* ------------- Event Details Section -------------*/
+
+.eventDetails {
+    margin: 0;
+    background-color: #A43634;
+    color: #ffffff;
+    padding: 0 22px 76px 22px;
+    text-align: center;
+}
+
+.eventDetailsContainer {
+    /* width: 172px;
+    height: 164px; */
+    border: 2px solid #b1b2b4;
+    border-radius: 10px;
+    padding: 20px 22px 60px 22px;
+    margin-bottom: 22px;
+}
+
+.eventDetails h2 {
+    margin: 48px 0 48px 0;
+}
+
+.eventDetails h4 {
+    margin-bottom: 24px;
+
+}
+
+.eventDetails p {
+    text-align: left;
+}
+
+#dateCenter {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* ------------- Placeholder Images -------------*/
 
