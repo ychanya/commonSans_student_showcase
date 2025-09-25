@@ -96,7 +96,7 @@ html {
 }
 
 header {
-    background-color: #c70000;
+    background-color: #D03D33;
 }
 
 .logoWrapper {
@@ -106,13 +106,20 @@ header {
 }
 
 nav button {
-    font-size: 1.25em;
-    color: #c70000;
+    background: none;
+    border: none;
+    font-family: inherit;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 3em;
+    color: #fff;
+    padding-right: 30px;
 }
 
 .fanshaweNavLogo {
-    width: 12.5em;
-    padding-left: 1.875em;
+    width: 15.25em;
+    padding-left: 1em;
 }
 
 .mobileIcon {
@@ -134,7 +141,7 @@ nav button {
 }
                                            
 #mobileMenu {
-    background-color: #c70000;
+    background-color: #D03D33;
     position: absolute;
     inset: 0;
     width: 100vw;
@@ -153,15 +160,32 @@ nav button {
 
 #mobileMenu ul {
   list-style: none;
-}
-
-#mobileMenu li {
-  margin: 1.875em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
 }
 
 #mobileMenu a {
   color: white;
 }
+
+.alignItemRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+span {
+    display: block;
+    width: 236px;
+    height: 1px;
+    background-color: #fff;
+}
+
+
 
 /* ------------- Tablet & Desktop Menu -------------*/
 
@@ -360,12 +384,11 @@ nav button {
 }
 
 .eventDetailsContainer {
-    /* width: 172px;
-    height: 164px; */
     border: 2px solid #b1b2b4;
     border-radius: 10px;
     padding: 20px 22px 60px 22px;
     margin-bottom: 22px;
+    text-align: center;
 }
 
 .eventDetails h2 {
@@ -374,19 +397,10 @@ nav button {
 
 .eventDetails h4 {
     margin-bottom: 24px;
-
 }
 
-.eventDetails p {
-    text-align: left;
-}
-
-#dateCenter {
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+#dateCustom {
+    margin-top: 50px;
 }
 
 /* ------------- Footer -------------*/
@@ -480,8 +494,6 @@ footer nav ul li {
         padding-top: 2em;
     }
 }
-
-
 
 /* ------------- Placeholder Images -------------*/
 
