@@ -575,10 +575,6 @@ span {
     line-height: 1.5em;
 }
 
-#interactiveMediaDesign {
-    padding: 0 20px 0 20px;
-}
-
 .IMDSmallImg img {
     width: 178px;
     height: 158px;
@@ -681,6 +677,13 @@ span {
     padding: 2px 7px 2px 7px;
 }
 
+#filterIcon nav {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 @media screen and (min-width: 48em) {
 
     .studentAvatarImg{
@@ -698,6 +701,10 @@ span {
 
     h4 {
         font-size: 14px;
+    }
+
+    #filterIcon nav {
+        margin-bottom: 60px;
     }
 }
 
