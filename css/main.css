@@ -511,6 +511,10 @@ span {
 
 /* ------------- Interactive Media Design -------------*/
 
+.IMDContent {
+    margin-bottom: 50px;
+}
+
 .IMDContent img {
     width: 372px;
     height: 329px;
@@ -601,7 +605,7 @@ span {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 /* ------------- Our Team -------------*/
