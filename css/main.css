@@ -20,8 +20,11 @@ ___________________________________________ */
     07. Hero Animation
     08. Event Section
     09. Event Details Section
-    00. Footer
-    10. Placeholder Images
+    10. Student Project Exhibit Section
+    11. Interactive Media Design
+    12. Students Portfolio Showcase
+    13. Testimonials
+    14. Footer
 
 /* ------------- Reset -------------*/
 
@@ -69,11 +72,27 @@ h1, h2, h3, h4, p {
 .hidden {
     display: none;
 }
+
 .cursorPointer {
     cursor: pointer;
 }
+
 .font-bold {
     font-weight: 600;
+}
+
+.trackingBtn button {
+    width: 10px;
+    height: 10px;
+    background: none;
+    border: none;
+    background-color: #b1b2b4;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.trackingBtn .customBtn {
+    background-color: #A43634;
 }
 
 /* ------------- General Styles  -------------*/
@@ -86,6 +105,39 @@ html {
    html {
       font-size: 100%;
    }
+}
+
+h2, h3 {
+   color: #D03D33;
+}
+
+h2 {
+   color: #D03D33;
+   text-align: center;
+   margin: 48px 0 48px 0;
+}
+
+.brandButtons {
+    padding: .3rem 1rem;
+    background-color: #D03D33;
+    color: #ffffff;
+    border: 0px solid;
+    border-radius: 0.625rem;
+    font-size: .8rem;
+    width: 8.5rem;
+    height: 3rem;
+    font: inherit;
+    font-size: 0.875rem;
+}
+
+.alignBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0 50px 0 50px;
+
 }
 
 /* ------------- Mobile Menu -------------*/
@@ -105,7 +157,7 @@ header {
     align-items: center;
 }
 
-nav button {
+#closeMobileMenuBtn {
     background: none;
     border: none;
     font-family: inherit;
@@ -145,7 +197,7 @@ nav button {
     position: absolute;
     inset: 0;
     width: 100vw;
-    height: 40vh;
+    height: 50vh;
     z-index: 100;  
 
     /* Animated mobile menu */
@@ -159,7 +211,6 @@ nav button {
 }
 
 #mobileMenu ul {
-  list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -208,7 +259,6 @@ span {
     justify-content: end;
     align-items: center;
     gap: 3.75em;
-    list-style: none;    
 }
 
 #desktopMenu a {
@@ -273,10 +323,6 @@ span {
     padding: 2em 1.5em;
 }
 
-.invitationText h3 {
-    color: #D03D33;
-}
-
 .invitationText p {
     margin-bottom: 0.625em;
     line-height: 1.5em;
@@ -326,19 +372,6 @@ span {
   }
 }
 
-.brandButtons {
-    padding: .3rem 1rem;
-    background-color: #D03D33;
-    color: #ffffff;
-    border: 0px solid;
-    border-radius: 0.625rem;
-    font-size: .8rem;
-    width: 8.5rem;
-    height: 3rem;
-    font: inherit;
-    font-size: 0.875rem;
-}
-
 .invitationButtons {
     display: flex;
     justify-content: center;
@@ -348,12 +381,6 @@ span {
 
 .eventInformation {
     margin: 0 1.25em 4.375em 1.25em;
-}
-
-.eventInformation h2 {
-    margin: 2em 0 2em 0;
-    text-align: center;
-    color: #D03D33;
 }
 
 #videoContainer {
@@ -380,10 +407,10 @@ span {
     background-color: #A43634;
     color: #ffffff;
     padding: 0 22px 76px 22px;
-    text-align: center;
 }
 
 .eventDetailsContainer {
+    height: 200px;
     border: 2px solid #b1b2b4;
     border-radius: 10px;
     padding: 20px 22px 60px 22px;
@@ -392,7 +419,7 @@ span {
 }
 
 .eventDetails h2 {
-    margin: 48px 0 48px 0;
+    color: #fff;
 }
 
 .eventDetails h4 {
@@ -401,6 +428,356 @@ span {
 
 #dateCustom {
     margin-top: 50px;
+}
+
+/* ------------- Student Project Exhibit Section -------------*/
+
+.SPEWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.SPEImg {
+    width: 372px;
+    height: 329px;
+    border: 2px solid #D03D33;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width: 48em) {
+    .SPEImg {
+        width: 653px;
+        height: 578px;
+    }
+    .SPEWrapper {
+    flex-direction: row;
+    }
+}
+@media  screen and (min-width: 75em) {
+    .SPEImg {
+        width: 509px;
+        height: 450px;
+    }
+    .groupWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+.btnWrapper button {
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: 1px solid #A43634;
+    border-radius: 100px;
+    color: #A43634;
+    cursor: pointer;
+    margin-left: 70px;
+}
+
+#studentProjectExhibit {
+    margin-bottom: 68px;
+}
+
+.groupWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+}
+
+/* ------------- Interactive Media Design -------------*/
+
+.IMDContent img {
+    width: 372px;
+    height: 329px;
+    border: 2px solid #A43634;
+    border-radius: 20px;
+}
+
+.IMDContent {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  padding: 0 20px 0 20px;
+}
+
+.IMDContent > div:first-child {
+  order: 2; 
+}
+
+.IMDContent .IMDImg {
+  order: 1; 
+}
+
+.IMDContent button {
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 48em) {
+    .IMDContent img {
+        width: 576px;
+        height: 479px;
+    }
+}
+
+@media  screen and (min-width: 75em) {
+    .IMDContent img {
+        width: 509px;
+        height: 450px;
+    }
+    .IMDContent {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .IMDContent > div:first-child {
+        order: 1; 
+    }
+    .IMDContent .IMDImg {
+        order: 2; 
+    }
+    .IMDContent button {
+        display: block;
+        margin: 0;
+    }
+} 
+
+.IMDContent p {
+    margin-bottom: 1.5em;
+    line-height: 1.5em;
+}
+
+#interactiveMediaDesign {
+    padding: 0 20px 0 20px;
+}
+
+.IMDSmallImg img {
+    width: 178px;
+    height: 158px;
+    border: 2px solid #A43634;
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 48em) {
+    .IMDSmallImg img {
+        width: 336px;
+        height: 243px;
+    }
+}
+@media  screen and (min-width: 75em) {
+
+    .IMDSmallImg img {
+        width: 255px;
+        height: 225px;
+    }
+}
+
+.IMDSmallImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 0 10px;
+}
+
+/* ------------- Our Team -------------*/
+
+#ourTeam img {
+    width: 179px;
+    height: 158px;
+    border: 2px solid #A43634;
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 48em) {
+
+    #ourTeam img {
+        width: 336px;
+        height: 243px;
+    }
+}
+@media  screen and (min-width: 75em) {
+
+    #ourTeam img {
+        width: 255px;
+        height: 225px;
+    }
+}
+
+.OTImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+/* ------------- Students Portfolio Showcase -------------*/
+
+.studentAvatarImg {
+    width: 41px;
+    height: 41px;
+    background-color: #d9d9d9;
+    border: 1.5px solid #FFE2E1;
+    border-radius: 100px;
+}
+
+.studentListWrapper {
+    border: 1px solid #F5F5F5;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 3px;
+    padding: 16px 8px 8px 6px;
+    font-size: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 2px rgba(145, 144, 144, 0.3);
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2px;
+    font-size: 10px;
+    margin: 4px 0 14px 0;
+}
+
+.tags li {
+    border-radius: 10px;
+    background-color: #FFE2E1;
+    color: #D03D33;
+    width: fit-content;
+    height: 18px;
+    padding: 2px 7px 2px 7px;
+}
+
+@media screen and (min-width: 48em) {
+
+    .studentAvatarImg{
+        width: 45px;
+        height: 45px;
+    } 
+}
+
+@media  screen and (min-width: 75em) {
+
+    .studentAvatarImg{
+        width: 50px;
+        height: 50px;
+    }  
+}
+
+#filterIcon button {
+    background: none;
+    font-family: inherit;
+    border: 2px solid #b1b2b4;
+    border-radius: 20px;
+    color: #63656B;
+    width: fit-content;
+    padding: 8px 14px 8px 14px;
+    margin-bottom: 15px;
+}
+
+#filterIcon .cutomFilter {
+    color: #fff;
+    background-color: #D03D33;
+    border: none;
+}
+
+#studentPortfolios {
+    margin: 0 15px 0;
+}
+
+/* ------------- Testimonials -------------*/
+
+.testimonials {
+    margin-bottom: 60px;
+}
+
+.testimonialAvatarImg img {
+    width: 71px;
+    height: 71px;
+    border-radius: 100px;
+}
+
+.testimonials li {
+    width: 336px;
+    height: 291px;
+    border: 2px solid #A43634;
+    padding: 36px 14px 0 13px;
+}
+
+.testimonials {
+   font-size: 14px;
+}
+
+.robTest {
+    display: none;
+}
+
+@media screen and (min-width: 48em) {
+    
+    .testimonialAvatarImg img {
+        width: 77px;
+        height: 77px;
+    }   
+    .testimonials li {
+        width: 513px;
+        height: 444px;
+    } 
+    .testimonials p {
+        font-size: 16px;
+    }
+}
+
+@media  screen and (min-width: 75em) {
+    
+    .testimonialAvatarImg img {
+        width: 84px;
+        height: 84px;
+    } 
+    .testimonials li {
+        width: 406px;
+        height: 340px;
+    }
+    .robTest {
+        display: block;
+    }
+} 
+
+.testimonialsWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 78px;
+}
+
+.quote {
+    padding: 0 36px 0 36px;
+}
+
+.nameWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 18px;
+    margin-bottom: 40px;
 }
 
 /* ------------- Footer -------------*/
@@ -493,80 +870,4 @@ footer nav ul li {
     .copyrightInfo {
         padding-top: 2em;
     }
-}
-
-/* ------------- Placeholder Images -------------*/
-
-.SPEImg, .IMDImg, .IMDSmallImg, .OTImg, .studentAvatarImg, .testimonialAvatarImg {
-    background-color: #d9d9d9;
-    border-radius: 8px;
-}
-
-.SPEImg, .IMDImg {
-    width: 372px;
-    height: 329px;
-}
-
-.IMDSmallImg, .OTImg {
-    width: 178px;
-    height: 158px;
-}
-
-.studentAvatarImg{
-    width: 41px;
-    height: 41px;
-}
-
-.testimonialAvatarImg {
-    width: 71px;
-    height: 71px;
-}
-
-@media screen and (min-width: 25.75em) {
-    .SPEImg, .IMDImg {
-        width: 372px;
-        height: 329px;
-    }
-}
-@media screen and (min-width: 48em) {
-    .SPEImg, .IMDImg {
-        width: 576px;
-        height: 479px;
-    }
-
-    .IMDSmallImg, .OTImg {
-        width: 336px;
-        height: 243px;
-    }
-
-    .studentAvatarImg{
-        width: 45px;
-        height: 45px;
-    } 
-    
-    .testimonialAvatarImg {
-        width: 77px;
-        height: 77px;
-    }    
-}
-@media  screen and (min-width: 75em) {
-    .SPEImg, .IMDImg {
-        width: 509px;
-        height: 450px;
-    }
-
-    .IMDSmallImg, .OTImg {
-        width: 255px;
-        height: 225px;
-    }
-
-    .studentAvatarImg{
-        width: 50px;
-        height: 50px;
-    }  
-    
-    .testimonialAvatarImg {
-        width: 84px;
-        height: 84px;
-    } 
 }

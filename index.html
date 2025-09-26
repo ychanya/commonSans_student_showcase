@@ -167,11 +167,11 @@
             <div class="one-item sm-one-item md-one-item lg-one-item">
                 <h2>Student Project Exhibit</h2>
             </div>
-            <div class="one-item sm-one-item md-one-item lg-two-items">
-                <div class="SPEImg">
-                    <!-- <img> -->
-                </div>
+            <div class="SPEWrapper one-item sm-one-item md-one-item lg-two-items">
                 <div>
+                    <img src="images/student-project/group1.jpg" alt="Group 1" class="SPEImg">
+                </div>
+                <div class="groupWrapper">
                     <h3>Group #1</h3>
                     <ul>
                         <li class="listStyleLi">Chanya Chumdee</li>
@@ -181,17 +181,17 @@
                     </ul>
                 </div>
             </div>
-            <div class="two-items sm-two-items md-two-items lg-two-items">
-                <nav>
+            <div class="alignBtn two-items sm-two-items md-two-items lg-two-items">
+                <nav class="trackingBtn">
                     <h3 class="hidden">Carousel Navigation</h3>
-                    <button></button>
+                    <button class="customBtn"></button>
                     <button></button>
                     <button></button>
                     <button></button>
                     <button></button>
                     <button></button>
                 </nav>
-                <div>
+                <div class="btnWrapper">
                     <button>←</button>
                     <button>→</button>
                 </div>
@@ -202,7 +202,7 @@
                 <h2>Interactive Media Design</h2>
             </div>
 
-            <div class="one-item sm-one-item md-one-item lg-two-items">
+            <div class="IMDContent one-item sm-one-item md-one-item lg-two-items">
                 <div>
                     <p>The Interactive Media Design (IDP3) program at Fanshawe is a two-year (60-week) diploma that
                         equips students with the skills to thrive in digital media, web design and development, 3D
@@ -213,24 +213,24 @@
                     <p>Graduates are prepared for careers in design studios, app and web development, multimedia
                         production companies, digital agencies, and technology consulting, among many other creative
                         industries.</p>
-                    <button>More Info</button>
+                    <button id="infoBtn" class="brandButtons">More Info</button>
                 </div>
                 <div class="IMDImg">
-                    <!-- <img> -->
+                    <img src="images/idp-info/image-3.jpg" alt="Interactive Media Design Image 1">
                 </div>
             </div>
             <div class="two-items sm-two-items md-two-items lg-four-items">
                 <div class="IMDSmallImg">
-                    <!-- <img> -->
+                    <img src="images/idp-info/image-1.jpg" alt="Interactive Media Design Image 2">
                 </div>
                 <div class="IMDSmallImg">
-                    <!-- <img> -->
+                    <img src="images/idp-info/image-2.jpg" alt="Interactive Media Design Image 3">
                 </div>
                 <div class="IMDSmallImg">
-                    <!-- <img> -->
+                    <img src="images/idp-info/idp-hero.jpg" alt="Interactive Media Design Image 4">
                 </div>
                 <div class="IMDSmallImg">
-                    <!-- <img> -->
+                    <img src="images/idp-info/image-4.jpg" alt="Interactive Media Design Image 5">
                 </div>
             </div>
         </section>
@@ -240,16 +240,16 @@
             </div>
             <div class="two-items sm-two-items md-two-items lg-four-items">
                 <div class="OTImg">
-                    <!-- <img> -->
+                    <img src="images/our-team/yaya.png" alt="Yaya image">
                 </div>
                 <div class="OTImg">
-                    <!-- <img> -->
+                    <img src="images/our-team/ben.jpg" alt="Ben image">
                 </div>
                 <div class="OTImg">
-                    <!-- <img> -->
+                    <img src="images/our-team/harlowe.jpg" alt="Harlowe image">
                 </div>
                 <div class="OTImg">
-                    <!-- <img> -->
+                    <img src="images/our-team/juliana.jpg" alt="Juliana image">
                 </div>
             </div>
         </section>
@@ -258,10 +258,10 @@
                 <h2>Students Portfolio Showcase</h2>
             </div>
             <div class="one-item sm-one-item md-one-item lg-one-item">
-                <div>
+                <div id="filterIcon">
                     <nav class="four-items sm-four-items md-five-items lg-five-items">
                         <h3 class="hidden">Portfolio Filter Navigation</h3>
-                        <button><i class="fa-solid fa-user"></i> All</button>
+                        <button class="cutomFilter"><i class="fa-solid fa-user"></i> All</button>
                         <button><i class="fa-solid fa-palette"></i> Graphic</button>
                         <button><i class="fa-solid fa-video"></i> Motion</button>
                         <button><i class="fa-solid fa-laptop-code"></i> Front-End</button>
@@ -272,14 +272,14 @@
             </div>
             <ul class="two-items sm-two-items md-three-items lg-four-items">
                 <!-- <ul id="student-list"></ul> -->
-                <li>
+                <li class="studentListWrapper">
                     <div class="studentAvatarImg">
                         <!-- <img> -->
                     </div>
                     <div>
                         <div>
-                            <h4>Isabella Marie Taylor</h4>
-                            <ul>
+                            <h4>Aayush Diyali</h4>
+                            <ul class="tags">
                                 <li>Graphic</li>
                                 <li>PM</li>
                             </ul>
@@ -287,14 +287,14 @@
                         <a href="#">View Portfolio &#8599</a>
                     </div>
                 </li>
-                <li>
+                <li class="studentListWrapper">
                     <div class="studentAvatarImg">
                         <!-- <img> -->
                     </div>
                     <div>
                         <div>
-                            <h4>Isabella Marie Taylor</h4>
-                            <ul>
+                            <h4>Abigail Londini</h4>
+                            <ul class="tags">
                                 <li>Graphic</li>
                                 <li>PM</li>
                             </ul>
@@ -302,14 +302,14 @@
                         <a href="#">View Portfolio &#8599</a>
                     </div>
                 </li>
-                <li>
+                <li class="studentListWrapper">
                     <div class="studentAvatarImg">
                         <!-- <img> -->
                     </div>
                     <div>
                         <div>
-                            <h4>Isabella Marie Taylor</h4>
-                            <ul>
+                            <h4>Ajay Antony Raj</h4>
+                            <ul class="tags">
                                 <li>Graphic</li>
                                 <li>PM</li>
                             </ul>
@@ -317,85 +317,507 @@
                         <a href="#">View Portfolio &#8599</a>
                     </div>
                 </li>
-                <li>
+                <li class="studentListWrapper">
                     <div class="studentAvatarImg">
                         <!-- <img> -->
                     </div>
                     <div>
                         <div>
-                            <h4>Isabella Marie Taylor</h4>
-                            <ul>
+                            <h4>Amy Armstrong</h4>
+                            <ul class="tags">
                                 <li>Graphic</li>
                                 <li>PM</li>
                             </ul>
                         </div>
-                        <a>View Portfolio &#8599</a>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Anh Nguyen</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Yi Lu</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Zakia Sultana</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Daljit Singh</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Diya Sanjay Patel</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Ezekiel John Celis</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Hannah Silva</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Zeran Lu</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Josephine Muncaster</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Tapshveer Benipal</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Justine Nathalie</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Kingsley Watson</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Laila Seif</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Liam Kuchta</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Linh Nguyen</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Luciano Clementi</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Mikhail Kirs</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Ngoc Nhu An Do</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Noah Kennedy</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Pranav Pranav</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Qihong Liu</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Rabin Tamang</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Rin Morito</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Roni Soud</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Simon Dasilva</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Situ Ranjit</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Sydney Bandarra</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
+                    </div>
+                </li>
+                <li class="studentListWrapper">
+                    <div class="studentAvatarImg">
+                        <!-- <img> -->
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Yi Cheng</h4>
+                            <ul class="tags">
+                                <li>Graphic</li>
+                                <li>PM</li>
+                            </ul>
+                        </div>
+                        <a href="#">View Portfolio &#8599</a>
                     </div>
                 </li>
             </ul>
         </section>
         <section class="testimonials">
-            <h2 class="hidden">Testimonials</h2>
-            <ul class="one-item sm-one-item md-one-item lg-two-items">
+            <h2 class="one-item sm-one-item md-one-item lg-one-items">Testimonials</h2>
+            <ul class="testimonialsWrapper one-item sm-one-item md-one-item lg-two-items">
                 <li>
                     <article>
-                        <div>
+                        <div class="nameWrapper">
                             <div class="testimonialAvatarImg">
-                                <!-- <img> -->
+                                <img src="images/testimonials/marco.jpg" alt="Marco Image">
                             </div>
                             <div>
                                 <h3>Marco De Luca</h3>
                                 <p>IDP Program Coordinator and Professor at Fanshawe College</p>
                             </div>
                         </div>
-                        <p>"Utilizing a diverse range of media, the Interactive Media Design students have masterfully
+                        <p class="quote">"Utilizing a diverse range of media, the Interactive Media Design students have
+                            masterfully
                             highlighted the heroic sacrifices made by the India soldiers in World war I."</p>
                     </article>
                 </li>
                 <li class="robTest">
                     <article>
-                        <div>
+                        <div class="nameWrapper">
                             <div class="testimonialAvatarImg">
-                                <!-- <img> -->
+                                <img src="images/testimonials/rob.jpg" alt="Rob Image">
                             </div>
                             <div>
                                 <h3>Rob Haaf</h3>
                                 <p>IDP Professor at Fanshawe College</p>
                             </div>
                         </div>
-                        <p>"It is always rewarding to see the innovation and passion that our students bring to Industry
+                        <p class="quote">"It is always rewarding to see the innovation and passion that our students
+                            bring to Industry
                             Night. The skills they have developed in the IDP3 program are impressive and set them up for
                             future success."</p>
                     </article>
                 </li>
-                <li class="jarrodTest">
+                <!-- <li class="jarrodTest">
                     <article>
-                        <div>
+                        <div class="nameWrapper">
                             <div class="testimonialAvatarImg">
-                                <!-- <img> -->
+                                <img src="images/testimonials/jarrod.jpg" alt="Jarrod Image">
                             </div>
                             <div>
                                 <h3>Jarrod Osterback</h3>
                                 <p>IDP Professor at Fanshawe College</p>
                             </div>
                         </div>
-                        <p>"Industry Night is a wonderful opportunity for our students to shine. The projects they
+                        <p class="quote">"Industry Night is a wonderful opportunity for our students to shine. The projects they
                             represent are a testament to their hard work and the real-world skills they've gained
                             throughout our program."</p>
                     </article>
-                </li>
+                </li> -->
             </ul>
-            <div class="two-items sm-two-items md-two-items lg-two-items">
-                <nav>
+            <div class="alignBtn two-items sm-two-items md-two-items lg-two-items">
+                <nav class="trackingBtn">
                     <h3 class="hidden">Carousel Navigation</h3>
-                    <button></button>
+                    <button class="customBtn"></button>
                     <button></button>
                     <button></button>
                     <button></button>
                     <button></button>
                     <button></button>
                 </nav>
-                <div>
+                <div class="btnWrapper">
                     <button>←</button>
                     <button>→</button>
                 </div>
