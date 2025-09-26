@@ -605,7 +605,7 @@ span {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 50px 0 0 10px;
+    margin-top: 50px;
 }
 
 /* ------------- Our Team -------------*/
