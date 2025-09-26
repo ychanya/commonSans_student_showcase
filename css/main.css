@@ -236,8 +236,6 @@ span {
     background-color: #fff;
 }
 
-
-
 /* ------------- Tablet & Desktop Menu -------------*/
 
 #desktopMenu {
@@ -453,20 +451,28 @@ span {
         width: 653px;
         height: 578px;
     }
-    .SPEWrapper {
-    flex-direction: row;
+     #studentProjectExhibit h3 {
+        font-size: 25px;
     }
 }
+
 @media  screen and (min-width: 75em) {
     .SPEImg {
         width: 509px;
         height: 450px;
+        margin-right: 126px;;
     }
-    .groupWrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    .SPEWrapper {
+    flex-direction: row;
+    }
+    #studentProjectExhibit .groupWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        row-gap: 24px;
+    }
+    #studentProjectExhibit h3 {
+        font-size: 35px;
     }
 }
 
@@ -672,6 +678,18 @@ span {
         width: 45px;
         height: 45px;
     } 
+
+    .tags {
+        font-size: 12px;
+    }
+
+    .studentListWrapper a {
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
 }
 
 @media  screen and (min-width: 75em) {
@@ -718,7 +736,7 @@ span {
 .testimonials li {
     width: 336px;
     height: 291px;
-    border: 2px solid #A43634;
+    border: 2px solid #D03D33;
     padding: 36px 14px 0 13px;
 }
 
