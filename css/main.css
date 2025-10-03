@@ -11,7 +11,9 @@ Tags: Let's styling!!!
        CSS Guide
 ___________________________________________ */
 
-/*  01. Reset
+/*  
+    00. Accessibility
+    01. Reset
     02. Utility classes
     03. General Styles
     04. Mobile Menu
@@ -26,7 +28,64 @@ ___________________________________________ */
     13. Testimonials
     14. Footer
 
+
+
+*/    
+
+/* ------------- Accessiblity -------------*/
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+button:focus, a:focus {
+    outline: 2px solid #000;
+}
+
+.skip-link {
+    position: absolute;
+    color: #000;
+    top: -40px;
+    left: 0;
+    background: #fff;
+    z-index: 100;
+    transition: all 0.3s ease-in-out;
+    padding: .5em .5em;
+}
+
+.skip-link:focus {
+    top: 0px;
+}
+
 /* ------------- Reset -------------*/
+
+
 
 /* button {
     background: none;
@@ -139,6 +198,7 @@ h2 {
     padding: 0 50px 0 50px;
 
 }
+
 
 /* ------------- Mobile Menu -------------*/
 
@@ -834,6 +894,10 @@ footer {
 
 footer nav ul li {
     margin-bottom: 1.25em;
+}
+
+footer nav ul li a{
+    color: #ffffff;
 }
 
 .socialMedia {
