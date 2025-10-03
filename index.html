@@ -163,20 +163,39 @@
             <div class="one-item sm-one-item md-one-item lg-one-item">
                 <h2>Student Project Exhibit</h2>
             </div>
-            <div class="SPEWrapper one-item sm-one-item md-one-item lg-two-items">
-                <div>
-                    <img src="images/student-project/group1.jpg" alt="Group 1" class="SPEImg">
+
+            <section id="carousel" class="SPEWrapper one-item sm-one-item md-one-item lg-two-items">
+                <div class="SPEWrapper one-item sm-one-item md-one-item lg-two-items">
+                    <figure>
+                        <img src="images/student-project/group1.jpg" alt="Group 1" class="SPEImg">
+                    </figure>
+                    <div class="groupWrapper">
+                        <h3>Group #1</h3>
+                        <ul>
+                            <li class="listStyleLi">Chanya Chumdee</li>
+                            <li class="listStyleLi">Harlowe D</li>
+                            <li class="listStyleLi">Juliana Gambuzza</li>
+                            <li class="listStyleLi">Ben Kettlewell</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="groupWrapper">
-                    <h3>Group #1</h3>
-                    <ul>
-                        <li class="listStyleLi">Chanya Chumdee</li>
-                        <li class="listStyleLi">Harlowe D</li>
-                        <li class="listStyleLi">Juliana Gambuzza</li>
-                        <li class="listStyleLi">Ben Kettlewell</li>
-                    </ul>
-                </div>
-            </div>
+
+                <!-- <div class="SPEWrapper one-item sm-one-item md-one-item lg-two-items">
+                    <figure>
+                        <img src="images/student-project/group1.jpg" alt="Group 2" class="SPEImg">
+                    </figure>
+                    <div class="groupWrapper">
+                        <h3>Group #2</h3>
+                        <ul>
+                            <li class="listStyleLi">Chanya Chumdee</li>
+                            <li class="listStyleLi">Harlowe D</li>
+                            <li class="listStyleLi">Juliana Gambuzza</li>
+                            <li class="listStyleLi">Ben Kettlewell</li>
+                        </ul>
+                    </div>
+                </div> -->
+            </section>
+
             <div class="alignBtn two-items sm-two-items md-two-items lg-two-items">
                 <nav class="trackingBtn">
                     <h3 class="hidden">Carousel Navigation</h3>
@@ -272,55 +291,7 @@
         <section class="testimonials">
             <h2 class="one-item sm-one-item md-one-item lg-one-items">Testimonials</h2>
             <ul class="testimonialsWrapper one-item sm-one-item md-one-item lg-two-items">
-                <li>
-                    <article>
-                        <div class="nameWrapper">
-                            <div class="testimonialAvatarImg">
-                                <img src="images/testimonials/marco.jpg" alt="Marco Image">
-                            </div>
-                            <div>
-                                <h3>Marco De Luca</h3>
-                                <p>IDP Program Coordinator and Professor at Fanshawe College</p>
-                            </div>
-                        </div>
-                        <p class="quote">"Utilizing a diverse range of media, the Interactive Media Design students have
-                            masterfully
-                            highlighted the heroic sacrifices made by the India soldiers in World war I."</p>
-                    </article>
-                </li>
-                <li class="robTest">
-                    <article>
-                        <div class="nameWrapper">
-                            <div class="testimonialAvatarImg">
-                                <img src="images/testimonials/rob.jpg" alt="Rob Image">
-                            </div>
-                            <div>
-                                <h3>Rob Haaf</h3>
-                                <p>IDP Professor at Fanshawe College</p>
-                            </div>
-                        </div>
-                        <p class="quote">"It is always rewarding to see the innovation and passion that our students
-                            bring to Industry
-                            Night. The skills they have developed in the IDP3 program are impressive and set them up for
-                            future success."</p>
-                    </article>
-                </li>
-                <!-- <li class="jarrodTest">
-                    <article>
-                        <div class="nameWrapper">
-                            <div class="testimonialAvatarImg">
-                                <img src="images/testimonials/jarrod.jpg" alt="Jarrod Image">
-                            </div>
-                            <div>
-                                <h3>Jarrod Osterback</h3>
-                                <p>IDP Professor at Fanshawe College</p>
-                            </div>
-                        </div>
-                        <p class="quote">"Industry Night is a wonderful opportunity for our students to shine. The projects they
-                            represent are a testament to their hard work and the real-world skills they've gained
-                            throughout our program."</p>
-                    </article>
-                </li> -->
+                <!-- Display testimonial -->
             </ul>
             <div class="alignBtn two-items sm-two-items md-two-items lg-two-items">
                 <nav class="trackingBtn">
@@ -333,8 +304,8 @@
                     <button></button>
                 </nav>
                 <div class="btnWrapper">
-                    <button>←</button>
-                    <button>→</button>
+                    <button id="previous">←</button>
+                    <button id="next">→</button>
                 </div>
             </div>
         </section>
