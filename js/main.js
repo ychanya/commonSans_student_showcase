@@ -122,7 +122,7 @@ const carousels = [
     },
 ];
 
-const carouselWrap = document.querySelector("#carousel");
+const carouselWrap = document.querySelector("#SPECarousel");
 const previousCa = document.querySelector("#previousCa");
 const nextCa = document.querySelector("#nextCa");
 let countCa = 0;
