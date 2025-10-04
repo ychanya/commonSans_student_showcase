@@ -19,21 +19,22 @@
 
 <body class="site">
     <a href="#main" class="skip-link screen-reader-text">Skip to main content</a>
-    <h1 class="hidden">Welcome to Fanshawe's Industry Night 2026</h1>
+    <h1 class="visually-hidden">Welcome to Fanshawe's Industry Night 2026</h1>
     <header class="head">
-        <h2 class="hidden">Main Navigation</h2>
+        <h2 class="visually-hidden">Website Header</h2>
 
         <a href="index.html" class="logo logoWrapper">
             <img src="images/Fanshawe-logo/fanshawe-logo.svg" alt="Fanshawe College Logo" class="fanshaweNavLogo">
         </a>
 
         <!-- Desktop Nav -->
-        <nav id="desktopMenu" class="main-nav">
+        <nav id="desktopMenu" class="main-nav" role="navigation" aria-label="Main Navigation">
+            <h3 class="visually-hidden">Main Navigation</h3>
             <ul>
-                <li><a href="#">Event</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Program</a></li>
-                <li><a href="#">Portfolios</a></li>
+                <li><a href="#eventSection" aria-label="Go to Events">Events</a></li>
+                <li><a href="#studentProjectExhibit" aria-label="Go to Projects">Projects</a></li>
+                <li><a href="#interactiveMediaDesign" aria-label="Go to Program Information">Program</a></li>
+                <li><a href="#studentPortfolios" aria-label="Go to Student Portfolios">Portfolios</a></li>
             </ul>
         </nav>
 
@@ -42,29 +43,30 @@
         </div>
 
         <!-- Mobile Nav -->
-        <nav id="mobileMenu">
+        <nav id="mobileMenu" role="navigation" aria-label="Mobile Navigation">
+            <h3 class="visually-hidden">Mobile Main Navigation</h3>
             <div class="alignItemRow">
                 <img src="images/Fanshawe-logo/fanshawe-logo.svg" alt="Fanshawe College Logo" class="fanshaweNavLogo">
-                <button id="closeMobileMenuBtn">&times;</button>
+                <button id="closeMobileMenuBtn" aria-label="Close Mobile Menu Button">&times;</button>
             </div>
             <ul>
-                <li><a href="#">Event</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Program</a></li>
-                <li><a href="#">Portfolios</a></li>
+                <li><a href="#eventSection" aria-label="Go to Events">Events</a></li>
+                <li><a href="#studentProjectExhibit" aria-label="Go to Projects">Projects</a></li>
+                <li><a href="#interactiveMediaDesign" aria-label="Go to Program Information">Program</a></li>
+                <li><a href="#studentPortfolios" aria-label="Go to Student Portfolios">Portfolios</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="main" id="main">
         <section id="heroSection">
-            <h2 class="hidden">Hero Section</h2>
+            <h2 class="visually-hidden">Hero Section</h2>
             <div class="hero_animation full">
                 <h3>Hero Animation</h3>
             </div>
         </section>
         <section id="eventSection">
-            <h2 class="hidden">Industry Night Information</h2>
+            <h2 class="visually-hidden">Industry Night Information</h2>
             <div class="eventInvitation full">
                 <div class="invitationText">
                     <h3>Step into an Inspiring Showcase</h3>
@@ -82,8 +84,8 @@
                 </div>
                 <div class="one-item sm-one-item md-one-item lg-one-item">
                     <div class="invitationButtons">
-                        <button class="brandButtons cursorPointer">Event Details</button><!-- define the buttons -->
-                        <button class="brandButtons cursorPointer">Portfolios</button><!-- define the buttons -->
+                        <button class="brandButtons cursorPointer" aria-label="Event Details Button">Event Details</button><!-- define the buttons -->
+                        <button class="brandButtons cursorPointer" aria-label="Show Portfolios Button">Portfolios</button><!-- define the buttons -->
                     </div>
                 </div>
             </div>
@@ -95,7 +97,7 @@
 
             <div class="eventVideo one-item sm-one-item md-one-item lg-two-items">
                 <div id="videoContainer" class="videoWrapper">
-                    <video controls preload="metadata" poster="images/Fanshawe.jpeg">
+                    <video controls preload="metadata" poster="images/Fanshawe.jpeg" aria-hidden="true">
                         <source src="video/IntroAnimation.mp4" type="video/mp4">
                         <source src="video/IntroAnimation.webm" type="video/webm">
                         <p>Your browser does not support HTML5 video. Please update your browser to the latest version.
@@ -165,23 +167,23 @@
                 <h2>Student Project Exhibit</h2>
             </div>
 
-            <section id="carousel" class="SPEWrapper one-item sm-one-item md-one-item lg-two-items">
+            <section id="SPECarousel" class="SPEWrapper one-item sm-one-item md-one-item lg-two-items" role="region" aria-roledescription="carousel" aria-label="Student projects carousel">
                 <!-- Display Carousel -->
             </section>
 
             <div class="alignBtn two-items sm-two-items md-two-items lg-two-items">
-                <nav class="trackingBtn">
-                    <h3 class="hidden">Carousel Navigation</h3>
-                    <button class="customBtn"></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
+                <nav class="trackingBtn" role="navigation" aria-label="Student Project Exhibit Carousel Navigation">
+                    <h3 class="visually-hidden">Student Project Exhibit Carousel Navigation</h3>
+                    <button class="customBtn" aria-label="Student Project Exhibit Carousel Slide One"></button>
+                    <button aria-label="Student Project Exhibit Carousel Slide Two"></button>
+                    <button aria-label="Student Project Exhibit Carousel Slide Three"></button>
+                    <button aria-label="Student Project Exhibit Carousel Slide Four"></button>
+                    <button aria-label="Student Project Exhibit Carousel Slide Five"></button>
+                    <button aria-label="Student Project Exhibit Carousel Slide Six"></button>
                 </nav>
                 <div class="btnWrapper">
-                    <button id="previousCa">←</button>
-                    <button id="nextCa">→</button>
+                    <button id="previousCa" aria-controls="SPECarousel" aria-label="Previous Slide">←</button>
+                    <button id="nextCa" aria-controls="SPECarousel" aria-label="Next Slide">→</button>
                 </div>
             </div>
         </section>
@@ -201,7 +203,7 @@
                     <p>Graduates are prepared for careers in design studios, app and web development, multimedia
                         production companies, digital agencies, and technology consulting, among many other creative
                         industries.</p>
-                    <button id="infoBtn" class="brandButtons">More Info</button>
+                    <button id="infoBtn" class="brandButtons" aria-label="More Information Button">More Info</button>
                 </div>
                 <div class="IMDImg">
                     <img
@@ -214,7 +216,7 @@
                                 images/responsive/mobile/program-info/hero-program-mobile_372.jpg 372w,
                                 images/responsive/tablet/program/hero-program-tablet_595.jpg 595w,
                                 images/responsive/desktop/program/hero-program-desktop_751.jpg 751w" 
-                        alt="Interactive Media Design Hero Image"
+                        alt="Interactive Media Design hero image (program overview)"
                         src="images/responsive/mobile/program-info/hero-program-mobile_372.jpg">
                 </div>
             </div>
@@ -230,7 +232,7 @@
                                 images/responsive/mobile//program-info/image-1-program-mobile_372.jpg 372w,
                                 images/responsive/tablet/program/image-1-tablet_595.jpg 595w,
                                 images/responsive/desktop/program/image-1-program-desktop_340.jpg 340w" 
-                        alt="Interactive Media Design Image 1"
+                        alt="Interactive Media Design student project screenshot — image 1"
                         src="images/responsive/mobile//program-info/image-1-program-mobile_372.jpg">
                 </div>
                 <div class="IMDSmallImg">
@@ -244,7 +246,7 @@
                                 images/responsive/mobile/program-info/image-2-program-mobile_372.jpg 372w,
                                 images/responsive/tablet/program/image-2-tablet_595.jpg 595w,
                                 images/responsive/desktop/program/image-2-program-desktop_340.jpg 340w" 
-                        alt="Interactive Media Design Image 2"
+                        alt="Interactive Media Design student project screenshot — image 2"
                         src="images/responsive/mobile/program-info/image-2-program-mobile_372.jpg">
                 </div>
                 <div class="IMDSmallImg">
@@ -258,7 +260,7 @@
                                 images/responsive/mobile/program-info/image-3-program-mobile_372.jpg 372w,
                                 images/responsive/tablet/program/image-3-tablet_594.jpg 594w,
                                 images/responsive/desktop/program/image-3-program-desktop_354.jpg 354w" 
-                        alt="Interactive Media Design Image 3"
+                        alt="Interactive Media Design student project screenshot — image 3"
                         src="images/responsive/mobile/program-info/image-3-program-mobile_372.jpg">
                 </div>
                 <div class="IMDSmallImg">
@@ -272,7 +274,7 @@
                                 images/responsive/mobile/program-info/image-4-program-mobile_372.jpg 372w,
                                 images/responsive/tablet/program/image-4-tablet_595.jpg 595w,
                                 images/responsive/desktop/program/image-4-program-desktop_341.jpg 341w" 
-                        alt="Interactive Media Design Image 4"
+                        alt="Interactive Media Design student project screenshot — image 4"
                         src="images/responsive/mobile/program-info/image-4-program-mobile_372.jpg">
                 </div>
             </div>
@@ -293,7 +295,7 @@
                                 images/responsive/mobile/our-team/yaya_372.jpg 372w,
                                 images/responsive/tablet/our-team/yaya_251.jpg 251w,
                                 images/responsive/desktop/our-team/yaya_341.jpg 341w" 
-                        alt="Yaya image"
+                        alt="Yaya — interactive media design student portrait"
                         src="images/responsive/mobile/our-team/yaya_372.jpg">
                 </div>
                 <div class="OTImg">
@@ -307,7 +309,7 @@
                                 images/responsive/mobile/our-team/ben_372.jpg 372w,
                                 images/responsive/tablet/our-team/ben_251.jpg 251w,
                                 images/responsive/desktop/our-team/ben_341.jpg 341w" 
-                        alt="Ben image"
+                        alt="Ben — interactive media design student portrait"
                         src="images/responsive/mobile/our-team/ben_372.jpg">
                 </div>
                 <div class="OTImg">
@@ -321,7 +323,7 @@
                                 images/responsive/mobile/our-team/harlowe_372.jpg 372w,
                                 images/responsive/tablet/our-team/harlowe_250.jpg 250w,
                                 images/responsive/desktop/our-team/harlowe_340.jpg 340w" 
-                        alt="Harlowe image"
+                        alt="Harlowe — interactive media design student portrait"
                         src="images/responsive/mobile/our-team/harlowe_372.jpg">
                 </div>
                 <div class="OTImg">
@@ -335,7 +337,7 @@
                                 images/responsive/mobile/our-team/juliana_372.jpg 372w,
                                 images/responsive/tablet/our-team/juliana_251.jpg 251w,
                                 images/responsive/desktop/our-team/juliana_341.jpg 341w" 
-                        alt="Juliana image"
+                        alt="Juliana — interactive media design student portrait"
                         src="images/responsive/mobile/our-team/juliana_372.jpg">
                 </div>
             </div>
@@ -346,14 +348,14 @@
             </div>
             <div class="one-item sm-one-item md-one-item lg-one-item">
                 <div id="filterIcon">
-                    <nav class="four-items sm-four-items md-five-items lg-five-items">
-                        <h3 class="hidden">Portfolio Filter Navigation</h3>
-                        <button class="cutomFilter"><i class="fa-solid fa-user"></i> All</button>
-                        <button><i class="fa-solid fa-palette"></i> Graphic</button>
-                        <button><i class="fa-solid fa-video"></i> Motion</button>
-                        <button><i class="fa-solid fa-laptop-code"></i> Front-End</button>
-                        <button><i class="fa-solid fa-server"></i> Back-End</button>
-                        <button><i class="fa-solid fa-clipboard-list"></i> Project Manager</button>
+                    <nav class="four-items sm-four-items md-five-items lg-five-items" role="navigation" aria-label="Portfolio Filter Navigation">
+                        <h3 class="visually-hidden">Portfolio Filter Navigation</h3>
+                        <button class="cutomFilter" aria-label="All Categories Button"><i class="fa-solid fa-user" aria-label="All Categories"></i> All</button>
+                        <button aria-label="Graphic Designer Button"><i class="fa-solid fa-palette" aria-label="Graphic Designer"></i> Graphic</button>
+                        <button aria-label="Motion Designer Button"><i class="fa-solid fa-video" aria-label="Motion Designer"></i> Motion</button>
+                        <button aria-label="Front-End Dev Button"><i class="fa-solid fa-laptop-code" aria-label="Front-End Dev"></i> Front-End</button>
+                        <button aria-label="Back-End Dev Button"><i class="fa-solid fa-server" aria-label="Back-End Dev"></i> Back-End</button>
+                        <button aria-label="Project Manager Button"><i class="fa-solid fa-clipboard-list" aria-label="Project Manager"></i> Project Manager</button>
                     </nav>
                 </div>
             </div>
@@ -362,22 +364,22 @@
         </section>
         <section class="testimonials">
             <h2 class="one-item sm-one-item md-one-item lg-one-items">Testimonials</h2>
-            <ul class="testimonialsWrapper one-item sm-one-item md-one-item lg-two-items">
+            <ul id="testimonialCarousel" class="testimonialsWrapper one-item sm-one-item md-one-item lg-two-items" role="region" aria-roledescription="carousel" aria-label="Testimonial carousel">
                 <!-- Display testimonial -->
             </ul>
             <div class="alignBtn two-items sm-two-items md-two-items lg-two-items">
-                <nav class="trackingBtn">
-                    <h3 class="hidden">Carousel Navigation</h3>
-                    <button class="customBtn"></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
+                <nav class="trackingBtn" role="navigation" aria-label="Testimonial Carousel Navigation">
+                    <h3 class="visually-hidden">Testimonial Carousel Navigation</h3>
+                    <button class="customBtn" aria-label="Testimonial Slide one"></button>
+                    <button aria-label="Testimonial Slide two"></button>
+                    <button aria-label="Testimonial Slide three"></button>
+                    <button aria-label="Testimonial Slide four"></button>
+                    <button aria-label="Testimonial Slide five"></button>
+                    <button aria-label="Testimonial Slide six"></button>
                 </nav>
                 <div class="btnWrapper">
-                    <button id="previous">←</button>
-                    <button id="next">→</button>
+                    <button id="previous" aria-controls="testimonialCarousel" aria-label="Previous Slide">←</button>
+                    <button id="next" aria-controls="testimonialCarousel" aria-label="Next Slide">→</button>
                 </div>
             </div>
         </section>
@@ -390,25 +392,25 @@
                         class="fanshaweFootLogo">
                 </a>
             </div>
-            <nav>
-                <h2 class="hidden">Footer Navigation</h2>
+            <nav role="navigation" aria-label="Footer Navigation">
+                <h2 class="visually-hidden">Footer Navigation</h2>
                 <ul class="lg-four-items">
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Program</a></li>
-                    <li><a href="#">Portfolios</a></li>
+                    <li><a href="#eventSection" aria-label="Go to Events">Events</a></li>
+                    <li><a href="#studentProjectExhibit" aria-label="Go to Projects">Projects</a></li>
+                    <li><a href="#interactiveMediaDesign" aria-label="Go to Program Information">Program</a></li>
+                    <li><a href="#studentPortfolios" aria-label="Go to Student Portfolios">Portfolios</a></li>
                 </ul>
             </nav>
             <div class="socialMedia">
                 <ul>
-                    <li><a href="https://www.facebook.com/FanshaweCollege"><i class="fa-brands fa-facebook"></i></a>
+                    <li><a href="https://www.facebook.com/FanshaweCollege" aria-label="Fanshawe college on Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a>
                     </li>
-                    <li><a href="https://www.instagram.com/fanshawecollege"><i class="fa-brands fa-instagram"></i></a>
+                    <li><a href="https://www.instagram.com/fanshawecollege" aria-label="Fanshawe college on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
                     </li>
-                    <li><a href="https://x.com/fanshawecollege"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="https://x.com/fanshawecollege" aria-label="Fanshawe college on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
                     <li><a href="https://www.linkedin.com/school/fanshawe-college/posts/?feedView=all"><i
                                 class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://www.youtube.com/user/MyFanshawe"><i class="fa-brands fa-youtube"></i></a></li>
+                    <li><a href="https://www.youtube.com/user/MyFanshawe" aria-label="Fanshawe college on Youtube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
             <div class="footerCollegeInfo">

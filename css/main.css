@@ -119,6 +119,18 @@ h1, h2, h3, h4, p {
 
 /* ------------- Utility classes -------------*/
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    white-space: nowrap;
+    clip-path: inset(50%);
+}
+
 .hidden {
     display: none;
 }
