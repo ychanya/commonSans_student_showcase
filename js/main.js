@@ -119,7 +119,7 @@ const carousels = [
             "Qihong Liu",
             "Zeran Lu"
         ]
-    },
+    }
 ];
 
 const carouselWrap = document.querySelector("#SPECarousel");
@@ -292,3 +292,79 @@ function previousTestimonial() {
 next.addEventListener("click", nextTestimonial);
 previous.addEventListener("click", previousTestimonial);
 displayTestimonial();
+
+// ------------- Testimonails v.2 ------------- Waiting for Marco’s approval
+
+// const testimonials = [
+//     { 
+//         img: "images/testimonials/marco.jpg",
+//         name: "Marco De Luca", 
+//         role: "IDP Program Coordinator and Professor at Fanshawe College",
+//         quote: "Utilizing a diverse range of media, the Interactive Media Design students have masterfully highlighted the heroic sacrifices made by the India soldiers in World war I."
+//     },
+//     { 
+//         img: "images/testimonials/rob.jpg",
+//         name: "Rob Haaf", 
+//         role: "IDP Professor at Fanshawe College",
+//         quote: "It is always rewarding to see the innovation and passion that our students bring to Industry Night. The skills they have developed in the IDP3 program are impressive and set them up for future success."
+//     },
+//     { 
+//         img: "images/testimonials/jarrod.jpg",
+//         name: "Jarrod Osterback", 
+//         role: "IDP Professor at Fanshawe College",
+//         quote: "Industry Night is a wonderful opportunity for our students to shine. The projects they represent are a testament to their hard work and the real-world skills they've gained throughout our program."
+//     }
+// ];
+
+// const testimonialWrap = document.querySelector(".testimonialsWrapper");
+// const previous = document.querySelector("#previous");
+// const next = document.querySelector("#next");
+// let count = 0;
+
+// function displayCount() {
+//     if (window.innerWidth >= 1200) {
+//         return 2; 
+//     } else {
+//         return 1; 
+//     }
+// }
+
+// function displayTestimonials() {
+//     testimonialWrap.innerHTML = ""; 
+
+//     for (let i = 0; i < displayCount(); i++) {
+//         const position = (count + i) % testimonials.length;
+//         const testimonialInfo = testimonials[position];
+
+//         testimonialWrap.innerHTML += `
+//         <li>
+//             <article>
+//                 <div class="nameWrapper">
+//                     <div class="testimonialAvatarImg">
+//                         <img src="${testimonialInfo.img}" alt="${testimonialInfo.name} Image">
+//                     </div>
+//                     <div>
+//                         <h3>${testimonialInfo.name}</h3>
+//                         <p>${testimonialInfo.role}</p>
+//                     </div>
+//                 </div>
+//                 <p class="quote">"${testimonialInfo.quote}"</p>
+//             </article>
+//         </li>`;
+//     }
+// }
+
+// function nextTestimonial() {
+//     count = (count + displayCount()) % testimonials.length;
+//     displayTestimonials();
+// }
+
+// function previousTestimonial() {
+//     count = (count - displayCount() + testimonials.length) % testimonials.length;
+//     displayTestimonials();
+// }
+
+// next.addEventListener("click", nextTestimonial);
+// previous.addEventListener("click", previousTestimonial);
+// window.addEventListener("resize", displayTestimonials);
+// displayTestimonials();
