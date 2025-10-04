@@ -1,6 +1,16 @@
+// *********************** JS Guide ***********************
+
+//   00. Video Player
+//   01. Carousel for Student Project Exhibition
+//   02. Student Portfolio Dynamic Code
+//   03. Testimonails
+
+// ********************************************************
+
 console.log("JS file connected");
 
-// Video Player
+// ------------- Video Player ------------- 
+
 const player = new Plyr("video", {
     controls: [
         "play-large", 
@@ -15,7 +25,148 @@ const player = new Plyr("video", {
     ]
 });
 
-// Student Portfolio Dynamic Code
+
+// ------------- Carousel for Student Project Exhibition ------------- 
+
+const carousels = [
+    { 
+        groupImg: "images/student-project/group1.jpg",
+        group: "Group #1", 
+        members: [
+            "Amy Armstrong",
+            "Josephine Muncaster",
+            "Laila Seif",
+            "Zakia Sultana"
+        ]
+    },
+    { 
+        groupImg: "images/student-project/group1.jpg",
+        group: "Group #2", 
+        members: [
+            "Harlowe D",
+            "Juliana Gambuzza",
+            "Benjamin Kettlewell",
+            "Chanya Chumdee"
+        ]
+    },
+    { 
+        groupImg: "images/student-project/group1.jpg",
+        group: "Group #3", 
+        members: [
+            "Sydney Bandarra",
+            "Roni Soud",
+            "Justine Nathalie",
+            "Yi Lu"
+        ]
+    },
+    { 
+        groupImg: "images/student-project/group1.jpg",
+        group: "Group #4", 
+        members: [
+            "Tapshveer Benipal",
+            "Daljit Singh",
+            "Pranav Pranav",
+            "Tamunotubo Jackreece"
+        ]
+    },
+    { 
+        groupImg: "images/student-project/group1.jpg",
+        group: "Group #5", 
+        members: [
+            "Ezekiel John Celis",
+            "Simon Dasilva",
+            "Diya Sanjay Patel",
+            "Noah Kennedy"
+        ]
+    },
+    { 
+        groupImg: "images/student-project/group1.jpg",
+        group: "Group #6", 
+        members: [
+            "Yi Cheng",
+            "Mikhail Kirs",
+            "Liam Kuchta",
+            "Rabin Tamang"
+        ]
+    },
+    { 
+        groupImg: "images/student-project/group1.jpg",
+        group: "Group #7", 
+        members: [
+            "Ngoc Nhu An Do",
+            "Anh Nguyen",
+            "Luciano Clementi",
+            "Ajay Chakaravarthy"
+        ]
+    },
+    { 
+        groupImg: "images/student-project/group1.jpg",
+        group: "Group #8", 
+        members: [
+            "Kingsley Watson",
+            "Rin Morito",
+            "Linh Nguyen",
+            "Situ Ranjit",
+            "Hannah Silva"
+        ]
+    },
+    { 
+        groupImg: "images/student-project/group1.jpg",
+        group: "Group #9", 
+        members: [
+            "Abigail Londini",
+            "Aayush Diyali",
+            "Qihong Liu",
+            "Zeran Lu"
+        ]
+    },
+];
+
+const carouselWrap = document.querySelector("#carousel");
+const previousCa = document.querySelector("#previousCa");
+const nextCa = document.querySelector("#nextCa");
+let countCa = 0;
+
+function displayCarousel() {
+    const carouselInfo = carousels[countCa];
+
+    // Clear carousel
+    carouselWrap.innerHTML = "";
+
+    // Display carousel
+    carouselWrap.innerHTML = `
+        <div class="SPEWrapper one-item sm-one-item md-one-item lg-two-items">
+            <figure>
+                <img src="${carouselInfo.groupImg}" alt="${carouselInfo.group}" class="SPEImg">
+            </figure>
+            <div class="groupWrapper">
+                <h3>${carouselInfo.group}</h3>
+                <ul>
+                    ${carouselInfo.members.map(member => `<li class="listStyleLi">${member}</li>`).join("")}
+                </ul>
+            </div>
+        </div>
+    `;
+}
+
+function nextCarousel() {
+    countCa++;
+    if (countCa >= carousels.length) countCa = 0;
+    displayCarousel();
+}
+
+function previousCarousel() {
+    countCa--;
+    if (countCa < 0) countCa = carousels.length - 1;
+    displayCarousel();
+}
+
+nextCa.addEventListener("click", nextCarousel);
+previousCa.addEventListener("click", previousCarousel);
+displayCarousel();
+
+
+// ------------- Student Portfolio Dynamic Code ------------- 
 const studentList = document.querySelector("#student-list");
 const students = [
     {id: 1, name: "Aayush Diyali", roles: ["Graphic","PM"], portfolio: "#"},
@@ -73,7 +224,7 @@ function renderStudents(items) {
 renderStudents(students);
 
 
-// Testimonails v.1 
+// ------------- Testimonails v.1 ------------- 
 
 const testimonials = [
     { 
@@ -104,10 +255,10 @@ let count = 0;
 function displayTestimonial() {
     const testimonialInfo = testimonials[count];
 
-    // Clear previous testimonial
+    // Clear testimonial
     testimonialWrap.innerHTML = "";
 
-    // Create testimonial
+    // Display testimonial
     testimonialWrap.innerHTML = `
         <li>
             <article>
