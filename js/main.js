@@ -161,7 +161,21 @@ const carousels = [
 const carouselWrap = document.querySelector("#SPECarousel");
 const previousCa = document.querySelector("#previousCa");
 const nextCa = document.querySelector("#nextCa");
+const trackingButtons = document.querySelectorAll(".SPEButton");
 let countCa = 0;
+
+// tracking buttons code
+function showSlide() {
+    trackingButtons.forEach((button) => {
+        const index = Number(button.dataset.index); 
+        
+    });
+    console.log(index);
+}
+
+trackingButtons.forEach((button) => {
+    button.addEventListener("click" , showSlide());
+});
 
 function displayCarousel() {
     const carouselInfo = carousels[countCa];
