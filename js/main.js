@@ -30,7 +30,11 @@ const player = new Plyr("video", {
 
 const carousels = [
     { 
-        groupImg: "images/student-project/group1.jpg",
+        groupImg: { 
+            mobile : "images/responsive/mobile/Project-exhibiton/group1_372.jpg",
+            tablet : "images/responsive/tablet/student-exhibition/group1_505.jpg",
+            desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg"
+        },
         group: "Group #1", 
         members: [
             "Amy Armstrong",
@@ -40,7 +44,11 @@ const carousels = [
         ]
     },
     { 
-        groupImg: "images/student-project/group1.jpg",
+        groupImg: { 
+            mobile : "images/responsive/mobile/Project-exhibiton/group1_372.jpg",
+            tablet : "images/responsive/tablet/student-exhibition/group1_505.jpg",
+            desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg"
+        },
         group: "Group #2", 
         members: [
             "Harlowe D",
@@ -50,7 +58,11 @@ const carousels = [
         ]
     },
     { 
-        groupImg: "images/student-project/group1.jpg",
+        groupImg: { 
+            mobile : "images/responsive/mobile/Project-exhibiton/group1_372.jpg",
+            tablet : "images/responsive/tablet/student-exhibition/group1_505.jpg",
+            desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg"
+        },
         group: "Group #3", 
         members: [
             "Sydney Bandarra",
@@ -60,7 +72,11 @@ const carousels = [
         ]
     },
     { 
-        groupImg: "images/student-project/group1.jpg",
+        groupImg: { 
+            mobile : "images/responsive/mobile/Project-exhibiton/group1_372.jpg",
+            tablet : "images/responsive/tablet/student-exhibition/group1_505.jpg",
+            desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg"
+        },
         group: "Group #4", 
         members: [
             "Tapshveer Benipal",
@@ -70,7 +86,11 @@ const carousels = [
         ]
     },
     { 
-        groupImg: "images/student-project/group1.jpg",
+        groupImg: { 
+            mobile : "images/responsive/mobile/Project-exhibiton/group1_372.jpg",
+            tablet : "images/responsive/tablet/student-exhibition/group1_505.jpg",
+            desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg"
+        },
         group: "Group #5", 
         members: [
             "Ezekiel John Celis",
@@ -80,7 +100,11 @@ const carousels = [
         ]
     },
     { 
-        groupImg: "images/student-project/group1.jpg",
+        groupImg: { 
+            mobile : "images/responsive/mobile/Project-exhibiton/group1_372.jpg",
+            tablet : "images/responsive/tablet/student-exhibition/group1_505.jpg",
+            desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg"
+        },
         group: "Group #6", 
         members: [
             "Yi Cheng",
@@ -90,7 +114,11 @@ const carousels = [
         ]
     },
     { 
-        groupImg: "images/student-project/group1.jpg",
+        groupImg: { 
+            mobile : "images/responsive/mobile/Project-exhibiton/group1_372.jpg",
+            tablet : "images/responsive/tablet/student-exhibition/group1_505.jpg",
+            desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg"
+        },
         group: "Group #7", 
         members: [
             "Ngoc Nhu An Do",
@@ -100,7 +128,11 @@ const carousels = [
         ]
     },
     { 
-        groupImg: "images/student-project/group1.jpg",
+        groupImg: { 
+            mobile : "images/responsive/mobile/Project-exhibiton/group1_372.jpg",
+            tablet : "images/responsive/tablet/student-exhibition/group1_505.jpg",
+            desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg"
+        },
         group: "Group #8", 
         members: [
             "Kingsley Watson",
@@ -111,7 +143,11 @@ const carousels = [
         ]
     },
     { 
-        groupImg: "images/student-project/group1.jpg",
+        groupImg: { 
+            mobile : "images/responsive/mobile/Project-exhibiton/group1_372.jpg",
+            tablet : "images/responsive/tablet/student-exhibition/group1_505.jpg",
+            desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg"
+        },
         group: "Group #9", 
         members: [
             "Abigail Londini",
@@ -137,7 +173,16 @@ function displayCarousel() {
     carouselWrap.innerHTML = `
         <div class="SPEWrapper one-item sm-one-item md-one-item lg-two-items">
             <figure>
-                <img src="${carouselInfo.groupImg}" alt="${carouselInfo.group}" class="SPEImg">
+                <img sizes="
+                            (min-width: 75em) 80em,
+                            (min-width: 48em) 64em,
+                            (min-width: 25.75em) 37.5em,
+                            100vw" 
+                    srcset="${carouselInfo.groupImg.mobile} 372w,
+                            ${carouselInfo.groupImg.tablet} 505w,
+                            ${carouselInfo.groupImg.desktop} 752w" 
+                    src="${carouselInfo.groupImg.mobile}" 
+                    alt="${carouselInfo.group}" class="SPEImg">
             </figure>
             <div class="groupWrapper">
                 <h3>${carouselInfo.group}</h3>
