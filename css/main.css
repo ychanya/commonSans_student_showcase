@@ -171,9 +171,9 @@ h2, h3 {
 }
 
 h2 {
-   color: #D03D33;
-   text-align: center;
-   margin: 48px 0 48px 0;
+    color: #D03D33;
+    text-align: center;
+    margin: 48px 0 48px 0;
 }
 
 .brandButtons {
@@ -258,9 +258,9 @@ header {
 }
 
 @media screen and (min-width: 75em) {
-.mobileIcon {
-    display: none;
-}
+    .mobileIcon {
+        display: none;
+    }
 }
                                            
 #mobileMenu {
@@ -309,9 +309,9 @@ header {
 }
 
 @media screen and (min-width: 75em) {
-#desktopMenu {
-    display: block;
-}
+    #desktopMenu {
+        display: block;
+    }
 }
 
 #desktopMenu ul {
@@ -326,7 +326,7 @@ header {
 }
 
 #desktopMenu a {
-  color: white;
+    color: white;
 }
 
 /* ------------- Video Styling -------------*/
@@ -366,10 +366,6 @@ header {
     height: 31.25rem;
 }
 
-/* .hero_animation > * {
-    grid-column: 1;
-    grid-row: 1;
-} */
 
 /* ------------- Event Section -------------*/
 
@@ -394,46 +390,46 @@ header {
 
 #invitation-subHeader {
     font-size: 16px;
-  }
+}
 
 @media screen and (min-width: 48em) {
-  .invitationText h3 {
-    font-size: 30px;
-  }
-  .invitationText p {
-    font-size: 18px;
-  }
-  .invitationText {
-    margin: 4em 3em;
-    padding: 3em 4em;
-  }
-  #invitation-subHeader {
-    font-size: 20px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  h4 {
-    font-size: 22px;
-  }
+    .invitationText h3 {
+        font-size: 30px;
+    }
+    .invitationText p {
+        font-size: 18px;
+    }
+    .invitationText {
+        margin: 4em 3em;
+        padding: 3em 4em;
+    }
+    #invitation-subHeader {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 22px;
+    }
 }
 
 @media screen and (min-width: 75em) {
-  .invitationText h3 {
-    font-size: 40px;
-  }
-  .invitationText p {
-    font-size: 22px;
-  }
-  #invitation-subHeader {
-    font-size: 24px;
-  }
-  h2 {
-    font-size: 40px;
-  }
-   h4 {
-    font-size: 24px;
-  }
+    .invitationText h3 {
+        font-size: 40px;
+    }
+    .invitationText p {
+        font-size: 22px;
+    }
+    #invitation-subHeader {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h4 {
+        font-size: 24px;
+    }
 }
 
 .invitationButtons {
@@ -539,7 +535,7 @@ header {
         margin-right: 126px;;
     }
     .SPEWrapper {
-    flex-direction: row;
+        flex-direction: row;
     }
     #studentProjectExhibit .groupWrapper {
         display: flex;
@@ -579,33 +575,33 @@ header {
 /* Carousel transition */
 
 @keyframes fadeInRight {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 @keyframes fadeInLeft {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .fadeIn-right {
-  animation: fadeInRight 2s ease forwards;
+    animation: fadeInRight 2s ease forwards;
 }
 
 .fadeIn-left {
-  animation: fadeInLeft 2s ease forwards;
+    animation: fadeInLeft 2s ease forwards;
 }
 
 
@@ -623,20 +619,20 @@ header {
 }
 
 .IMDContent {
-  display: flex;
-  flex-direction: column; 
-  justify-content: center;
-  align-items: center;
-  row-gap: 20px;
-  padding: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    padding: 0 20px 0 20px;
 }
 
 .IMDContent > div:first-child {
-  order: 2; 
+    order: 2; 
 }
 
 .IMDContent .IMDImg {
-  order: 1; 
+    order: 1; 
 }
 
 .IMDContent button {
@@ -869,7 +865,7 @@ header {
 }
 
 .testimonials {
-   font-size: 14px;
+    font-size: 14px;
 }
 
 .robTest {
