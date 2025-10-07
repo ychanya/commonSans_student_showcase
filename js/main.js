@@ -163,47 +163,49 @@ const previousCa = document.querySelector("#previousCa");
 const nextCa = document.querySelector("#nextCa");
 let countCa = 0;
 
-function displayCarousel() {
+function displayCarousel(direction) {
     const carouselInfo = carousels[countCa];
 
-    // Clear carousel
-    carouselWrap.innerHTML = "";
+    // Using parameter to decide which animation should apply + add it directly into the HTML!!!! 
+    if (direction === "right") {
+        animation = "fadeIn-right";
+    } else {
+        animation = "fadeIn-left";
+    }
 
-    // Display carousel
     carouselWrap.innerHTML = `
-        <div class="SPEWrapper one-item sm-one-item md-one-item lg-two-items">
-            <figure>
-                <img sizes="
-                            (min-width: 75em) 80em,
-                            (min-width: 48em) 64em,
-                            (min-width: 25.75em) 37.5em,
-                            100vw" 
-                    srcset="${carouselInfo.groupImg.mobile} 372w,
-                            ${carouselInfo.groupImg.tablet} 505w,
-                            ${carouselInfo.groupImg.desktop} 752w" 
-                    src="${carouselInfo.groupImg.mobile}" 
-                    alt="${carouselInfo.group}" class="SPEImg">
-            </figure>
-            <div class="groupWrapper">
-                <h3>${carouselInfo.group}</h3>
-                <ul>
-                    ${carouselInfo.members.map(member => `<li class="listStyleLi">${member}</li>`).join("")}
-                </ul>
-            </div>
+    <div class="SPEWrapper one-item sm-one-item md-one-item lg-two-items ${animation}">
+        <figure>
+            <img 
+                sizes="(min-width: 75em) 80em, (min-width: 48em) 64em, (min-width: 25.75em) 37.5em, 100vw"
+                srcset="${carouselInfo.groupImg.mobile} 372w,
+                        ${carouselInfo.groupImg.tablet} 505w,
+                        ${carouselInfo.groupImg.desktop} 752w"
+                src="${carouselInfo.groupImg.mobile}"
+                alt="${carouselInfo.group}" 
+                class="SPEImg"
+            >
+        </figure>
+        <div class="groupWrapper">
+            <h3>${carouselInfo.group}</h3>
+            <ul>
+                ${carouselInfo.members.map(member => `<li class="listStyleLi">${member}</li>`).join("")}
+            </ul>
         </div>
-    `;
+    </div>
+  `;
 }
 
 function nextCarousel() {
-    countCa++;
-    if (countCa >= carousels.length) countCa = 0;
-    displayCarousel();
+  countCa++;
+  if (countCa >= carousels.length) countCa = 0;
+  displayCarousel("right"); 
 }
 
 function previousCarousel() {
-    countCa--;
-    if (countCa < 0) countCa = carousels.length - 1;
-    displayCarousel();
+  countCa--;
+  if (countCa < 0) countCa = carousels.length - 1;
+  displayCarousel("left");
 }
 
 nextCa.addEventListener("click", nextCarousel);
@@ -247,29 +249,41 @@ const students = [
     {id: 32, name: "Yi Cheng", roles: ["Front-End","PM"], portfolio: "#"}
 ];
 
-function renderStudents(items) {
-    console.log("function working");
-    // <img> src will be stored in the object and will be updated once imgs are obtained
-    studentList.innerHTML = items.map(s => `
-        <li class="studentListWrapper">
-                    <div class="studentAvatarImg">
-                        <!-- <img> -->
-                    </div>
+function renderStudents(students) {
+    // Clear any existing content from the list
+    studentList.innerHTML = "";
+
+    // Loop through each student in the array
+    students.forEach(student => {
+        // Build a list of this student's roles
+        let rolesHTML = "";
+        student.roles.forEach(role => {
+            rolesHTML += `<li>${role}</li>`;
+        });
+
+    // Create the HTML for one student
+        const studentHTML = `
+            <li class="studentListWrapper">
+                <div class="studentAvatarImg"></div>
+                <div>
                     <div>
-                        <div>
-                            <h3>${s.name}</h3>
-                            <ul class="tags">${(s.roles||[]).map(r => `<li>${r}</li>`).join('')}</ul>
-                        </div>
-                        <a href="${s.portfolio}">View Portfolio &#8599;</a>
+                        <h3>${student.name}</h3>
+                        <ul class="tags">${rolesHTML}</ul>
                     </div>
-                </li>    
-    `).join('');
+                    <a href="${student.portfolio}">View Portfolio &#8599;</a>
+                </div>
+            </li>
+        `;
+
+    // Add this student's HTML to the list container
+    studentList.innerHTML += studentHTML;
+  });
 }
 
 renderStudents(students);
 
 
-// ------------- Testimonails v.1 ------------- 
+// ------------- Testimonails ------------- 
 
 const testimonials = [
     { 
@@ -297,15 +311,38 @@ const previous = document.querySelector("#previous");
 const next = document.querySelector("#next");
 let count = 0;
 
-function displayTestimonial() {
-    const testimonialInfo = testimonials[count];
+function displayCount() {
+    if (window.innerWidth >= 1200) {
+        return 2; 
+    } else {
+        return 1; 
+    }
+}
 
-    // Clear testimonial
+function displayTestimonials(direction) {
     testimonialWrap.innerHTML = "";
+    
+    // Using parameter to decide which animation should apply + add it directly into the HTML!!!! 
+    if (direction === "right") {
+        animation = "fadeIn-right";
+    } else {
+        animation = "fadeIn-left";
+    }
 
-    // Display testimonial
-    testimonialWrap.innerHTML = `
-        <li>
+    for (let i = 0; i < displayCount(); i++) {
+        let position = count + i;
+
+        // If position goes past the last testimonial, start again from the first one
+        if (position >= testimonials.length) {
+            position = position - testimonials.length;
+        } else {
+            position = position;
+        }
+
+        const testimonialInfo = testimonials[position];
+
+        testimonialWrap.innerHTML += `
+        <li class="${animation}">
             <article>
                 <div class="nameWrapper">
                     <div class="testimonialAvatarImg">
@@ -318,98 +355,31 @@ function displayTestimonial() {
                 </div>
                 <p class="quote">"${testimonialInfo.quote}"</p>
             </article>
-        </li>
-    `;
+        </li>`;
+    }
 }
 
 function nextTestimonial() {
-    count++;
-    if (count >= testimonials.length) count = 0;
-    displayTestimonial();
+    // Increase count based on how many items are shown from displayCount() 
+    count = count + displayCount();
+     // If count goes over the last testimonial, get back to the first one!!
+    if (count >= testimonials.length) {
+        count = count - testimonials.length;
+    }
+    displayTestimonials("right");
 }
 
 function previousTestimonial() {
-    count--;
-    if (count < 0) count = testimonials.length - 1;
-    displayTestimonial();
+    // Decrease count based on how many items are shown from displayCount()
+    count = count - displayCount();
+    // If count < 0, show last testimonials instead of going negative
+    if (count < 0) {
+        count = testimonials.length + count; 
+    }
+    displayTestimonials("left");
 }
 
 next.addEventListener("click", nextTestimonial);
 previous.addEventListener("click", previousTestimonial);
-displayTestimonial();
-
-// ------------- Testimonails v.2 ------------- Waiting for Marco’s approval
-
-// const testimonials = [
-//     { 
-//         img: "images/testimonials/marco.jpg",
-//         name: "Marco De Luca", 
-//         role: "IDP Program Coordinator and Professor at Fanshawe College",
-//         quote: "Utilizing a diverse range of media, the Interactive Media Design students have masterfully highlighted the heroic sacrifices made by the India soldiers in World war I."
-//     },
-//     { 
-//         img: "images/testimonials/rob.jpg",
-//         name: "Rob Haaf", 
-//         role: "IDP Professor at Fanshawe College",
-//         quote: "It is always rewarding to see the innovation and passion that our students bring to Industry Night. The skills they have developed in the IDP3 program are impressive and set them up for future success."
-//     },
-//     { 
-//         img: "images/testimonials/jarrod.jpg",
-//         name: "Jarrod Osterback", 
-//         role: "IDP Professor at Fanshawe College",
-//         quote: "Industry Night is a wonderful opportunity for our students to shine. The projects they represent are a testament to their hard work and the real-world skills they've gained throughout our program."
-//     }
-// ];
-
-// const testimonialWrap = document.querySelector(".testimonialsWrapper");
-// const previous = document.querySelector("#previous");
-// const next = document.querySelector("#next");
-// let count = 0;
-
-// function displayCount() {
-//     if (window.innerWidth >= 1200) {
-//         return 2; 
-//     } else {
-//         return 1; 
-//     }
-// }
-
-// function displayTestimonials() {
-//     testimonialWrap.innerHTML = ""; 
-
-//     for (let i = 0; i < displayCount(); i++) {
-//         const position = (count + i) % testimonials.length;
-//         const testimonialInfo = testimonials[position];
-
-//         testimonialWrap.innerHTML += `
-//         <li>
-//             <article>
-//                 <div class="nameWrapper">
-//                     <div class="testimonialAvatarImg">
-//                         <img src="${testimonialInfo.img}" alt="${testimonialInfo.name} Image">
-//                     </div>
-//                     <div>
-//                         <h3>${testimonialInfo.name}</h3>
-//                         <p>${testimonialInfo.role}</p>
-//                     </div>
-//                 </div>
-//                 <p class="quote">"${testimonialInfo.quote}"</p>
-//             </article>
-//         </li>`;
-//     }
-// }
-
-// function nextTestimonial() {
-//     count = (count + displayCount()) % testimonials.length;
-//     displayTestimonials();
-// }
-
-// function previousTestimonial() {
-//     count = (count - displayCount() + testimonials.length) % testimonials.length;
-//     displayTestimonials();
-// }
-
-// next.addEventListener("click", nextTestimonial);
-// previous.addEventListener("click", previousTestimonial);
-// window.addEventListener("resize", displayTestimonials);
-// displayTestimonials();
+window.addEventListener("resize", displayTestimonials);
+displayTestimonials();
