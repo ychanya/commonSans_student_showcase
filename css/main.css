@@ -74,16 +74,14 @@ button:focus, a:focus {
 
 /* ------------- Reset -------------*/
 
-
-
-/* button {
+button {
     background: none;
     border: none;
     font-family: inherit;
     padding: 0px;
     margin: 0px;
     cursor: pointer;
-} */
+}
 
 li {
     list-style-type: none;
@@ -159,6 +157,7 @@ h1, h2, h3, h4, p {
 
 html {
     font-size: 14px;
+    scroll-behavior: smooth;
 }
 
 @media screen and (min-width: 48em) {
@@ -200,13 +199,24 @@ h2 {
 
 }
 
+header {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0;
+    z-index: 9999;
+    box-shadow: 0 6px 6px rgba(145, 144, 144, 0.3);
+}
+
+main {
+    padding-top: 90px;
+}
+
+#eventSection, #studentProjectExhibit ,#interactiveMediaDesign, #studentPortfolios {
+    scroll-margin-top: 90px;
+}
 
 /* ------------- Mobile Menu -------------*/
-
-.head {
-    margin-left: 0;
-    margin-right: 0;
-}
 
 header {
     background-color: #D03D33;
@@ -269,6 +279,7 @@ header {
 /* Display mobile menu */
 #mobileMenu.open {
     transform: translateY(0);
+    box-shadow: 0 6px 6px rgba(145, 144, 144, 0.3);
 }
 
 
@@ -290,12 +301,6 @@ header {
     align-items: center;
 }
 
-/* span {
-    display: block;
-    width: 236px;
-    height: 1px;
-    background-color: #fff;
-} */
 
 /* ------------- Tablet & Desktop Menu -------------*/
 
@@ -570,6 +575,39 @@ header {
     align-items: center;
     column-gap: 40px;
 }
+
+/* Carousel transition */
+
+@keyframes fadeInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.fadeIn-right {
+  animation: fadeInRight 2s ease forwards;
+}
+
+.fadeIn-left {
+  animation: fadeInLeft 2s ease forwards;
+}
+
 
 /* ------------- Interactive Media Design -------------*/
 
