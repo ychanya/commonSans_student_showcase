@@ -183,17 +183,15 @@ console.log("JS file connected");
         }
     ];
 
-
     const carouselWrap = document.querySelector("#SPECarousel");
-    const previousCa = document.querySelector("#previousCa");
-    const nextCa = document.querySelector("#nextCa");
+    const previous = document.querySelector("#previousCa");
+    const next = document.querySelector("#nextCa");
     const trackingButtons = document.querySelectorAll(".SPEButton");
-    let countCa = 0;
-
+    let count = 0;
 
     // tracking buttons code
     function addActiveState() {
-        const activeBtn = document.querySelector(`.SPEButton[data-index="${countCa}"]`);
+        const activeBtn = document.querySelector(`.SPEButton[data-index="${count}"]`);
         if (activeBtn) {
             activeBtn.classList.add("customBtn");
         }
@@ -202,17 +200,14 @@ console.log("JS file connected");
     function showSlide(e) {
         const button = e.currentTarget;
         const index = Number(button.dataset.index); 
-        countCa = index; 
+        count = index; 
         displayCarousel(); 
         addActiveState();
     }
 
-
-
     function displayCarousel(direction) {
 
-        const carouselInfo = carousels[countCa];
-
+        const carouselInfo = carousels[count];
 
         // Using parameter to decide which animation should apply + add class directly into the HTML!!!! 
         if (direction === "right") {
@@ -251,23 +246,20 @@ console.log("JS file connected");
     }
 
     function nextCarousel() {
-        countCa++;
-        if (countCa >= carousels.length) countCa = 0;
+        count++;
+        if (count >= carousels.length) count = 0;
         displayCarousel("right"); 
     }
 
     function previousCarousel() {
-        countCa--;
-        if (countCa < 0) count = carousels.length - 1;
+        count--;
+        if (count < 0) count = carousels.length - 1;
         displayCarousel("left");
     }
 
     next.addEventListener("click", nextCarousel);
     previous.addEventListener("click", previousCarousel);
-    displayCarousel();
     trackingButtons.forEach((button) => {button.addEventListener("click" , showSlide);});
-    nextCa.addEventListener("click", nextCarousel);
-    previousCa.addEventListener("click", previousCarousel);
     displayCarousel();
 
 })();
