@@ -272,36 +272,55 @@ console.log("JS file connected");
     const students = [
         {id: 1, name: "Aayush Diyali", roles: ["Graphic","PM"], portfolio: "#"},
         {id: 2, name: "Abigail Londini", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 3, name: "Amy Armstrong", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 4, name: "Anh Nguyen", roles: ["Front-End","PM"], portfolio: "#"},
+        {id: 3, name: "Amy Armstrong", roles: ["Graphic"], portfolio: "#"},
+        {id: 4, name: "Anh Nguyen", roles: ["Back-End","PM"], portfolio: "#"},
         {id: 5, name: "Yi Lu", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 6, name: "Zakia Sultana", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 7, name: "Daljit Singh", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 8, name: "Diya Sanjay Patel", roles: ["Front-End","PM"], portfolio: "#"},
+        {id: 6, name: "Zakia Sultana", roles: ["PM"], portfolio: "#"},
+        {id: 7, name: "Daljit Singh", roles: ["Front-End"], portfolio: "#"},
+        {id: 8, name: "Diya Sanjay Patel", roles: ["Motion","PM"], portfolio: "#"},
         {id: 9, name: "Ezekiel John Celis", roles: ["Front-End","PM"], portfolio: "#"},
         {id: 10, name: "Hannah Silva", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 11, name: "Zeran Lu", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 12, name: "Josephine Muncaster", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 13, name: "Tapshveer Benipal", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 14, name: "Justine Nathalie", roles: ["Front-End","PM"], portfolio: "#"},
+        {id: 11, name: "Zeran Lu", roles: ["Front-End","Back-End"], portfolio: "#"},
+        {id: 12, name: "Josephine Muncaster", roles: ["Front-End"], portfolio: "#"},
+        {id: 13, name: "Tapshveer Benipal", roles: ["Graphic","PM"], portfolio: "#"},
+        {id: 14, name: "Justine Nathalie", roles: ["Motion"], portfolio: "#"},
         {id: 16, name: "Kingsley Watson", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 17, name: "Laila Seif", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 18, name: "Liam Kuchta", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 19, name: "Linh Nguyen", roles: ["Front-End","PM"], portfolio: "#"},
+        {id: 17, name: "Laila Seif", roles: ["Front-End","Motion"], portfolio: "#"},
+        {id: 18, name: "Liam Kuchta", roles: ["Front-End"], portfolio: "#"},
+        {id: 19, name: "Linh Nguyen", roles: ["Motion","PM"], portfolio: "#"},
         {id: 20, name: "Luciano Clementi", roles: ["Front-End","PM"], portfolio: "#"},
         {id: 21, name: "Mikhail Kirs", roles: ["Front-End","PM"], portfolio: "#"},
         {id: 22, name: "Ngoc Nhu An Do", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 23, name: "Noah Kennedy", roles: ["Front-End","PM"], portfolio: "#"},
+        {id: 23, name: "Noah Kennedy", roles: ["Back-End"], portfolio: "#"},
         {id: 24, name: "Pranav Pranav", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 25, name: "Qihong Liu", roles: ["Front-End","PM"], portfolio: "#"},
+        {id: 25, name: "Qihong Liu", roles: ["Motion"], portfolio: "#"},
         {id: 26, name: "Rabin Tamang", roles: ["Front-End","PM"], portfolio: "#"},
         {id: 27, name: "Rin Morito", roles: ["Front-End","PM"], portfolio: "#"},
         {id: 28, name: "Roni Soud", roles: ["Front-End","PM"], portfolio: "#"},
         {id: 29, name: "Simon Dasilva", roles: ["Front-End","PM"], portfolio: "#"},
         {id: 30, name: "Situ Ranjit", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 31, name: "Sydney Bandarra", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 32, name: "Yi Cheng", roles: ["Front-End","PM"], portfolio: "#"}
+        {id: 31, name: "Sydney Bandarra", roles: ["PM"], portfolio: "#"},
+        {id: 32, name: "Yi Cheng", roles: ["Back-End","Graphic"], portfolio: "#"}
     ];
+
+    const allBtn = document.querySelector("#allBtn");
+    const graphicButton = document.querySelector("#graphicBtn");
+    const motionButton = document.querySelector("#motionBtn");
+    const frontEnButton = document.querySelector("#frontEnBtn");
+    const backEnButton = document.querySelector("#backEnBtn");
+    const pmButton = document.querySelector("#pmBtn");
+    
+    // Filter student roles by using filter() method
+    function filterRole(role) {
+        if (role === "All") {
+                const result = students.filter((student) => student.roles.length);
+                renderStudents(result);
+            } else {
+                // Use includes() to check array/string, while contains() is for DOM elements (like classList)
+                const result = students.filter((student) => student.roles.includes(role));
+                renderStudents(result);
+            }
+    }
 
     function renderStudents(students) {
         // Clear any existing content from the list
@@ -335,6 +354,12 @@ console.log("JS file connected");
     }
 
     renderStudents(students);
+    allBtn.addEventListener("click", () => filterRole("All"));
+    graphicButton.addEventListener("click", () => filterRole("Graphic"));
+    motionButton.addEventListener("click", () => filterRole("Motion"));
+    frontEnButton.addEventListener("click", () => filterRole("Front-End"));
+    backEnButton.addEventListener("click", () => filterRole("Back-End"));
+    pmButton.addEventListener("click", () => filterRole("PM"));
 
 })();
 
@@ -366,6 +391,7 @@ console.log("JS file connected");
     const testimonialWrap = document.querySelector(".testimonialsWrapper");
     const previous = document.querySelector("#previous");
     const next = document.querySelector("#next");
+    const trackingButtons = document.querySelectorAll(".TTButton");
     let count = 0;
 
     function displayCount() {
@@ -375,6 +401,29 @@ console.log("JS file connected");
             return 1; 
         }
     }
+
+    function addActiveState() {
+        // Remove active styles from all tracking buttons first 
+        trackingButtons.forEach((btn) => {
+            btn.classList.remove("customBtn");
+        }); 
+
+        const activeBtn = document.querySelector(`.TTButton[data-index="${count}"]`);
+
+        // Add active style to the button that matches the current slide
+        if (activeBtn) {
+            activeBtn.classList.add("customBtn");
+        }
+    }
+
+    function showSlide(e) {
+        const button = e.currentTarget;
+        const index = Number(button.dataset.index); 
+        count = index; 
+        displayTestimonials(); 
+        addActiveState();
+    }
+
 
     function displayTestimonials(direction) {
         testimonialWrap.innerHTML = "";
@@ -413,7 +462,7 @@ console.log("JS file connected");
                         <p class="quote">"${testimonialInfo.quote}"</p>
                     </article>
                 </li>
-            `;
+            `; 
         }
     }
 
@@ -425,6 +474,7 @@ console.log("JS file connected");
             count = count - testimonials.length;
         }
         displayTestimonials("right");
+        addActiveState();
     }
 
     function previousTestimonial() {
@@ -435,11 +485,13 @@ console.log("JS file connected");
             count = testimonials.length + count; 
         }
         displayTestimonials("left");
+        addActiveState();
     }
 
     next.addEventListener("click", nextTestimonial);
     previous.addEventListener("click", previousTestimonial);
     window.addEventListener("resize", displayTestimonials);
+    trackingButtons.forEach((button) => {button.addEventListener("click" , showSlide);});
     displayTestimonials();
-
+    addActiveState();
 })();
