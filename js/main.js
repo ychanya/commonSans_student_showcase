@@ -309,17 +309,26 @@ console.log("JS file connected");
     const frontEnButton = document.querySelector("#frontEnBtn");
     const backEnButton = document.querySelector("#backEnBtn");
     const pmButton = document.querySelector("#pmBtn");
+    const filterButtons = document.querySelectorAll('.filterButton');
     
+
+    // function to remove active state
+    function removeActiveState() {
+        filterButtons.forEach((button) =>{button.classList.remove("cutomFilter")} );
+    }
+
     // Filter student roles by using filter() method
-    function filterRole(role) {
+    function filterRole(role, e) {
         if (role === "All") {
                 const result = students.filter((student) => student.roles.length);
                 renderStudents(result);
-            } else {
-                // Use includes() to check array/string, while contains() is for DOM elements (like classList)
-                const result = students.filter((student) => student.roles.includes(role));
-                renderStudents(result);
-            }
+        } else {
+            // Use includes() to check array/string, while contains() is for DOM elements (like classList)
+            const result = students.filter((student) => student.roles.includes(role));
+            renderStudents(result);
+        }
+        removeActiveState();
+        e.currentTarget.classList.add("cutomFilter");
     }
 
     function renderStudents(students) {
@@ -354,12 +363,12 @@ console.log("JS file connected");
     }
 
     renderStudents(students);
-    allBtn.addEventListener("click", () => filterRole("All"));
-    graphicButton.addEventListener("click", () => filterRole("Graphic"));
-    motionButton.addEventListener("click", () => filterRole("Motion"));
-    frontEnButton.addEventListener("click", () => filterRole("Front-End"));
-    backEnButton.addEventListener("click", () => filterRole("Back-End"));
-    pmButton.addEventListener("click", () => filterRole("PM"));
+    allBtn.addEventListener("click", (e) => filterRole("All", e));
+    graphicButton.addEventListener("click", (e) => filterRole("Graphic", e));
+    motionButton.addEventListener("click", (e) => filterRole("Motion", e));
+    frontEnButton.addEventListener("click", (e) => filterRole("Front-End", e));
+    backEnButton.addEventListener("click", (e) => filterRole("Back-End", e));
+    pmButton.addEventListener("click", (e) => filterRole("PM", e));
 
 })();
 
