@@ -612,7 +612,8 @@ header {
 }
 
 .IMDContent img {
-    width: 372px;
+    /* width: 372px; */
+    width: 100%;
     height: 329px;
     border: 2px solid #A43634;
     border-radius: 20px;
@@ -642,14 +643,16 @@ header {
 
 @media screen and (min-width: 48em) {
     .IMDContent img {
-        width: 576px;
+        /* width: 576px; */
+        width: 100%;
         height: auto;
     }
 }
 
 @media  screen and (min-width: 75em) {
     .IMDContent img {
-        width: 509px;
+        /* width: 509px; */
+        width: 100%;
         height: auto;
     }
     .IMDContent {
@@ -676,7 +679,8 @@ header {
 }
 
 .IMDSmallImg img {
-    width: 178px;
+    /* width: 178px; */
+    width: 100%;
     height: auto;
     border: 2px solid #A43634;
     border-radius: 20px;
@@ -684,14 +688,16 @@ header {
 
 @media screen and (min-width: 48em) {
     .IMDSmallImg img {
-        width: 336px;
+        /* width: 336px; */
+        width: 100%;
         height: auto;
     }
 }
 @media  screen and (min-width: 75em) {
 
     .IMDSmallImg img {
-        width: 255px;
+        /* width: 255px; */
+        width: 100%;
         height: auto;
     }
 }
@@ -702,6 +708,10 @@ header {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+}
+
+.IMDGallery {
+    padding: 0 20px;
 }
 
 /* ------------- Our Team -------------*/
@@ -787,6 +797,9 @@ header {
     margin: 10px;
 }
 
+#ourTeam {
+    padding: 0 20px;
+}
 
 
 /* ------------- Students Portfolio Showcase -------------*/
