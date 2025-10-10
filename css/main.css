@@ -612,7 +612,8 @@ header {
 }
 
 .IMDContent img {
-    width: 372px;
+    /* width: 372px; */
+    width: 100%;
     height: 329px;
     border: 2px solid #A43634;
     border-radius: 20px;
@@ -640,18 +641,33 @@ header {
     margin: 0 auto;
 }
 
+/* .IMDImg {
+    max-width: 372px;
+} */
+
 @media screen and (min-width: 48em) {
     .IMDContent img {
-        width: 576px;
+        /* width: 576px; */
+        width: 100%;
         height: auto;
+    }
+
+    .IMDImg {
+        max-width: 576px;
     }
 }
 
 @media  screen and (min-width: 75em) {
     .IMDContent img {
-        width: 509px;
+        /* width: 509px; */
+        width: 100%;
         height: auto;
     }
+
+    .IMDImg {
+        max-width: 509px;
+    }
+
     .IMDContent {
         display: flex;
         flex-direction: row;
@@ -676,24 +692,11 @@ header {
 }
 
 .IMDSmallImg img {
-    width: 178px;
+    /* width: 178px; */
+    width: 100%;
     height: auto;
     border: 2px solid #A43634;
     border-radius: 20px;
-}
-
-@media screen and (min-width: 48em) {
-    .IMDSmallImg img {
-        width: 336px;
-        height: auto;
-    }
-}
-@media  screen and (min-width: 75em) {
-
-    .IMDSmallImg img {
-        width: 255px;
-        height: auto;
-    }
 }
 
 .IMDSmallImg {
@@ -701,18 +704,60 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
+    max-width: 336px;
+
+}
+
+@media screen and (min-width: 48em) {
+    .IMDSmallImg img {
+        /* width: 336px; */
+        width: 100%;
+        height: auto;
+    }
+
+    .IMDSmallImg {
+        max-width: 336px;
+    }
+}
+@media  screen and (min-width: 75em) {
+
+    .IMDSmallImg img {
+        /* width: 255px; */
+        width: 100%;
+        height: auto;
+    }
+
+    .IMDSmallImg {
+        max-width: 255px;
+    }
+}
+
+.IMDGallery {
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 /* ------------- Our Team -------------*/
 
 #ourTeam img {
     display: block;
-    /* width: 179px; */
     width: 100%;
     height: auto;
     border: 2px solid #A43634;
     border-radius: 1.25em;
+}
+
+.OTImg {
+    overflow: hidden;
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+    max-width: 336px;
 }
 
 .relativeDiv {
@@ -720,7 +765,6 @@ header {
     position: absolute;
     inset: 0;
     background-color: #F1F1F180;
-    /* max-width: 176px; */
     height: auto;
     /* height: 155px; */
     border-radius: 1.25em;
@@ -750,6 +794,11 @@ header {
     opacity: 1;
 }
 
+.OTGallery {
+    margin: 0 auto;
+    width: 100%;
+}
+
 @media screen and (min-width: 48em) {
 
     #ourTeam img {
@@ -762,6 +811,10 @@ header {
         width: 333px;
         height: 294px;
     } */
+
+    .OTImg {
+        max-width: 336px;
+    }
 }
 @media  screen and (min-width: 75em) {
 
@@ -775,18 +828,15 @@ header {
         width: 252px;
         height: 223px;
     } */
+
+    .OTImg {
+        max-width: 255px;
+    }
 }
 
-.OTImg {
-    overflow: hidden;
-    position: relative;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
+#ourTeam {
+    padding: 0 20px;
 }
-
 
 
 /* ------------- Students Portfolio Showcase -------------*/
