@@ -28,7 +28,7 @@
         </a>
 
         <!-- Desktop Nav -->
-        <nav id="desktopMenu" class="main-nav" role="navigation" aria-label="Main Navigation">
+        <nav id="desktopMenu" class="main-nav">
             <h3 class="visually-hidden">Main Navigation</h3>
             <ul>
                 <li><a href="#eventSection" aria-label="Go to Events">Events</a></li>
@@ -43,7 +43,7 @@
         </div>
 
         <!-- Mobile Nav -->
-        <nav id="mobileMenu" role="navigation" aria-label="Mobile Navigation">
+        <nav id="mobileMenu">
             <h3 class="visually-hidden">Mobile Main Navigation</h3>
             <div class="alignItemRow">
                 <img src="images/Fanshawe-logo/fanshawe-logo.svg" alt="Fanshawe College Logo" class="fanshaweNavLogo">
@@ -100,8 +100,8 @@
             <div class="eventVideo one-item sm-one-item md-one-item lg-two-items">
                 <div id="videoContainer" class="videoWrapper">
                     <video controls preload="metadata" poster="images/Fanshawe.jpeg" aria-hidden="true">
-                        <source src="video/IntroAnimation.mp4" type="video/mp4">
-                        <source src="video/IntroAnimation.webm" type="video/webm">
+                        <source src="video/promo-video.mp4" type="video/mp4">
+                        <source src="video/promo-video.webm" type="video/webm">
                         <p>Your browser does not support HTML5 video. Please update your browser to the latest version.
                         </p>
                     </video>
@@ -169,13 +169,13 @@
                 <h2>Student Project Exhibit</h2>
             </div>
 
-            <section id="SPECarousel" class="SPEWrapper one-item sm-one-item md-one-item lg-two-items" role="region"
+            <section id="SPECarousel" class="SPEWrapper one-item sm-one-item md-one-item lg-two-items"
                 aria-roledescription="carousel" aria-label="Student projects carousel">
                 <!-- Display Carousel -->
             </section>
 
             <div class="alignBtn two-items sm-two-items md-two-items lg-two-items">
-                <nav class="trackingBtn" role="navigation" aria-label="Student Project Exhibit Carousel Navigation">
+                <nav class="trackingBtn">
                     <h3 class="visually-hidden">Student Project Exhibit Carousel Navigation</h3>
                     <button data-index="0" class="SPEButton"
                         aria-label="Student Project Exhibit Carousel Slide One"></button>
@@ -385,35 +385,33 @@
             </div>
             <div class="one-item sm-one-item md-one-item lg-one-item">
                 <div id="filterIcon">
-                    <nav class="four-items sm-four-items md-five-items lg-five-items" role="navigation"
-                        aria-label="Portfolio Filter Navigation">
+                    <nav class="four-items sm-four-items md-five-items lg-five-items">
                         <h3 class="visually-hidden">Portfolio Filter Navigation</h3>
                         <button id="allBtn" class="filterButton" aria-label="All Categories Button"><i
-                                class="fa-solid fa-user" aria-label="All Categories"></i> All</button>
+                                class="fa-solid fa-user" aria-hidden="true"></i> All</button>
                         <button id="graphicBtn" class="filterButton" aria-label="Graphic Designer Button"><i class="fa-solid fa-palette"
-                                aria-label="Graphic Designer"></i> Graphic</button>
+                                aria-hidden="true"></i> Graphic</button>
                         <button id="motionBtn" class="filterButton" aria-label="Motion Designer Button"><i class="fa-solid fa-video"
-                                aria-label="Motion Designer"></i> Motion</button>
+                                aria-hidden="true"></i> Motion</button>
                         <button id="frontEnBtn" class="filterButton" aria-label="Front-End Dev Button"><i class="fa-solid fa-laptop-code"
-                                aria-label="Front-End Dev"></i> Front-End</button>
+                                aria-hidden="true"></i> Front-End</button>
                         <button id="backEnBtn" class="filterButton" aria-label="Back-End Dev Button"><i class="fa-solid fa-server"
-                                aria-label="Back-End Dev"></i> Back-End</button>
+                                aria-hidden="true"></i> Back-End</button>
                         <button id="pmBtn" class="filterButton" aria-label="Project Manager Button"><i class="fa-solid fa-clipboard-list"
-                                aria-label="Project Manager"></i> Project Manager</button>
+                                aria-hidden="true"></i> Project Manager</button>
                     </nav>
                 </div>
             </div>
             <ul id="student-list" class="two-items sm-two-items md-three-items lg-four-items"></ul>
 
         </section>
-        <section class="testimonials">
+        <section class="testimonials" aria-roledescription="carousel" aria-label="Testimonial carousel">
             <h2 class="one-item sm-one-item md-one-item lg-one-items">Testimonials</h2>
-            <ul id="testimonialCarousel" class="testimonialsWrapper one-item sm-one-item md-one-item lg-two-items"
-                role="region" aria-roledescription="carousel" aria-label="Testimonial carousel">
+            <ul id="testimonialCarousel" class="testimonialsWrapper one-item sm-one-item md-one-item lg-two-items">
                 <!-- Display testimonial -->
             </ul>
             <div class="alignBtn two-items sm-two-items md-two-items lg-two-items">
-                <nav class="trackingBtn" role="navigation" aria-label="Testimonial Carousel Navigation">
+                <nav class="trackingBtn">
                     <h3 class="visually-hidden">Testimonial Carousel Navigation</h3>
                     <button data-index="0" class="TTButton" aria-label="Testimonial Slide one"></button>
                     <button data-index="1" class="TTButton" aria-label="Testimonial Slide two"></button>
@@ -434,7 +432,7 @@
                         class="fanshaweFootLogo">
                 </a>
             </div>
-            <nav role="navigation" aria-label="Footer Navigation">
+            <nav>
                 <h2 class="visually-hidden">Footer Navigation</h2>
                 <ul class="lg-four-items">
                     <li><a href="#eventSection" aria-label="Go to Events">Events</a></li>
