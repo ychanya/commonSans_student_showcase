@@ -729,6 +729,11 @@ header {
 
 }
 
+.IMDGallery {
+    padding: 0 20px;
+    width: 100%;
+}
+
 @media screen and (min-width: 48em) {
     .IMDSmallImg img {
         /* width: 336px; */
@@ -751,13 +756,13 @@ header {
     .IMDSmallImg {
         max-width: 255px;
     }
+    .IMDGallery {
+        padding: 0;
+        width: 100%;
+    }
 }
 
-.IMDGallery {
-    /* padding: 0 20px; */
-    margin: 0 auto;
-    width: 100%;
-}
+
 
 /* ------------- Our Team -------------*/
 
