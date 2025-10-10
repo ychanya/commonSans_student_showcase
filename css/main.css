@@ -710,7 +710,39 @@ header {
     width: 179px;
     height: auto;
     border: 2px solid #A43634;
-    border-radius: 20px;
+    border-radius: 1.25em;
+}
+
+.relativeDiv {
+    opacity: 0;
+    position: absolute;
+    background-color: #F1F1F180;
+    width: 176px;
+    height: 155px;
+    border-radius: 1.25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.relativeDiv a {
+    background-color: #D03D33;
+    width: 80%;
+    padding: 0.25em;
+    border-radius: 1.25em;
+    text-align: center;
+    color: #F1F1F1;
+    font-size: 0.875em;
+}
+
+.relativeDiv h3 {
+    color: #000;
+}
+
+.OTImg:hover .relativeDiv {
+    opacity: 1;
 }
 
 @media screen and (min-width: 48em) {
@@ -719,6 +751,11 @@ header {
         width: 336px;
         height: auto;
     }
+
+    .relativeDiv {
+        width: 333px;
+        height: 294px;
+    }
 }
 @media  screen and (min-width: 75em) {
 
@@ -726,15 +763,23 @@ header {
         width: 255px;
         height: auto;
     }
+
+    .relativeDiv {
+        width: 252px;
+        height: 223px;
+    }
 }
 
 .OTImg {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 10px;
 }
+
+
 
 /* ------------- Students Portfolio Showcase -------------*/
 
@@ -758,7 +803,19 @@ header {
     font-size: 12px;
     margin-bottom: 20px;
     box-shadow: 0 2px 2px rgba(145, 144, 144, 0.3);
+    transition: all .3s ease-in-out;
 }
+
+.studentListWrapper:hover {
+    border: 1px solid #D03D33;
+} 
+
+.studentListWrapper:hover a{
+    background-color: #D03D33;
+    color: #F1F1F1;
+    padding: 0.25em 0.5em;
+    border-radius: 1.25em;
+} 
 
 .studentListWrapper h3 {
     color: #626262;
@@ -766,6 +823,7 @@ header {
 
 .studentListWrapper a {
     color: #D03D33;
+    transition: all .3s ease-in-out;
 }
 
 .tags {
