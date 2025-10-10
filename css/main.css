@@ -720,8 +720,9 @@ header {
     position: absolute;
     inset: 0;
     background-color: #F1F1F180;
-    /* width: 176px;
-    height: 155px; */
+    /* max-width: 176px; */
+    height: auto;
+    /* height: 155px; */
     border-radius: 1.25em;
     display: flex;
     flex-direction: column;
@@ -752,7 +753,7 @@ header {
 @media screen and (min-width: 48em) {
 
     #ourTeam img {
-        /* width: 336px; */
+        /* max-width: 336px; */
         width: 100%;
         height: auto;
     }
@@ -765,7 +766,7 @@ header {
 @media  screen and (min-width: 75em) {
 
     #ourTeam img {
-        /* width: 255px; */
+        /* max-width: 255px; */
         width: 100%;
         height: auto;
     }
