@@ -1,6 +1,6 @@
 # IDP Industry Night Site 2026 ✨
 
-![Industry night's Banner](images/Patterns/Pattern-red%20on%20red.jpg)
+![Industry night's Banner](images/Fanshawe.jpeg)
 
 Welcome to Industry Night 2026 🎉 Celebrate the creativity, innovation, and technical skills of Interactive Media Design students.
 
