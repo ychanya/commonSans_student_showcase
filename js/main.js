@@ -58,127 +58,82 @@ console.log("JS file connected");
             groupImg: { 
                 mobile : "images/responsive/mobile/Project-exhibiton/group1_372.jpg",
                 tablet : "images/responsive/tablet/student-exhibition/group1_505.jpg",
-                desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg"
+                desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg",
+                alt: "Group 1 project exhibition group photo"
             },
             group: "Group #1", 
             members: [
-                "Amy Armstrong",
-                "Josephine Muncaster",
-                "Laila Seif",
-                "Zakia Sultana"
+                "Ajay Chakaravarthy",
+                "Zakia Sultana",
+                "Aayush Diyali",
+                "Tapshveer Benipal",
+                "Ngoc Nhu An Do",
+                "Luciano Clementi"
             ]
         },
         { 
             groupImg: { 
                 mobile : "images/responsive/mobile/Project-exhibiton/group1_372.jpg",
                 tablet : "images/responsive/tablet/student-exhibition/group1_505.jpg",
-                desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg"
+                desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg",
+                alt: "Group 2 project exhibition group photo"
             },
             group: "Group #2", 
             members: [
-                "Harlowe D",
-                "Juliana Gambuzza",
-                "Benjamin Kettlewell",
-                "Chanya Chumdee"
+                "Josephine Muncaster",
+                "Linh Nguyen",
+                "Situ Ranjit",
+                "Rin Morito",
+                "Anh Nguyen"
             ]
         },
         { 
             groupImg: { 
                 mobile : "images/responsive/mobile/Project-exhibiton/group1_372.jpg",
                 tablet : "images/responsive/tablet/student-exhibition/group1_505.jpg",
-                desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg"
+                desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg",
+                alt: "Group 3 project exhibition group photo"
             },
             group: "Group #3", 
             members: [
-                "Sydney Bandarra",
-                "Roni Soud",
-                "Justine Nathalie",
-                "Yi Lu"
+                "Mikhail Kirs",
+                "Liam Kuchta",
+                "Daljit Singh",
+                "Rabin Tamang",
+                "Pranav Pranav",
+                "Simon Dasilva"
             ]
         },
         { 
             groupImg: { 
                 mobile : "images/responsive/mobile/Project-exhibiton/group1_372.jpg",
                 tablet : "images/responsive/tablet/student-exhibition/group1_505.jpg",
-                desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg"
+                desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg",
+                alt: "Group 4 project exhibition group photo"
             },
             group: "Group #4", 
             members: [
-                "Tapshveer Benipal",
-                "Daljit Singh",
-                "Pranav Pranav",
-                "Tamunotubo Jackreece"
+                "Kingsley Watson",
+                "Amy Armstrong",
+                "Zeran Lu",
+                "Justine Nathalie Ng",
+                "Ramona Lozon"
             ]
         },
         { 
             groupImg: { 
                 mobile : "images/responsive/mobile/Project-exhibiton/group1_372.jpg",
                 tablet : "images/responsive/tablet/student-exhibition/group1_505.jpg",
-                desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg"
+                desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg",
+                alt: "Group 5 project exhibition group photo"
             },
             group: "Group #5", 
             members: [
-                "Ezekiel John Celis",
-                "Simon Dasilva",
-                "Diya Sanjay Patel",
-                "Noah Kennedy"
-            ]
-        },
-        { 
-            groupImg: { 
-                mobile : "images/responsive/mobile/Project-exhibiton/group1_372.jpg",
-                tablet : "images/responsive/tablet/student-exhibition/group1_505.jpg",
-                desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg"
-            },
-            group: "Group #6", 
-            members: [
-                "Yi Cheng",
-                "Mikhail Kirs",
-                "Liam Kuchta",
-                "Rabin Tamang"
-            ]
-        },
-        { 
-            groupImg: { 
-                mobile : "images/responsive/mobile/Project-exhibiton/group1_372.jpg",
-                tablet : "images/responsive/tablet/student-exhibition/group1_505.jpg",
-                desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg"
-            },
-            group: "Group #7", 
-            members: [
-                "Ngoc Nhu An Do",
-                "Anh Nguyen",
-                "Luciano Clementi",
-                "Ajay Chakaravarthy"
-            ]
-        },
-        { 
-            groupImg: { 
-                mobile : "images/responsive/mobile/Project-exhibiton/group1_372.jpg",
-                tablet : "images/responsive/tablet/student-exhibition/group1_505.jpg",
-                desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg"
-            },
-            group: "Group #8", 
-            members: [
-                "Kingsley Watson",
-                "Rin Morito",
-                "Linh Nguyen",
-                "Situ Ranjit",
-                "Hannah Silva"
-            ]
-        },
-        { 
-            groupImg: { 
-                mobile : "images/responsive/mobile/Project-exhibiton/group1_372.jpg",
-                tablet : "images/responsive/tablet/student-exhibition/group1_505.jpg",
-                desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg"
-            },
-            group: "Group #9", 
-            members: [
-                "Abigail Londini",
-                "Aayush Diyali",
-                "Qihong Liu",
-                "Zeran Lu"
+                "Harlowe Chetan Dhameliya",
+                "Juliana Gambuzza",
+                "Benjamin Kettlewell",
+                "Hannah Silva",
+                "Chanya Chumdee"
             ]
         }
     ];
@@ -215,33 +170,44 @@ console.log("JS file connected");
         } else {
             animation = "fadeIn-left";
         }
-
-        carouselWrap.innerHTML = `
-            <div class="SPEWrapper one-item sm-one-item md-one-item lg-two-items ${animation}">
-                <figure>
-                    <img 
-                        sizes="(min-width: 75em) 80em, (min-width: 48em) 64em, (min-width: 25.75em) 37.5em, 100vw"
-                        srcset="${carouselInfo.groupImg.mobile} 372w,
-                                ${carouselInfo.groupImg.tablet} 505w,
-                                ${carouselInfo.groupImg.desktop} 752w"
-                        src="${carouselInfo.groupImg.mobile}"
-                        alt="${carouselInfo.group}" 
-                        class="SPEImg"
-                    >
-                </figure>
-                <div class="groupWrapper">
-                    <h3>${carouselInfo.group}</h3>
-                    <ul>
-                        ${carouselInfo.members.map(member => `<li class="listStyleLi">${member}</li>`).join("")}
-                    </ul>
-                </div>
-            </div>
-        `;
         
+        carouselWrap.innerHTML = "";
+
+        const wrapper = document.createElement("div");
+        wrapper.className = `SPEWrapper one-item sm-one-item md-one-item lg-two-items ${animation}`;
+
+        const figure = document.createElement("figure");
+        const image = document.createElement("img");
+        image.sizes = "(min-width: 75em) 80em, (min-width: 48em) 64em, (min-width: 25.75em) 37.5em, 100vw";
+        image.srcset = `${carouselInfo.groupImg.mobile} 372w,
+                        ${carouselInfo.groupImg.tablet} 505w,
+                        ${carouselInfo.groupImg.desktop} 752w`;
+        image.src = `${carouselInfo.groupImg.mobile}`;
+        image.alt = `${carouselInfo.groupImg.alt}`;
+        image.className = "SPEImg";
+        figure.appendChild(image);
+
+        const groupWrapper = document.createElement("div");
+        groupWrapper.className = "groupWrapper";
+        const header = document.createElement("h3");
+        header.textContent =  carouselInfo.group;
+        const ul = document.createElement("ul");
+        carouselInfo.members.forEach( member => {
+            const list = document.createElement("li");
+            list.textContent = member;
+            list.className = "listStyleLi";
+            ul.appendChild(list);
+        });
+        groupWrapper.appendChild(header);
+        groupWrapper.appendChild(ul);
+
+        wrapper.appendChild(figure);
+        wrapper.appendChild(groupWrapper);
+        carouselWrap.appendChild(wrapper);
+
         trackingButtons.forEach((btn) => {
             btn.classList.remove("customBtn");
         }); 
-
         addActiveState();
     }
 
@@ -270,37 +236,221 @@ console.log("JS file connected");
 (function() {
     const studentList = document.querySelector("#student-list");
     const students = [
-        {id: 1, name: "Aayush Diyali", roles: ["Graphic","PM"], portfolio: "#"},
-        {id: 2, name: "Abigail Londini", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 3, name: "Amy Armstrong", roles: ["Graphic"], portfolio: "#"},
-        {id: 4, name: "Anh Nguyen", roles: ["Back-End","PM"], portfolio: "#"},
-        {id: 5, name: "Yi Lu", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 6, name: "Zakia Sultana", roles: ["PM"], portfolio: "#"},
-        {id: 7, name: "Daljit Singh", roles: ["Front-End"], portfolio: "#"},
-        {id: 8, name: "Diya Sanjay Patel", roles: ["Motion","PM"], portfolio: "#"},
-        {id: 9, name: "Ezekiel John Celis", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 10, name: "Hannah Silva", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 11, name: "Zeran Lu", roles: ["Front-End","Back-End"], portfolio: "#"},
-        {id: 12, name: "Josephine Muncaster", roles: ["Front-End"], portfolio: "#"},
-        {id: 13, name: "Tapshveer Benipal", roles: ["Graphic","PM"], portfolio: "#"},
-        {id: 14, name: "Justine Nathalie", roles: ["Motion"], portfolio: "#"},
-        {id: 16, name: "Kingsley Watson", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 17, name: "Laila Seif", roles: ["Front-End","Motion"], portfolio: "#"},
-        {id: 18, name: "Liam Kuchta", roles: ["Front-End"], portfolio: "#"},
-        {id: 19, name: "Linh Nguyen", roles: ["Motion","PM"], portfolio: "#"},
-        {id: 20, name: "Luciano Clementi", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 21, name: "Mikhail Kirs", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 22, name: "Ngoc Nhu An Do", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 23, name: "Noah Kennedy", roles: ["Back-End"], portfolio: "#"},
-        {id: 24, name: "Pranav Pranav", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 25, name: "Qihong Liu", roles: ["Motion"], portfolio: "#"},
-        {id: 26, name: "Rabin Tamang", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 27, name: "Rin Morito", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 28, name: "Roni Soud", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 29, name: "Simon Dasilva", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 30, name: "Situ Ranjit", roles: ["Front-End","PM"], portfolio: "#"},
-        {id: 31, name: "Sydney Bandarra", roles: ["PM"], portfolio: "#"},
-        {id: 32, name: "Yi Cheng", roles: ["Back-End","Graphic"], portfolio: "#"}
+        {
+            id: 1, 
+            img: "#",
+            alt: "Portait of Aayush Diyali",
+            name: "Aayush Diyali", 
+            roles: ["Motion"], 
+            portfolio: "#"
+        },
+        {
+            id: 2, 
+            img: "#",
+            alt: "Portait of Abigail Londini",
+            name: "Abigail Londini", 
+            roles: ["Front-End","PM"], 
+            portfolio: "#"
+        },
+        {
+            id: 3, 
+            img: "#",
+            alt: "Portait of Ajay Chakaravarthy",
+            name: "Ajay Chakaravarthy", 
+            roles: ["Back-End"], 
+            portfolio: "#"
+        },
+        {
+            id: 4, 
+            img: "#",
+            alt: "Portait of Amy Armstrong",
+            name: "Amy Armstrong", 
+            roles: ["Graphic"], 
+            portfolio: "#"
+        },
+        {
+            id: 5, 
+            img: "#",
+            alt: "Portait of Anh Nguyen",
+            name: "Anh Nguyen", 
+            roles: ["Back-End"], 
+            portfolio: "#"
+        },
+        {
+            id: 6, 
+            img: "#",
+            alt: "Portait of Daljit Singh",
+            name: "Daljit Singh", 
+            roles: ["Graphic"], 
+            portfolio: "#"
+        },
+        {
+            id: 7, 
+            img: "#",
+            alt: "Portait of Hannah Silva",
+            name: "Hannah Silva", 
+            roles: ["PM"], 
+            portfolio: "#"
+        },
+        {
+            id: 8, 
+            img: "#",
+            alt: "Portait of Josephine Muncaster",
+            name: "Josephine Muncaster", 
+            roles: ["PM"], 
+            portfolio: "#"
+        },
+        {
+            id: 9, 
+            img: "#",
+            alt: "Portait of Justine Nathalie Ng",
+            name: "Justine Nathalie Ng", 
+            roles: ["PM"], portfolio: "#"
+        },
+        {
+            id: 10, 
+            img: "#",
+            alt: "Portait of Kingsley Watson",
+            name: "Kingsley Watson", 
+            roles: ["Motion"], 
+            portfolio: "#"
+        },
+        {
+            id: 11, 
+            img: "#",
+            alt: "Portait of Laila Seif",
+            name: "Laila Seif", 
+            roles: ["Front-End","Motion"], 
+            portfolio: "#"
+        },
+        {
+            id: 12, 
+            img: "#",
+            alt: "Portait of Liam Kuchta",
+            name: "Liam Kuchta", 
+            roles: ["Motion"], 
+            portfolio: "#"
+        },
+        {
+            id: 13, 
+            img: "#",
+            alt: "Portait of Linh Nguyen",
+            name: "Linh Nguyen", 
+            roles: ["Graphic"], 
+            portfolio: "#"
+        },
+        {
+            id: 14, 
+            img: "#",
+            alt: "Portait of Luciano Clementi",
+            name: "Luciano Clementi", 
+            roles: ["Front-End","PM"], 
+            portfolio: "#"
+        },
+        {
+            id: 15, 
+            img: "#",
+            alt: "Portait of Mikhail Kirs",
+            name: "Mikhail Kirs", 
+            roles: ["Front-End","PM"], 
+            portfolio: "#"
+        },
+        {
+            id: 16, 
+            img: "#",
+            alt: "Portait of Ngoc Nhu An Do",
+            name: "Ngoc Nhu An Do", 
+            roles: ["Back-End"], 
+            portfolio: "#"
+        },
+        {
+            id: 17, 
+            img: "#",
+            alt: "Portait of Pranav Pranav",
+            name: "Pranav Pranav", 
+            roles: ["PM"], 
+            portfolio: "#"
+        },
+        {
+            id: 18, 
+            img: "#",
+            alt: "Portait of Rabin Tamang",
+            name: "Rabin Tamang", 
+            roles: ["Front-End"], 
+            portfolio: "#"
+        },
+        {
+            id: 19, 
+            img: "#",
+            alt: "Portait of Ramona Lozon",
+            name: "Ramona Lozon", 
+            roles: ["Back-End"], 
+            portfolio: "#"
+        },
+        {
+            id: 20, 
+            img: "#",
+            alt: "Portait of Rin Morito",
+            name: "Rin Morito", 
+            roles: ["Front-End"], 
+            portfolio: "#"
+        },
+        {
+            id: 21, 
+            img: "#",
+            alt: "Portait of Simon Dasilva",
+            name: "Simon Dasilva", 
+            roles: ["Back-End"], 
+            portfolio: "#"
+        },
+        {
+            id: 22, 
+            img: "#",
+            alt: "Portait of Situ Ranjit",
+            name: "Situ Ranjit", 
+            roles: ["Motion"], 
+            portfolio: "#"
+        },
+        {
+            id: 23, 
+            img: "#",
+            alt: "Portait of Tapshveer Benipal",
+            name: "Tapshveer Benipal", 
+            roles: ["Front-End"], 
+            portfolio: "#"
+        },
+        {
+            id: 24, 
+            img: "#",
+            alt: "Portait of Yi Cheng",
+            name: "Yi Cheng", 
+            roles: ["Back-End","Graphic"], 
+            portfolio: "#"
+        },
+        {
+            id: 25, 
+            img: "#",
+            alt: "Portait of Yi Lu",
+            name: "Yi Lu", 
+            roles: ["Front-End","PM"], 
+            portfolio: "#"
+        },
+        {
+            id: 26, 
+            img: "#",
+            alt: "Portait of Zakia Sultana",
+            name: "Zakia Sultana", 
+            roles: ["PM"], 
+            portfolio: "#"
+        },
+        {
+            id: 27, 
+            img: "#",
+            alt: "Portait of Zeran Lu",
+            name: "Zeran Lu", 
+            roles: ["Front-End"], 
+            portfolio: "#"
+        }
     ];
 
     const allBtn = document.querySelector("#allBtn");
@@ -332,37 +482,49 @@ console.log("JS file connected");
     }
 
     function renderStudents(students) {
-        // Clear any existing content from the list
+
         studentList.innerHTML = "";
 
-        // Loop through each student in the array
-        students.forEach(student => {
-            // Build a list of this student's roles
-            let rolesHTML = "";
-            student.roles.forEach(role => {
-                rolesHTML += `<li>${role}</li>`;
+        students.forEach( student => {
+
+            const card = document.createElement("li");
+            card.className = "studentListWrapper";
+
+            const avatarImg = document.createElement("img");
+            avatarImg.className = "studentAvatarImg";
+            avatarImg.src = student.img;
+            avatarImg.alt = student.alt;
+
+            const infoDiv = document.createElement("div");
+            const nameRolesDiv = document.createElement("div");
+
+            const header = document.createElement("h3");
+            header.textContent = student.name;
+            const ul = document.createElement("ul");
+            ul.className = "tags";
+            student.roles.forEach( role => {
+                const listRole = document.createElement("li");
+                listRole.textContent = role;
+                ul.appendChild(listRole);
             });
+            nameRolesDiv.appendChild(header);
+            nameRolesDiv.appendChild(ul);
 
-            // Create the HTML for one student
-            const studentHTML = `
-                <li class="studentListWrapper">
-                    <div class="studentAvatarImg"></div>
-                    <div>
-                        <div>
-                            <h3>${student.name}</h3>
-                            <ul class="tags">${rolesHTML}</ul>
-                        </div>
-                        <a href="${student.portfolio}">View Portfolio &#8599;</a>
-                    </div>
-                </li>
-            `;
+            const portfolioLink = document.createElement("a");
+            portfolioLink.href = student.portfolio;
+            portfolioLink.innerHTML = "View Portfolio &#8599;";
+            infoDiv.appendChild(nameRolesDiv);
+            infoDiv.appendChild(portfolioLink);
 
-            // Add this student's HTML to the list container
-            studentList.innerHTML += studentHTML;
+            card.appendChild(avatarImg);
+            card.appendChild(infoDiv);
+
+            studentList.appendChild(card);
         });
     }
 
     renderStudents(students);
+
     allBtn.addEventListener("click", (e) => filterRole("All", e));
     graphicButton.addEventListener("click", (e) => filterRole("Graphic", e));
     motionButton.addEventListener("click", (e) => filterRole("Motion", e));
@@ -379,18 +541,21 @@ console.log("JS file connected");
     const testimonials = [
         { 
             img: "images/testimonials/marco.jpg",
+            alt: "Portrait of Marco De Luca",
             name: "Marco De Luca", 
             role: "IDP Program Coordinator and Professor at Fanshawe College",
             quote: "Utilizing a diverse range of media, the Interactive Media Design students have masterfully highlighted the heroic sacrifices made by the India soldiers in World war I."
         },
         { 
             img: "images/testimonials/rob.jpg",
+            alt: "Portrait of Rob Haaf",
             name: "Rob Haaf", 
             role: "IDP Professor at Fanshawe College",
             quote: "It is always rewarding to see the innovation and passion that our students bring to Industry Night. The skills they have developed in the IDP3 program are impressive and set them up for future success."
         },
         { 
             img: "images/testimonials/jarrod.jpg",
+            alt: "Portrait of Jarrod Osterback",
             name: "Jarrod Osterback", 
             role: "IDP Professor at Fanshawe College",
             quote: "Industry Night is a wonderful opportunity for our students to shine. The projects they represent are a testament to their hard work and the real-world skills they've gained throughout our program."
@@ -433,7 +598,6 @@ console.log("JS file connected");
         addActiveState();
     }
 
-
     function displayTestimonials(direction) {
         testimonialWrap.innerHTML = "";
     
@@ -456,22 +620,44 @@ console.log("JS file connected");
 
             const testimonialInfo = testimonials[position];
 
-            testimonialWrap.innerHTML += `
-                <li class="${animation}">
-                    <article>
-                        <div class="nameWrapper">
-                            <div class="testimonialAvatarImg">
-                                <img src="${testimonialInfo.img}" alt="${testimonialInfo.name} Image">
-                            </div>
-                            <div>
-                                <h3>${testimonialInfo.name}</h3>
-                                <p>${testimonialInfo.role}</p>
-                            </div>
-                        </div>
-                        <p class="quote">"${testimonialInfo.quote}"</p>
-                    </article>
-                </li>
-            `; 
+            const list = document.createElement("li");
+            list.className = `${animation}`;
+
+            const article = document.createElement("article");
+
+            const nameWrapper = document.createElement("div");
+            nameWrapper.className = "nameWrapper";
+
+            const avatarDiv = document.createElement("div");
+            avatarDiv.className = "testimonialAvatarImg";
+
+            const image = document.createElement("img");
+            image.src = testimonialInfo.img;
+            image.alt = testimonialInfo.alt;
+            avatarDiv.appendChild(image);
+
+            const textWrapper = document.createElement("div");
+            const header = document.createElement("h3");
+            header.textContent = testimonialInfo.name;
+
+            const paragraph = document.createElement("p");
+            paragraph.textContent = testimonialInfo.role;
+            textWrapper.appendChild(header);
+            textWrapper.appendChild(paragraph);
+
+            nameWrapper.appendChild(avatarDiv);
+            nameWrapper.appendChild(textWrapper);
+
+            const quote = document.createElement("p");
+            quote.className = "quote";
+            quote.textContent = testimonialInfo.quote;
+
+            article.appendChild(nameWrapper);
+            article.appendChild(quote);
+
+            list.appendChild(article);
+
+            testimonialWrap.appendChild(list);
         }
     }
 
