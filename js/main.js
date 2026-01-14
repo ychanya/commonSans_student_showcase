@@ -163,8 +163,8 @@ console.log("JS file connected");
     function displayCarousel(direction) {
 
         const carouselInfo = carousels[count];
+        let animation = "";
 
-        // Using parameter to decide which animation should apply + add class directly into the HTML!!!! 
         if (direction === "right") {
             animation = "fadeIn-right";
         } else {
@@ -453,16 +453,8 @@ console.log("JS file connected");
         }
     ];
 
-    const allBtn = document.querySelector("#allBtn");
-    const graphicButton = document.querySelector("#graphicBtn");
-    const motionButton = document.querySelector("#motionBtn");
-    const frontEnButton = document.querySelector("#frontEnBtn");
-    const backEnButton = document.querySelector("#backEnBtn");
-    const pmButton = document.querySelector("#pmBtn");
-    const filterButtons = document.querySelectorAll('.filterButton');
+    const filterButtons = document.querySelectorAll(".filterButton");
     
-
-    // function to remove active state
     function removeActiveState() {
         filterButtons.forEach((button) =>{button.classList.remove("cutomFilter")} );
     }
@@ -525,12 +517,11 @@ console.log("JS file connected");
 
     renderStudents(students);
 
-    allBtn.addEventListener("click", (e) => filterRole("All", e));
-    graphicButton.addEventListener("click", (e) => filterRole("Graphic", e));
-    motionButton.addEventListener("click", (e) => filterRole("Motion", e));
-    frontEnButton.addEventListener("click", (e) => filterRole("Front-End", e));
-    backEnButton.addEventListener("click", (e) => filterRole("Back-End", e));
-    pmButton.addEventListener("click", (e) => filterRole("PM", e));
+    filterButtons.forEach(button => {
+        button.addEventListener("click", (e) =>
+            filterRole(`${e.currentTarget.id}`, e)
+        );
+    });
 
 })();
 
@@ -550,7 +541,7 @@ console.log("JS file connected");
             img: "images/testimonials/rob.jpg",
             alt: "Portrait of Rob Haaf",
             name: "Rob Haaf", 
-            role: "IDP Professor at Fanshawe College",
+            role: "Retired IDP Professor at Fanshawe College",
             quote: "It is always rewarding to see the innovation and passion that our students bring to Industry Night. The skills they have developed in the IDP3 program are impressive and set them up for future success."
         },
         { 
@@ -559,7 +550,22 @@ console.log("JS file connected");
             name: "Jarrod Osterback", 
             role: "IDP Professor at Fanshawe College",
             quote: "Industry Night is a wonderful opportunity for our students to shine. The projects they represent are a testament to their hard work and the real-world skills they've gained throughout our program."
+        },
+        { 
+            img: "images/testimonials/jarrod.jpg",
+            alt: "Portrait of Justin Brunner",
+            name: "Justin Brunner", 
+            role: "UX Design Coordinator and IDP Professor at Fanshawe College",
+            quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae suscipit urna. Mauris ut mauris ut lorem fringilla condimentum in et mauris."
+        },
+        {
+            img: "images/testimonials/jarrod.jpg",
+            alt: "Portrait of Nicholas Ireland",
+            name: "Nicholas Ireland",
+            role: "IDP Professor at Fanshawe College",
+            quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae suscipit urna. Mauris ut mauris ut lorem fringilla condimentum in et mauris."
         }
+        
     ];
 
     const testimonialWrap = document.querySelector(".testimonialsWrapper");
@@ -567,24 +573,11 @@ console.log("JS file connected");
     const next = document.querySelector("#next");
     const trackingButtons = document.querySelectorAll(".TTButton");
     let count = 0;
-
-    function displayCount() {
-        if (window.innerWidth >= 1200) {
-            return 2; 
-        } else {
-            return 1; 
-        }
-    }
+    let autoPlay;
 
     function addActiveState() {
-        // Remove active styles from all tracking buttons first 
-        trackingButtons.forEach((btn) => {
-            btn.classList.remove("customBtn");
-        }); 
-
+   
         const activeBtn = document.querySelector(`.TTButton[data-index="${count}"]`);
-
-        // Add active style to the button that matches the current slide
         if (activeBtn) {
             activeBtn.classList.add("customBtn");
         }
@@ -599,94 +592,88 @@ console.log("JS file connected");
     }
 
     function displayTestimonials(direction) {
-        testimonialWrap.innerHTML = "";
+
+        const testimonialInfo = testimonials[count];
+
+        let animation = "";
     
-        // Using parameter to decide which animation should apply + add class directly into the HTML!!!! 
         if (direction === "right") {
             animation = "fadeIn-right";
         } else {
             animation = "fadeIn-left";
         }
 
-        for (let i = 0; i < displayCount(); i++) {
-            let position = count + i;
+        testimonialWrap.innerHTML = "";
 
-            // If position goes past the last testimonial, start again from the first one
-            if (position >= testimonials.length) {
-                position = position - testimonials.length;
-            } else {
-                position = position;
-            }
+        const list = document.createElement("li");
+        list.className = `${animation}`;
 
-            const testimonialInfo = testimonials[position];
+        const article = document.createElement("article");
 
-            const list = document.createElement("li");
-            list.className = `${animation}`;
+        const nameWrapper = document.createElement("div");
+        nameWrapper.className = "nameWrapper";
 
-            const article = document.createElement("article");
+        const avatarDiv = document.createElement("div");
+        avatarDiv.className = "testimonialAvatarImg";
 
-            const nameWrapper = document.createElement("div");
-            nameWrapper.className = "nameWrapper";
+        const image = document.createElement("img");
+        image.src = testimonialInfo.img;
+        image.alt = testimonialInfo.alt;
+        avatarDiv.appendChild(image);
 
-            const avatarDiv = document.createElement("div");
-            avatarDiv.className = "testimonialAvatarImg";
+        const textWrapper = document.createElement("div");
+        const header = document.createElement("h3");
+        header.textContent = testimonialInfo.name;
 
-            const image = document.createElement("img");
-            image.src = testimonialInfo.img;
-            image.alt = testimonialInfo.alt;
-            avatarDiv.appendChild(image);
+        const paragraph = document.createElement("p");
+        paragraph.textContent = testimonialInfo.role;
+        textWrapper.appendChild(header);
+        textWrapper.appendChild(paragraph);
 
-            const textWrapper = document.createElement("div");
-            const header = document.createElement("h3");
-            header.textContent = testimonialInfo.name;
+        nameWrapper.appendChild(avatarDiv);
+        nameWrapper.appendChild(textWrapper);
 
-            const paragraph = document.createElement("p");
-            paragraph.textContent = testimonialInfo.role;
-            textWrapper.appendChild(header);
-            textWrapper.appendChild(paragraph);
+        const quote = document.createElement("p");
+        quote.className = "quote";
+        quote.textContent = testimonialInfo.quote;
 
-            nameWrapper.appendChild(avatarDiv);
-            nameWrapper.appendChild(textWrapper);
+        article.appendChild(nameWrapper);
+        article.appendChild(quote);
 
-            const quote = document.createElement("p");
-            quote.className = "quote";
-            quote.textContent = testimonialInfo.quote;
+        list.appendChild(article);
 
-            article.appendChild(nameWrapper);
-            article.appendChild(quote);
-
-            list.appendChild(article);
-
-            testimonialWrap.appendChild(list);
-        }
+        testimonialWrap.appendChild(list);
+            
+        trackingButtons.forEach((btn) => {
+            btn.classList.remove("customBtn");
+        }); 
+        addActiveState();
     }
 
     function nextTestimonial() {
-        // Increase count based on how many items are shown from displayCount() 
-        count = count + displayCount();
-        // If count goes over the last testimonial, get back to the first one!!
-        if (count >= testimonials.length) {
-            count = count - testimonials.length;
-        }
+        count++;
+        if (count >= testimonials.length) count = 0; 
         displayTestimonials("right");
-        addActiveState();
     }
 
     function previousTestimonial() {
-        // Decrease count based on how many items are shown from displayCount()
-        count = count - displayCount();
-        // If count < 0, show last testimonials instead of going negative
-        if (count < 0) {
-            count = testimonials.length + count; 
-        }
+        count--;
+        if (count < 0) count = testimonials.length - 1; 
         displayTestimonials("left");
-        addActiveState();
+    }
+
+    function startAutoPlay() {
+        autoPlay = setInterval(nextTestimonial,4000);
+    }
+
+    function stopAutoPlay() {
+        clearInterval(autoPlay);
     }
 
     next.addEventListener("click", nextTestimonial);
     previous.addEventListener("click", previousTestimonial);
-    window.addEventListener("resize", displayTestimonials);
     trackingButtons.forEach((button) => {button.addEventListener("click" , showSlide);});
     displayTestimonials();
-    addActiveState();
+    testimonialWrap.addEventListener("mouseenter", stopAutoPlay);
+    testimonialWrap.addEventListener("mouseleave", startAutoPlay);
 })();
