@@ -46,5 +46,5 @@ If you have any questions or want to collaborate, feel free to reach out anytime
 
 - [**Ben Kettlewell**](https://www.linkedin.com/in/ben-kettlewell-310736336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app) – Motion Designer
 - [**Juliana Gambuzza**](https://www.linkedin.com/in/juliana-gambuzza-bernal-4195452b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app) – Graphic Designer
-- [**Hansini Chetan Dhameliya [Harlowe]**](https://www.linkedin.com/in/harlowe-hansini-d-dhameliya-a01282265/) –  Project Manager and Front-end Developer 
+- [**Harlowe Chetan Dhameliya**](https://www.linkedin.com/in/harlowe-hansini-d-dhameliya-a01282265/) –  Project Manager and Front-end Developer 
 - [**Chanya Chumdee**](https://www.linkedin.com/in/chanya-chumdee-255b0634a) – Front-end Developer
