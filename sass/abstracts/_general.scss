@@ -1,0 +1,80 @@
+html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 48em) {
+   html {
+      font-size: 100%;
+   }
+}
+
+h2, h3 {
+   color: #D03D33;
+}
+
+h2 {
+    color: #D03D33;
+    text-align: center;
+    margin: 48px 0 48px 0;
+}
+
+.brandButtons {
+    padding: .3rem 1rem;
+    background-color: #D03D33;
+    color: #ffffff;
+    border: 0px solid;
+    border-radius: 0.625rem;
+    font-size: .8rem;
+    width: 8.5rem;
+    height: 3rem;
+    font: inherit;
+    font-size: 0.875rem;
+    transition: all .3s ease-in-out;
+}
+
+.brandButtons:hover {
+    background-color: #fff;
+    color: #D03D33;
+    border: 1px solid #D03D33;
+}
+
+.alignBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0 50px 0 50px;
+
+}
+
+header {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0;
+    z-index: 9999;
+    box-shadow: 0 6px 6px rgba(145, 144, 144, 0.3);
+}
+
+main {
+    padding-top: 90px;
+}
+
+#eventSection, #studentProjectExhibit ,#interactiveMediaDesign, #studentPortfolios {
+    scroll-margin-top: 90px;
+}
+
+#previous:hover, #previousCa:hover, #nextCa:hover, #next:hover {
+    color: #fff;
+    background-color: #D03D33;
+}
+
+#previous, #previousCa, #nextCa, #next {
+    transition: all .3s ease-in-out;
+}
+
+#desktopMenu a:hover, #mobileMenu a:hover, .foot a:hover {
+    text-decoration: underline;
+}

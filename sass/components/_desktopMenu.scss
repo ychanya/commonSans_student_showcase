@@ -1,0 +1,24 @@
+#desktopMenu {
+    display: none;
+}
+
+@media screen and (min-width: 75em) {
+    #desktopMenu {
+        display: block;
+    }
+}
+
+#desktopMenu ul {
+    height:100%;
+    margin: 0;
+    padding-right: 3.125em;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 3.75em;
+}
+
+#desktopMenu a {
+    color: white;
+}

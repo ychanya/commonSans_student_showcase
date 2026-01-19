@@ -1,0 +1,16 @@
+.videoWrapper {
+    height: auto;
+}
+
+.plyr {
+    border-radius: 20px;
+    box-shadow: 0 6px 6px rgba(145, 144, 144, 0.3);
+} 
+
+:root {
+  --plyr-color-main: #c70000;
+  --plyr-video-controls-background: linear-gradient(rgba(0, 0, 0, 0), rgba(199, 0, 0, 0.341));
+  --plyr-control-icon-size: 20px;
+  --plyr-control-radius: 20px;
+  --plyr-font-family: Helvetica, Arial, Sans-serif;
+}
