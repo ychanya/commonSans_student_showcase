@@ -1,0 +1,82 @@
+header {
+    background-color: #D03D33;
+}
+
+.logoWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#closeMobileMenuBtn {
+    background: none;
+    border: none;
+    font-family: inherit;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+    font-size: 3em;
+    color: #fff;
+    padding-right: 30px;
+}
+
+.fanshaweNavLogo {
+    width: 15.25em;
+    padding-left: 2em;
+}
+
+.mobileIcon {
+    width: 2.5em;
+}
+
+.mobileIconWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding-right: 1.875em;
+}
+
+@media screen and (min-width: 75em) {
+    .mobileIcon {
+        display: none;
+    }
+}
+                                           
+#mobileMenu {
+    background-color: #D03D33;
+    position: absolute;
+    inset: 0;
+    width: 100vw;
+    height: 50vh;
+    z-index: 100;  
+
+    /* Animated mobile menu */
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Display mobile menu */
+#mobileMenu.open {
+    transform: translateY(0);
+    box-shadow: 0 6px 6px rgba(145, 144, 144, 0.3);
+}
+
+
+#mobileMenu ul li{
+    text-align: center;
+    padding-bottom: 1em;
+    border-bottom: 0.0625em solid #ffffff;
+    margin-bottom: 1em;
+}
+
+#mobileMenu a {
+  color: white;
+}
+
+.alignItemRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

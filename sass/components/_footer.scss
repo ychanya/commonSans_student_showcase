@@ -1,0 +1,89 @@
+footer {
+    background-color: #D03D33;
+    padding: 5em;
+    color: #ffffff;
+    font-size: 0.875em;
+}
+
+.fanshaweFootLogo {
+    width: 12.5em;
+}
+
+footer nav ul li {
+    margin-bottom: 1.25em;
+}
+
+footer nav ul li a{
+    color: #ffffff;
+}
+
+.socialMedia {
+    margin-bottom: 1.25em;
+}
+
+.socialMedia ul li a {
+    color: #ffffff;
+    
+}
+
+.socialMedia ul li {
+    display: inline;
+    margin-right: 0.75em;
+}
+
+.footerCollegeInfo {
+    margin-bottom: 1.5em;
+}
+
+.footerAddress {
+    margin-bottom: 1.5em;
+}
+
+.copyrightInfo {
+    border-top: 0.125em solid #ffffff;
+    padding-top: 1.25em;
+}
+
+.copyrightInfoPara {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 25.75em) {
+    footer {
+        font-size: 1em;
+    }
+}
+@media screen and (min-width: 48em) {
+    footer {
+        font-size: 1em;
+    }
+}
+@media  screen and (min-width: 75em) {
+    footer {
+        font-size: 1em;
+    }
+
+    footer nav ul li {
+        display: inline;
+        margin-right: 1.75em;
+    }
+
+    .footerAddress {
+        margin-bottom: 2em;
+    }
+
+    .socialMedia ul {
+        display: flex;
+        justify-content: flex-end;
+
+    }
+
+    .footerCollegeInfo {
+        margin-bottom: 2em;
+    }
+
+    .copyrightInfo {
+        padding-top: 2em;
+    }
+}
