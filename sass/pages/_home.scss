@@ -31,10 +31,12 @@ ___________________________________________ */
 .invitationText p {
     margin-bottom: 0.625em;
     line-height: 1.5em;
+    text-align: left;
 }
 
 #invitation-subHeader {
     font-size: 16px;
+    text-align: center;
 }
 
 @media screen and (min-width: 48em) {
@@ -215,6 +217,10 @@ ___________________________________________ */
     justify-content: center;
     align-items: center;
     column-gap: 40px;
+    li{
+        border-left: 2px solid #D03D33;
+        padding-left: 10px;
+    }
 }
 
 /* Carousel transition */
@@ -537,7 +543,7 @@ ___________________________________________ */
 .tags {
     display: flex;
     flex-direction: row;
-    column-gap: 2px;
+    column-gap: 6px;
     font-size: 10px;
     margin: 4px 0 14px 0;
 }
@@ -693,4 +699,26 @@ ___________________________________________ */
     align-items: center;
     column-gap: 18px;
     margin-bottom: 40px;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 30px;    
+    right: 30px;     
+    z-index: 100;
+    padding: 10px;
+    background-color: #A43634;
+    border: 2px solid #B1B2B4;
+    border-radius: 25px;
+    color: #ffffff;
+    font-size: 20px;
+    transform: scale(0);
+    transition: all .4s;
+    
+    &:hover{
+        bottom: 40px;
+    }
+    &.show {
+        transform: scale(1);
+    }
 }

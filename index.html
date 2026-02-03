@@ -60,6 +60,8 @@
         </nav>
     </header>
 
+    <a href="#main" id="backToTop"><i class="fa-solid fa-arrow-up"></i></a>
+
     <main class="main" id="main">
         <section id="heroSection">
             <h2 class="visually-hidden">Hero Section</h2>
@@ -86,10 +88,13 @@
                 </div>
                 <div class="one-item sm-one-item md-one-item lg-one-item">
                     <div class="invitationButtons">
-                        <button class="brandButtons cursorPointer" aria-label="Event Details Button">Event
-                            Details</button><!-- define the buttons -->
-                        <button class="brandButtons cursorPointer"
-                            aria-label="Show Portfolios Button">Portfolios</button><!-- define the buttons -->
+                        <a href="#eventDetailSect" class="brandButtons cursorPointer" aria-label="Event Details Button">
+                            Event Details
+                        </a>
+                        <a href="#studentPortfolios" class="brandButtons cursorPointer"
+                            aria-label="Show Portfolios Button">
+                            Portfolios
+                        </a>
                     </div>
                 </div>
             </div>
@@ -131,14 +136,14 @@
 
             </div>
         </section>
-        <section class="eventDetails">
+        <section id="eventDetailSect" class="eventDetails">
             <div class="one-item sm-one-item md-one-item lg-one-item">
                 <h2>Event Details</h2>
             </div>
             <div class="two-items sm-two-items md-three-items lg-three-items">
                 <div class="eventDetailsContainer">
                     <h3><i class="fa-solid fa-calendar-days"></i>Date</h3>
-                    <p id="dateCustom">April 23rd, 2025</p>
+                    <p id="dateCustom">April 23rd, 2026</p>
                 </div>
                 <div class="eventDetailsContainer">
                     <h3><i class="fa-solid fa-location-dot"></i>Location</h3>
@@ -212,7 +217,10 @@
                     <p>Graduates are prepared for careers in design studios, app and web development, multimedia
                         production companies, digital agencies, and technology consulting, among many other creative
                         industries.</p>
-                    <button id="infoBtn" class="brandButtons" aria-label="More Information Button">More Info</button>
+                    <a href="https://www.fanshawec.ca/programs/idp3-interactive-media-design/next?utm_source=google&utm_medium=cpc&utm_campaign=rbm_search&gad_source=1&gad_campaignid=20146753815&gbraid=0AAAAAD3AQO_bqDsm_-iHneHT9zNlz5JOS&gclid=CjwKCAiAs4HMBhBJEiwACrfNZYADOe5lBLcjKJQ5Gt-cft8rpiCJyxciN8nabKOilRB1sG8c1oiziRoCUW4QAvD_BwE"
+                        target="_blank" id="infoBtn" class="brandButtons" aria-label="More Information Button">
+                        More Info
+                    </a>
                 </div>
                 <div class="IMDImg">
                     <img sizes="
