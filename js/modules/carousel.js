@@ -142,7 +142,6 @@ export function carousel() {
         carouselInfo.members.forEach( member => {
             const list = document.createElement("li");
             list.textContent = member;
-            list.className = "listStyleLi";
             ul.appendChild(list);
         });
         groupWrapper.appendChild(header);
