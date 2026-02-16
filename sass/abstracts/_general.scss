@@ -82,3 +82,7 @@ main {
 #desktopMenu a:hover, #mobileMenu a:hover, .foot a:hover {
     text-decoration: underline;
 }
+
+#desktopMenu a, #mobileMenu a, .foot a {
+    transition: all .3s ease-in-out;
+}

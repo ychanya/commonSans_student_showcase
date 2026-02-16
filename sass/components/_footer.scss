@@ -31,6 +31,14 @@ footer nav ul li a{
     margin-right: 0.75em;
 }
 
+.socialMedia ul li:hover {
+    transform: scale(1.2);
+}
+
+.socialMedia ul li {
+    transition: all .3s ease-in-out;
+}
+
 .footerCollegeInfo {
     margin-bottom: 1.5em;
 }
@@ -86,4 +94,13 @@ footer nav ul li a{
     .copyrightInfo {
         padding-top: 2em;
     }
+}
+
+.foot nav li:hover {
+    transform: scale(1.1);
+    text-shadow:0 0 2px rgba(0,0,0,.6);
+}
+
+.foot nav li {
+    transition: all .3s ease-in-out;
 }

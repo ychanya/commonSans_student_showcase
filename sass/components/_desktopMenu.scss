@@ -22,3 +22,12 @@
 #desktopMenu a {
     color: white;
 }
+
+#desktopMenu li:hover {
+    transform: scale(1.1);
+    text-shadow:0 0 2px rgba(0,0,0,.6);
+}
+
+#desktopMenu li {
+    transition: all .3s ease-in-out;
+}
