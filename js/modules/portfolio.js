@@ -1,6 +1,5 @@
 export function portfolio() {
     
-    const studentList = document.querySelector("#student-list");
     const students = [
         {
             id: 1, 
@@ -218,25 +217,33 @@ export function portfolio() {
             portfolio: "#"
         }
     ];
-
+    const studentList = document.querySelector("#student-list");
     const filterButtons = document.querySelectorAll(".filterButton");
+    const defaultBtn = document.querySelector("#All");
     
-    function removeActiveState() {
-        filterButtons.forEach((button) =>{button.classList.remove("cutomFilter")} );
+    function removeActiveState(selectedBtn) {
+        filterButtons.forEach((filterBtn) => {
+            if(filterBtn.id !== selectedBtn.id) {
+                filterBtn.classList.remove("cutomFilter");
+            }
+        })
     }
 
     // Filter student roles by using filter() method
-    function filterRole(role, e) {
+    function filterRole(selectedBtn) {
+
+        const role = selectedBtn.id;
+
         if (role === "All") {
-                const result = students.filter((student) => student.roles.length);
-                renderStudents(result);
+            renderStudents(students);
         } else {
             // Use includes() to check array/string, while contains() is for DOM elements (like classList)
             const result = students.filter((student) => student.roles.includes(role));
             renderStudents(result);
         }
-        removeActiveState();
-        e.currentTarget.classList.add("cutomFilter");
+
+        selectedBtn.classList.add("cutomFilter");
+        removeActiveState(selectedBtn);
     }
 
     function renderStudents(students) {
@@ -281,12 +288,11 @@ export function portfolio() {
         });
     }
 
-    renderStudents(students);
-
     filterButtons.forEach(button => {
-        button.addEventListener("click", (e) =>
-            filterRole(`${e.currentTarget.id}`, e)
+        button.addEventListener("click", () =>
+            filterRole(button)
         );
     });
 
+    filterRole(defaultBtn);
 }
