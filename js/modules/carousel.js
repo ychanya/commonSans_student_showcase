@@ -31,7 +31,7 @@ export function carousel() {
                 "Linh Nguyen",
                 "Situ Ranjit",
                 "Rin Morito",
-                "Anh Nguyen"
+                "Alex Nguyen"
             ]
         },
         { 

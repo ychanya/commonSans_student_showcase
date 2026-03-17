@@ -4,6 +4,7 @@ import { carousel } from "./modules/carousel.js";
 import { portfolio } from "./modules/portfolio.js";
 import { testimonial } from "./modules/testimonial.js";
 import { backToTop } from "./modules/backToTop.js";
+import { heroAnimation } from "./modules/hero-animation.js";
 
 burgerMenu();
 player();
@@ -11,3 +12,4 @@ carousel();
 portfolio();
 testimonial();
 backToTop();
+heroAnimation();

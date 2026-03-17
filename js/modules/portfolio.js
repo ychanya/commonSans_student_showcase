@@ -36,10 +36,10 @@ export function portfolio() {
         {
             id: 5, 
             img: "#",
-            alt: "Portait of Anh Nguyen",
-            name: "Anh Nguyen", 
-            roles: ["Back-End"], 
-            portfolio: "#"
+            alt: "Portait of Alex Nguyen",
+            name: "Alex Nguyen", 
+            roles: ["Graphic","Motion","Front-End"], 
+            portfolio: "https://jhustalex.ca/index.php"
         },
         {
             id: 6, 
@@ -78,8 +78,8 @@ export function portfolio() {
             img: "#",
             alt: "Portait of Kingsley Watson",
             name: "Kingsley Watson", 
-            roles: ["Motion"], 
-            portfolio: "#"
+            roles: ["Graphic","Motion"], 
+            portfolio: "https://kingsley-watson.ca/"
         },
         {
             id: 11, 
@@ -179,7 +179,7 @@ export function portfolio() {
         },
         {
             id: 23, 
-            img: "#",
+            img: "images/students-profile/avatar.jpg",
             alt: "Portait of Tapshveer Benipal",
             name: "Tapshveer Benipal", 
             roles: ["Front-End"], 

@@ -1,15 +1,21 @@
 #heroSection {
-    margin: 0;
+    canvas {
+        width: 100%;
+    }
+
+    #hero-animation-mb {
+        display: block;
+    }
+    #hero-animation-dk {
+        display: none; 
+    }
 }
 
-.hero_animation h3 {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero_animation {
-    height: 31.25rem;
+@media screen and (min-width: 75em) { 
+    #hero-animation-mb {
+        display: none !important;
+    }
+    #hero-animation-dk {
+        display: block !important;
+    }
 }
