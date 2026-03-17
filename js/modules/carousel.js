@@ -3,9 +3,9 @@ export function carousel() {
     const carousels = [
         { 
             groupImg: { 
-                mobile : "images/responsive/mobile/Project-exhibiton/group1_372.jpg",
+                mobile : "images/responsive/mobile/student-exhibition/group1_372.jpg",
                 tablet : "images/responsive/tablet/student-exhibition/group1_505.jpg",
-                desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg",
+                desktop : "images/responsive/desktop/student-exhibition/group1_752.jpg",
                 alt: "Group 1 project exhibition group photo"
             },
             group: "Group #1", 
@@ -20,14 +20,14 @@ export function carousel() {
         },
         { 
             groupImg: { 
-                mobile : "images/responsive/mobile/Project-exhibiton/group1_372.jpg",
-                tablet : "images/responsive/tablet/student-exhibition/group1_505.jpg",
-                desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg",
+                mobile : "images/responsive/mobile/student-exhibition/group2_372.jpg",
+                tablet : "images/responsive/tablet/student-exhibition/group2_505.jpg",
+                desktop : "images/responsive/desktop/student-exhibition/group2_752.jpg",
                 alt: "Group 2 project exhibition group photo"
             },
             group: "Group #2", 
             members: [
-                "Josephine Muncaster",
+                "Jo Muncaster",
                 "Linh Nguyen",
                 "Situ Ranjit",
                 "Rin Morito",
@@ -36,9 +36,9 @@ export function carousel() {
         },
         { 
             groupImg: { 
-                mobile : "images/responsive/mobile/Project-exhibiton/group1_372.jpg",
-                tablet : "images/responsive/tablet/student-exhibition/group1_505.jpg",
-                desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg",
+                mobile : "images/responsive/mobile/student-exhibition/group3_372.jpg",
+                tablet : "images/responsive/tablet/student-exhibition/group3_505.jpg",
+                desktop : "images/responsive/desktop/student-exhibition/group3_752.jpg",
                 alt: "Group 3 project exhibition group photo"
             },
             group: "Group #3", 
@@ -47,15 +47,15 @@ export function carousel() {
                 "Liam Kuchta",
                 "Daljit Singh",
                 "Rabin Tamang",
-                "Pranav Pranav",
+                "Pranav Jain",
                 "Simon Dasilva"
             ]
         },
         { 
             groupImg: { 
-                mobile : "images/responsive/mobile/Project-exhibiton/group1_372.jpg",
-                tablet : "images/responsive/tablet/student-exhibition/group1_505.jpg",
-                desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg",
+                mobile : "images/responsive/mobile/student-exhibition/group4_372.jpg",
+                tablet : "images/responsive/tablet/student-exhibition/group4_505.jpg",
+                desktop : "images/responsive/desktop/student-exhibition/group4_752.jpg",
                 alt: "Group 4 project exhibition group photo"
             },
             group: "Group #4", 
@@ -63,23 +63,23 @@ export function carousel() {
                 "Kingsley Watson",
                 "Amy Armstrong",
                 "Zeran Lu",
-                "Justine Nathalie Ng",
+                "Justine Nathalie",
                 "Ramona Lozon"
             ]
         },
         { 
             groupImg: { 
-                mobile : "images/responsive/mobile/Project-exhibiton/group1_372.jpg",
-                tablet : "images/responsive/tablet/student-exhibition/group1_505.jpg",
-                desktop : "images/responsive/desktop/student-project/group1-desktop_752.jpg",
+                mobile : "images/responsive/mobile/student-exhibition/group5_372.jpg",
+                tablet : "images/responsive/tablet/student-exhibition/group5_505.jpg",
+                desktop : "images/responsive/desktop/student-exhibition/group5_752.jpg",
                 alt: "Group 5 project exhibition group photo"
             },
             group: "Group #5", 
             members: [
                 "Harlowe Chetan Dhameliya",
                 "Juliana Gambuzza",
-                "Benjamin Kettlewell",
-                "Hannah Silva",
+                "Ben Kettlewell",
+                "Hannah Melo",
                 "Chanya Chumdee"
             ]
         }

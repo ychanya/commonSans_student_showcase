@@ -6,7 +6,7 @@ export function testimonial() {
             alt: "Portrait of Marco De Luca",
             name: "Marco De Luca", 
             role: "IDP Program Coordinator and Professor at Fanshawe College",
-            quote: "Utilizing a diverse range of media, the Interactive Media Design students have masterfully highlighted the heroic sacrifices made by the India soldiers in World war I."
+            quote: "Through live client projects, Level 4 students bring together design, development, and marketing skills to deliver fully realized, professional campaigns. Working directly with local organizations, they gain real-world experience while creating work that leaves a meaningful and lasting impact on the community."
         },
         { 
             img: "images/testimonials/rob.jpg",
@@ -21,22 +21,7 @@ export function testimonial() {
             name: "Jarrod Osterback", 
             role: "IDP Professor at Fanshawe College",
             quote: "Industry Night is a wonderful opportunity for our students to shine. The projects they represent are a testament to their hard work and the real-world skills they've gained throughout our program."
-        },
-        { 
-            img: "images/testimonials/jarrod.jpg",
-            alt: "Portrait of Justin Brunner",
-            name: "Justin Brunner", 
-            role: "UX Design Coordinator and IDP Professor at Fanshawe College",
-            quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae suscipit urna. Mauris ut mauris ut lorem fringilla condimentum in et mauris."
-        },
-        {
-            img: "images/testimonials/jarrod.jpg",
-            alt: "Portrait of Nicholas Ireland",
-            name: "Nicholas Ireland",
-            role: "IDP Professor at Fanshawe College",
-            quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae suscipit urna. Mauris ut mauris ut lorem fringilla condimentum in et mauris."
         }
-        
     ];
 
     const testimonialWrap = document.querySelector(".testimonialsWrapper");
