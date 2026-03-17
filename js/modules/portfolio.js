@@ -3,19 +3,19 @@ export function portfolio() {
     const students = [
         {
             id: 1, 
-            img: "#",
+            img: "images/students-profile/AayushDiyali.jpg",
             alt: "Portait of Aayush Diyali",
             name: "Aayush Diyali", 
-            roles: ["Motion"], 
-            portfolio: "#"
+            roles: ["Motion", "Graphic"], 
+            portfolio: "https://aayushdiyali.ca/"
         },
         {
             id: 2, 
-            img: "#",
+            img: "images/students-profile/AbigailLondini.jpg",
             alt: "Portait of Abigail Londini",
             name: "Abigail Londini", 
-            roles: ["Front-End","PM"], 
-            portfolio: "#"
+            roles: ["Generalist"], 
+            portfolio: "http://abigaillondini.ca/"
         },
         {
             id: 3, 
@@ -27,11 +27,11 @@ export function portfolio() {
         },
         {
             id: 4, 
-            img: "#",
+            img: "images/students-profile/AmyArmstrong.jpg",
             alt: "Portait of Amy Armstrong",
             name: "Amy Armstrong", 
-            roles: ["Graphic"], 
-            portfolio: "#"
+            roles: ["Graphic","Brand Designer"], 
+            portfolio: "https://armstrng.com/index.html"
         },
         {
             id: 5, 
@@ -43,34 +43,35 @@ export function portfolio() {
         },
         {
             id: 6, 
-            img: "#",
+            img: "images/students-profile/DaljitSingh.jpg",
             alt: "Portait of Daljit Singh",
             name: "Daljit Singh", 
             roles: ["Graphic"], 
-            portfolio: "#"
+            portfolio: "https://daljitsinghcreations.com/"
         },
         {
             id: 7, 
-            img: "#",
-            alt: "Portait of Hannah Silva",
-            name: "Hannah Silva", 
-            roles: ["PM"], 
-            portfolio: "#"
+            img: "images/students-profile/HannahMelo.jpg",
+            alt: "Portait of Hannah Melo",
+            name: "Hannah Melo", 
+            roles: ["Motion"], 
+            portfolio: "http://hannahmelomd.ca/"
         },
         {
             id: 8, 
-            img: "#",
-            alt: "Portait of Josephine Muncaster",
-            name: "Josephine Muncaster", 
-            roles: ["PM"], 
-            portfolio: "#"
+            img: "images/students-profile/JoMuncaster.jpg",
+            alt: "Portait of Jo Muncaster",
+            name: "Jo Muncaster", 
+            roles: ["Graphic","Motion","Web Designer"], 
+            portfolio: "https://www.jomuncaster.design/"
         },
         {
             id: 9, 
-            img: "#",
-            alt: "Portait of Justine Nathalie Ng",
-            name: "Justine Nathalie Ng", 
-            roles: ["PM"], portfolio: "#"
+            img: "images/students-profile/.jpg",
+            alt: "Portait of Justine Nathalie",
+            name: "Justine Nathalie", 
+            roles: ["Graphic","Motion"], 
+            portfolio: "https://jnathaliedesigns.com/"
         },
         {
             id: 10, 
@@ -82,43 +83,43 @@ export function portfolio() {
         },
         {
             id: 11, 
-            img: "#",
+            img: "images/students-profile/LailaSeif.jpg",
             alt: "Portait of Laila Seif",
             name: "Laila Seif", 
-            roles: ["Front-End","Motion"], 
-            portfolio: "#"
+            roles: ["Graphic","UI designer"], 
+            portfolio: "http://lailaseif.ca/"
         },
         {
             id: 12, 
-            img: "#",
+            img: "images/students-profile/LiamKuchta.jpg",
             alt: "Portait of Liam Kuchta",
             name: "Liam Kuchta", 
-            roles: ["Motion"], 
-            portfolio: "#"
+            roles: ["Graphic","Motion"], 
+            portfolio: "https://liamkuchta.ca/"
         },
         {
             id: 13, 
-            img: "#",
+            img: "images/students-profile/LinhNguyen.jpg",
             alt: "Portait of Linh Nguyen",
             name: "Linh Nguyen", 
-            roles: ["Graphic"], 
-            portfolio: "#"
+            roles: ["Graphic","Front-End","Motion"], 
+            portfolio: "https://linhnguyenportfolio.com/"
         },
         {
             id: 14, 
-            img: "#",
+            img: "images/students-profile/LucianoClementi.jpg",
             alt: "Portait of Luciano Clementi",
             name: "Luciano Clementi", 
-            roles: ["Front-End","PM"], 
-            portfolio: "#"
+            roles: ["Motion","Front-End","Video Editor"], 
+            portfolio: "https://lucianoclementi.com/"
         },
         {
             id: 15, 
-            img: "#",
+            img: "images/students-profile/MikhailKris.jpg",
             alt: "Portait of Mikhail Kirs",
             name: "Mikhail Kirs", 
-            roles: ["Front-End","PM"], 
-            portfolio: "#"
+            roles: ["Front-End"], 
+            portfolio: "https://michaelkirsweb.ca/"
         },
         {
             id: 16, 
@@ -130,11 +131,11 @@ export function portfolio() {
         },
         {
             id: 17, 
-            img: "#",
-            alt: "Portait of Pranav Pranav",
-            name: "Pranav Pranav", 
-            roles: ["PM"], 
-            portfolio: "#"
+            img: "images/students-profile/PranavJain.jpg",
+            alt: "Portait of Pranav Jain",
+            name: "Pranav Jain", 
+            roles: ["Front-End","Graphic","PM"], 
+            portfolio: "https://notpranavjain.ca/"
         },
         {
             id: 18, 
@@ -142,39 +143,39 @@ export function portfolio() {
             alt: "Portait of Rabin Tamang",
             name: "Rabin Tamang", 
             roles: ["Front-End"], 
-            portfolio: "#"
+            portfolio: "https://rabintamang.ca/"
         },
         {
             id: 19, 
             img: "#",
             alt: "Portait of Ramona Lozon",
             name: "Ramona Lozon", 
-            roles: ["Back-End"], 
-            portfolio: "#"
+            roles: ["Back-End","Front-End"], 
+            portfolio: "https://ramonalozon.ca/"
         },
         {
             id: 20, 
-            img: "#",
+            img: "images/students-profile/RinMorito.jpg",
             alt: "Portait of Rin Morito",
             name: "Rin Morito", 
-            roles: ["Front-End"], 
-            portfolio: "#"
+            roles: ["Front-End","Graphic","Motion"], 
+            portfolio: "https://rinmorito.com/"
         },
         {
             id: 21, 
-            img: "#",
+            img: "images/students-profile/SimonDasilva.jpg",
             alt: "Portait of Simon Dasilva",
             name: "Simon Dasilva", 
-            roles: ["Back-End"], 
-            portfolio: "#"
+            roles: ["Front-End"], 
+            portfolio: "https://simon-dasilva.ca/"
         },
         {
             id: 22, 
-            img: "#",
+            img: "images/students-profile/SituRanjit.jpg",
             alt: "Portait of Situ Ranjit",
             name: "Situ Ranjit", 
-            roles: ["Motion"], 
-            portfolio: "#"
+            roles: ["Front-End","Graphic"], 
+            portfolio: "https://www.situranjit.com/"
         },
         {
             id: 23, 
@@ -182,39 +183,39 @@ export function portfolio() {
             alt: "Portait of Tapshveer Benipal",
             name: "Tapshveer Benipal", 
             roles: ["Front-End"], 
-            portfolio: "#"
+            portfolio: "https://tapshveerb.ca/"
         },
         {
             id: 24, 
-            img: "#",
+            img: "images/students-profile/avatar.jpg",
             alt: "Portait of Yi Cheng",
             name: "Yi Cheng", 
-            roles: ["Back-End","Graphic"], 
-            portfolio: "#"
+            roles: ["Graphic","Front-End"], 
+            portfolio: "https://y1cng118.mywhc.ca/"
         },
         {
             id: 25, 
-            img: "#",
+            img: "images/students-profile/avatar.jpg",
             alt: "Portait of Yi Lu",
             name: "Yi Lu", 
-            roles: ["Front-End","PM"], 
-            portfolio: "#"
+            roles: ["Graphic"], 
+            portfolio: "https://yiluportfolio.ca/"
         },
         {
             id: 26, 
-            img: "#",
+            img: "images/students-profile/ZakiaSultana.jpg",
             alt: "Portait of Zakia Sultana",
             name: "Zakia Sultana", 
-            roles: ["PM"], 
-            portfolio: "#"
+            roles: ["Front-End","Back-End"], 
+            portfolio: "https://zakiasultana.ca/"
         },
         {
             id: 27, 
-            img: "#",
+            img: "images/students-profile/ZeranLu.jpg",
             alt: "Portait of Zeran Lu",
             name: "Zeran Lu", 
             roles: ["Front-End"], 
-            portfolio: "#"
+            portfolio: "https://zeranlu.ca/"
         }
     ];
     const studentList = document.querySelector("#student-list");
@@ -277,6 +278,7 @@ export function portfolio() {
 
             const portfolioLink = document.createElement("a");
             portfolioLink.href = student.portfolio;
+            portfolioLink.target = "_blank";
             portfolioLink.innerHTML = "View Portfolio &#8599;";
             infoDiv.appendChild(nameRolesDiv);
             infoDiv.appendChild(portfolioLink);
