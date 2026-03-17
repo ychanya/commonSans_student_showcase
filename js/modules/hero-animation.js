@@ -49,7 +49,7 @@ export function heroAnimation() {
         const context = canvas.getContext("2d");
 
         canvas.width = 1920;
-        canvas.height = 1080;
+        canvas.height = 860;
 
         const frameCount = 252;
 

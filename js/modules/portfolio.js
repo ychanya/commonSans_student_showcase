@@ -35,7 +35,7 @@ export function portfolio() {
         },
         {
             id: 5, 
-            img: "#",
+            img: "images/students-profile/AlexNguyen.jpg",
             alt: "Portait of Alex Nguyen",
             name: "Alex Nguyen", 
             roles: ["Graphic","Motion","Front-End"], 
@@ -67,7 +67,7 @@ export function portfolio() {
         },
         {
             id: 9, 
-            img: "images/students-profile/.jpg",
+            img: "images/students-profile/JustineNathalie.jpg",
             alt: "Portait of Justine Nathalie",
             name: "Justine Nathalie", 
             roles: ["Graphic","Motion"], 
@@ -139,7 +139,7 @@ export function portfolio() {
         },
         {
             id: 18, 
-            img: "#",
+            img: "images/students-profile/RabinTamang.jpg",
             alt: "Portait of Rabin Tamang",
             name: "Rabin Tamang", 
             roles: ["Front-End"], 
@@ -147,7 +147,7 @@ export function portfolio() {
         },
         {
             id: 19, 
-            img: "#",
+            img: "images/students-profile/RamonaLozon.jpg",
             alt: "Portait of Ramona Lozon",
             name: "Ramona Lozon", 
             roles: ["Back-End","Front-End"], 
