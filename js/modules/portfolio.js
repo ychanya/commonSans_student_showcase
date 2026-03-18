@@ -9,14 +9,14 @@ export function portfolio() {
             roles: ["Motion", "Graphic"], 
             portfolio: "https://aayushdiyali.ca/"
         },
-        {
-            id: 2, 
-            img: "images/students-profile/AbigailLondini.jpg",
-            alt: "Portait of Abigail Londini",
-            name: "Abigail Londini", 
-            roles: ["Generalist"], 
-            portfolio: "http://abigaillondini.ca/"
-        },
+        // {
+        //     id: 2, 
+        //     img: "images/students-profile/AbigailLondini.jpg",
+        //     alt: "Portait of Abigail Londini",
+        //     name: "Abigail Londini", 
+        //     roles: ["Generalist"], 
+        //     portfolio: "http://abigaillondini.ca/"
+        // },
         {
             id: 3, 
             img: "images/students-profile/AjayAntonyRaj.jpg",
@@ -25,14 +25,14 @@ export function portfolio() {
             roles: ["Front-End","Back-End"], 
             portfolio: "https://ajayantonyraj.ca/"
         },
-        {
-            id: 4, 
-            img: "images/students-profile/AmyArmstrong.jpg",
-            alt: "Portait of Amy Armstrong",
-            name: "Amy Armstrong", 
-            roles: ["Graphic","Brand Designer"], 
-            portfolio: "https://armstrng.com/index.html"
-        },
+        // {
+        //     id: 4, 
+        //     img: "images/students-profile/AmyArmstrong.jpg",
+        //     alt: "Portait of Amy Armstrong",
+        //     name: "Amy Armstrong", 
+        //     roles: ["Graphic","Brand Designer"], 
+        //     portfolio: "https://armstrng.com/index.html"
+        // },
         {
             id: 5, 
             img: "images/students-profile/AlexNguyen.jpg",
@@ -65,14 +65,14 @@ export function portfolio() {
             roles: ["Graphic"], 
             portfolio: "https://daljitsinghcreations.com/"
         },
-        {
-            id: 9, 
-            img: "images/students-profile/HannahMelo.jpg",
-            alt: "Portait of Hannah Melo",
-            name: "Hannah Melo", 
-            roles: ["Motion"], 
-            portfolio: "http://hannahmelomd.ca/"
-        },
+        // {
+        //     id: 9, 
+        //     img: "images/students-profile/HannahMelo.jpg",
+        //     alt: "Portait of Hannah Melo",
+        //     name: "Hannah Melo", 
+        //     roles: ["Motion"], 
+        //     portfolio: "http://hannahmelomd.ca/"
+        // },
          {
             id: 10, 
             img: "images/students-profile/HarloweChetanDhameliya.jpg",
@@ -113,14 +113,14 @@ export function portfolio() {
             roles: ["Graphic","Motion"], 
             portfolio: "https://kingsley-watson.ca/"
         },
-        {
-            id: 15, 
-            img: "images/students-profile/LailaSeif.jpg",
-            alt: "Portait of Laila Seif",
-            name: "Laila Seif", 
-            roles: ["Graphic","UI designer"], 
-            portfolio: "http://lailaseif.ca/"
-        },
+        // {
+        //     id: 15, 
+        //     img: "images/students-profile/LailaSeif.jpg",
+        //     alt: "Portait of Laila Seif",
+        //     name: "Laila Seif", 
+        //     roles: ["Graphic","UI designer"], 
+        //     portfolio: "http://lailaseif.ca/"
+        // },
         {
             id: 16, 
             img: "images/students-profile/LiamKuchta.jpg",
@@ -268,10 +268,15 @@ export function portfolio() {
         const role = selectedBtn.id;
 
         if (role === "All") {
+            // "sort() method" needs a positive value to swap item and a negative value to keep em. Since "Math.random()" is always positive, subtracting it from 0.5 create 50/50 chance to swap the list
+            // randomize on page load
+            students.sort(() => 0.5 - Math.random());
             renderStudents(students);
         } else {
             // Use includes() to check array/string, while contains() is for DOM elements (like classList)
             const result = students.filter((student) => student.roles.includes(role));
+            // randomize on click each filter btn
+            result.sort(() => 0.5 - Math.random());
             renderStudents(result);
         }
 
