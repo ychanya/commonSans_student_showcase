@@ -14,7 +14,7 @@ export function carousel() {
                 "Zakia Sultana",
                 "Aayush Diyali",
                 "Tapshveer Benipal",
-                "Ngoc Nhu An Do",
+                "Do, Ngoc Nhu An",
                 "Luciano Clementi"
             ]
         },
@@ -48,7 +48,7 @@ export function carousel() {
                 "Daljit Singh",
                 "Rabin Tamang",
                 "Pranav Jain",
-                "Simon Dasilva"
+                "Simon DaSilva"
             ]
         },
         { 
