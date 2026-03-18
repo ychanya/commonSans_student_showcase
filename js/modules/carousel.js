@@ -10,7 +10,7 @@ export function carousel() {
             },
             group: "Group #1", 
             members: [
-                "Ajay Chakaravarthy",
+                "Ajay Antony Raj",
                 "Zakia Sultana",
                 "Aayush Diyali",
                 "Tapshveer Benipal",

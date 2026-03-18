@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fanshawe's Industry Night 2026</title>
-    <link rel="icon" href="/images/Fanshawe-logo/fanshawe_symbol.svg">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <script src="https://kit.fontawesome.com/bb4be9e166.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -102,7 +106,7 @@
         </section>
         <section class="eventInformation">
             <div class="one-item sm-one-item md-one-item lg-one-item">
-                <h2>What it is all about?</h2>
+                <h2 id="eventInfo">What it is all about?</h2>
             </div>
 
             <div class="eventVideo one-item sm-one-item md-one-item lg-two-items">
@@ -115,7 +119,7 @@
                     </video>
                 </div>
 
-                <div>
+                <div id="eventContent">
                     <ul class="marginUl">
                         <li class="listStyleLi">
                             <p>Level 4 students partnered in designing and delivering a digital platform that preserves
@@ -139,17 +143,17 @@
         </section>
         <section id="eventDetailSect" class="eventDetails">
             <div class="one-item sm-one-item md-one-item lg-one-item">
-                <h2>Event Details</h2>
+                <h2 id="eventDetail">Event Details</h2>
             </div>
             <div class="two-items sm-two-items md-three-items lg-three-items">
-                <div class="eventDetailsContainer">
+                <div class="eventDetailsContainer box">
 
                     <i class="fa-solid fa-calendar-days"></i>
                     <h3>Date</h3>
 
                     <p id="dateCustom">April 23rd, 2026</p>
                 </div>
-                <div class="eventDetailsContainer">
+                <div class="eventDetailsContainer box">
 
                     <i class="fa-solid fa-location-dot"></i>
                     <h3>Location</h3>
@@ -159,28 +163,28 @@
                         London, ON<br>
                         N6A 1E9</p>
                 </div>
-                <div class="eventDetailsContainer">
+                <div class="eventDetailsContainer box">
 
                     <i class="fa-solid fa-clock"></i>
                     <h3>4:30 PM - 6:00 PM</h3>
 
                     <p>Spotlight Presentations (The Good Foundation Inc. Theatre)</p>
                 </div>
-                <div class="eventDetailsContainer">
+                <div class="eventDetailsContainer box">
 
                     <i class="fa-solid fa-clock"></i>
                     <h3>6:00 PM - 7:00 PM</h3>
 
                     <p>Student Portfolio Viewing (Level 4 Labs)</p>
                 </div>
-                <div class="eventDetailsContainer">
+                <div class="eventDetailsContainer box">
 
                     <i class="fa-solid fa-clock"></i>
                     <h3>7:00 PM - 8:00 PM</h3>
 
                     <p>Food & Drinks/Mingle & Networking (The Chef's Table)</p>
                 </div>
-                <div class="eventDetailsContainer">
+                <div class="eventDetailsContainer box">
                     <h3>Save the Date!</h3>
                     <p>Be part of an unforgettable Industry Night experience.</p>
                     <img id="qr-code" src="images/save-date-qr-code.png" alt="QR Code to save the date">
@@ -220,11 +224,11 @@
         </section>
         <section id="interactiveMediaDesign">
             <div class="one-item sm-one-item md-one-item lg-one-item">
-                <h2>Interactive Media Design</h2>
+                <h2 id="idpHeading">Interactive Media Design</h2>
             </div>
 
             <div class="IMDContent one-item sm-one-item md-one-item lg-two-items">
-                <div>
+                <div id="idpContent">
                     <p>The Interactive Media Design (IDP3) program at Fanshawe is a two-year (60-week) diploma that
                         equips students with the skills to thrive in digital media, web design and development, 3D
                         animation, multimedia production, UX/UI, and interactive design.</p>
@@ -239,7 +243,7 @@
                         More Info
                     </a>
                 </div>
-                <div class="IMDImg">
+                <div id="idpImg" class="IMDImg">
                     <img sizes="
                                 (min-width: 75em) 80em,
                                 (min-width: 48em) 64em,
@@ -324,6 +328,7 @@
                             <h3>Yaya</h3>
                             <ul class="tags">
                                 <li>Front-End</li>
+                                <li>UX/UI designer</li>
                             </ul>
                         </div>
                         <a href="https://cc-chanya.com/" target="_blank">View Portfolio &#8599;</a>

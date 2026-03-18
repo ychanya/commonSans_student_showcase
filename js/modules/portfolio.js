@@ -19,11 +19,11 @@ export function portfolio() {
         },
         {
             id: 3, 
-            img: "#",
-            alt: "Portait of Ajay Chakaravarthy",
-            name: "Ajay Chakaravarthy", 
-            roles: ["Back-End"], 
-            portfolio: "#"
+            img: "images/students-profile/AjayAntonyRaj.jpg",
+            alt: "Portait of Ajay Antony Raj",
+            name: "Ajay Antony Raj", 
+            roles: ["Front-End","Back-End"], 
+            portfolio: "https://ajayantonyraj.ca/"
         },
         {
             id: 4, 
@@ -75,7 +75,7 @@ export function portfolio() {
         },
         {
             id: 10, 
-            img: "#",
+            img: "images/students-profile/KingsleyWatson.jpg",
             alt: "Portait of Kingsley Watson",
             name: "Kingsley Watson", 
             roles: ["Graphic","Motion"], 
@@ -123,11 +123,11 @@ export function portfolio() {
         },
         {
             id: 16, 
-            img: "#",
+            img: "images/students-profile/AndreaDo.jpg",
             alt: "Portait of Ngoc Nhu An Do",
             name: "Ngoc Nhu An Do", 
-            roles: ["Back-End"], 
-            portfolio: "#"
+            roles: ["Graphic"], 
+            portfolio: "https://an-dodesign.ca/"
         },
         {
             id: 17, 
@@ -187,7 +187,7 @@ export function portfolio() {
         },
         {
             id: 24, 
-            img: "images/students-profile/avatar.jpg",
+            img: "images/students-profile/YiCheng.jpg",
             alt: "Portait of Yi Cheng",
             name: "Yi Cheng", 
             roles: ["Graphic","Front-End"], 
@@ -206,7 +206,7 @@ export function portfolio() {
             img: "images/students-profile/ZakiaSultana.jpg",
             alt: "Portait of Zakia Sultana",
             name: "Zakia Sultana", 
-            roles: ["Front-End","Back-End"], 
+            roles: ["Front-End","Back-End","Graphic"], 
             portfolio: "https://zakiasultana.ca/"
         },
         {
