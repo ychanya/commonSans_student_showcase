@@ -43,6 +43,22 @@ export function portfolio() {
         },
         {
             id: 6, 
+            img: "images/students-profile/BenKettlewell.jpg",
+            alt: "Portait of Ben Kettlewell",
+            name: "Ben Kettlewell", 
+            roles: ["Motion","Videographer","Graphic"], 
+            portfolio: "https://benkettlewell.ca/"
+        },
+        {
+            id: 7, 
+            img: "images/students-profile/ChanyaChumdee.jpg",
+            alt: "Portait of Chanya Chumdee",
+            name: "Chanya Chumdee", 
+            roles: ["Front-End","UX/UI designer"], 
+            portfolio: "https://cc-chanya.com/"
+        },
+        {
+            id: 8, 
             img: "images/students-profile/DaljitSingh.jpg",
             alt: "Portait of Daljit Singh",
             name: "Daljit Singh", 
@@ -50,15 +66,23 @@ export function portfolio() {
             portfolio: "https://daljitsinghcreations.com/"
         },
         {
-            id: 7, 
+            id: 9, 
             img: "images/students-profile/HannahMelo.jpg",
             alt: "Portait of Hannah Melo",
             name: "Hannah Melo", 
             roles: ["Motion"], 
             portfolio: "http://hannahmelomd.ca/"
         },
+         {
+            id: 10, 
+            img: "images/students-profile/HarloweChetanDhameliya.jpg",
+            alt: "Portait of Harlowe Chetan Dhameliya",
+            name: "Harlowe Chetan Dhameliya", 
+            roles: ["Front-End","Back-End","Web Designer","PM"], 
+            portfolio: "https://harlowed.com/"
+        },
         {
-            id: 8, 
+            id: 11, 
             img: "images/students-profile/JoMuncaster.jpg",
             alt: "Portait of Jo Muncaster",
             name: "Jo Muncaster", 
@@ -66,7 +90,15 @@ export function portfolio() {
             portfolio: "https://www.jomuncaster.design/"
         },
         {
-            id: 9, 
+            id: 12, 
+            img: "images/students-profile/Julianagambuzza.jpg",
+            alt: "Portait of Juliana Gambuzza",
+            name: "Juliana Gambuzza", 
+            roles: ["Graphic","Web Designer","Motion"], 
+            portfolio: "https://julianagambuzza.ca/"
+        },
+        {
+            id: 13, 
             img: "images/students-profile/JustineNathalie.jpg",
             alt: "Portait of Justine Nathalie",
             name: "Justine Nathalie", 
@@ -74,7 +106,7 @@ export function portfolio() {
             portfolio: "https://jnathaliedesigns.com/"
         },
         {
-            id: 10, 
+            id: 14, 
             img: "images/students-profile/KingsleyWatson.jpg",
             alt: "Portait of Kingsley Watson",
             name: "Kingsley Watson", 
@@ -82,7 +114,7 @@ export function portfolio() {
             portfolio: "https://kingsley-watson.ca/"
         },
         {
-            id: 11, 
+            id: 15, 
             img: "images/students-profile/LailaSeif.jpg",
             alt: "Portait of Laila Seif",
             name: "Laila Seif", 
@@ -90,7 +122,7 @@ export function portfolio() {
             portfolio: "http://lailaseif.ca/"
         },
         {
-            id: 12, 
+            id: 16, 
             img: "images/students-profile/LiamKuchta.jpg",
             alt: "Portait of Liam Kuchta",
             name: "Liam Kuchta", 
@@ -98,7 +130,7 @@ export function portfolio() {
             portfolio: "https://liamkuchta.ca/"
         },
         {
-            id: 13, 
+            id: 17, 
             img: "images/students-profile/LinhNguyen.jpg",
             alt: "Portait of Linh Nguyen",
             name: "Linh Nguyen", 
@@ -106,7 +138,7 @@ export function portfolio() {
             portfolio: "https://linhnguyenportfolio.com/"
         },
         {
-            id: 14, 
+            id: 18, 
             img: "images/students-profile/LucianoClementi.jpg",
             alt: "Portait of Luciano Clementi",
             name: "Luciano Clementi", 
@@ -114,7 +146,7 @@ export function portfolio() {
             portfolio: "https://lucianoclementi.com/"
         },
         {
-            id: 15, 
+            id: 19, 
             img: "images/students-profile/MikhailKris.jpg",
             alt: "Portait of Mikhail Kirs",
             name: "Mikhail Kirs", 
@@ -122,7 +154,7 @@ export function portfolio() {
             portfolio: "https://michaelkirsweb.ca/"
         },
         {
-            id: 16, 
+            id: 20, 
             img: "images/students-profile/AndreaDo.jpg",
             alt: "Portait of Do, Ngoc Nhu An",
             name: "Do, Ngoc Nhu An", 
@@ -130,7 +162,7 @@ export function portfolio() {
             portfolio: "https://an-dodesign.ca/"
         },
         {
-            id: 17, 
+            id: 21, 
             img: "images/students-profile/PranavJain.jpg",
             alt: "Portait of Pranav Jain",
             name: "Pranav Jain", 
@@ -138,7 +170,7 @@ export function portfolio() {
             portfolio: "https://notpranavjain.ca/"
         },
         {
-            id: 18, 
+            id: 22, 
             img: "images/students-profile/RabinTamang.jpg",
             alt: "Portait of Rabin Tamang",
             name: "Rabin Tamang", 
@@ -146,7 +178,7 @@ export function portfolio() {
             portfolio: "https://rabintamang.ca/"
         },
         {
-            id: 19, 
+            id: 23, 
             img: "images/students-profile/RamonaLozon.jpg",
             alt: "Portait of Ramona Lozon",
             name: "Ramona Lozon", 
@@ -154,7 +186,7 @@ export function portfolio() {
             portfolio: "https://ramonalozon.ca/"
         },
         {
-            id: 20, 
+            id: 24, 
             img: "images/students-profile/RinMorito.jpg",
             alt: "Portait of Rin Morito",
             name: "Rin Morito", 
@@ -162,7 +194,7 @@ export function portfolio() {
             portfolio: "https://rinmorito.com/"
         },
         {
-            id: 21, 
+            id: 25, 
             img: "images/students-profile/SimonDasilva.jpg",
             alt: "Portait of Simon DaSilva",
             name: "Simon DaSilva", 
@@ -170,7 +202,7 @@ export function portfolio() {
             portfolio: "https://simon-dasilva.ca/"
         },
         {
-            id: 22, 
+            id: 26, 
             img: "images/students-profile/SituRanjit.jpg",
             alt: "Portait of Situ Ranjit",
             name: "Situ Ranjit", 
@@ -178,7 +210,7 @@ export function portfolio() {
             portfolio: "https://www.situranjit.com/"
         },
         {
-            id: 23, 
+            id: 27, 
             img: "images/students-profile/avatar.jpg",
             alt: "Portait of Tapshveer Benipal",
             name: "Tapshveer Benipal", 
@@ -186,7 +218,7 @@ export function portfolio() {
             portfolio: "https://tapshveerb.ca/"
         },
         {
-            id: 24, 
+            id: 28, 
             img: "images/students-profile/YiCheng.jpg",
             alt: "Portait of Yi Cheng",
             name: "Yi Cheng", 
@@ -194,7 +226,7 @@ export function portfolio() {
             portfolio: "https://y1cng118.mywhc.ca/"
         },
         {
-            id: 25, 
+            id: 29, 
             img: "images/students-profile/avatar.jpg",
             alt: "Portait of Yi Lu",
             name: "Yi Lu", 
@@ -202,7 +234,7 @@ export function portfolio() {
             portfolio: "https://yiluportfolio.ca/"
         },
         {
-            id: 26, 
+            id: 30, 
             img: "images/students-profile/ZakiaSultana.jpg",
             alt: "Portait of Zakia Sultana",
             name: "Zakia Sultana", 
@@ -210,7 +242,7 @@ export function portfolio() {
             portfolio: "https://zakiasultana.ca/"
         },
         {
-            id: 27, 
+            id: 31, 
             img: "images/students-profile/ZeranLu.jpg",
             alt: "Portait of Zeran Lu",
             name: "Zeran Lu", 
