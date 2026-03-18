@@ -129,7 +129,7 @@ ___________________________________________ */
     text-align: center;
 
     i{
-        font-size: 60px;
+        font-size: 50px;
         margin-bottom: 20px;
     }
 }
@@ -150,8 +150,12 @@ ___________________________________________ */
     .eventDetailsContainer p {
         font-size: 18px;
     }
+    .eventDetailsContainer {
+        i{
+            font-size: 60px;
+        }
+    }
 }
-
 #qr-code {
     width: 40%;
     margin-top: 24px;
@@ -564,6 +568,9 @@ ___________________________________________ */
     background-color: #FFE2E1;
     color: #D03D33;
     width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 18px;
     padding: 2px 7px;
     margin-top: 6px;
@@ -650,7 +657,7 @@ ___________________________________________ */
 
 .testimonials li {
     width: 336px;
-    height: fit-content;
+    height: 355px;
     border: 2px solid #D03D33;
     padding: 36px 14px 36px 13px;
 }
@@ -671,7 +678,6 @@ ___________________________________________ */
     }   
     .testimonials li {
         width: 513px;
-        height: fit-content;
     } 
     .testimonials p {
         font-size: 16px;
@@ -691,7 +697,6 @@ ___________________________________________ */
     } 
     .testimonials li {
         width: 406px;
-        height: fit-content;
     }
     .robTest {
         display: block;
