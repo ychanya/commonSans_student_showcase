@@ -316,7 +316,9 @@ export function portfolio() {
             const portfolioLink = document.createElement("a");
             portfolioLink.href = student.portfolio;
             portfolioLink.target = "_blank";
-            portfolioLink.innerHTML = "View Portfolio &#8599;";
+            portfolioLink.innerHTML = `View Portfolio 
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:inline-block; vertical-align:middle; margin-left:4px;">
+                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
             infoDiv.appendChild(nameRolesDiv);
             infoDiv.appendChild(portfolioLink);
 
