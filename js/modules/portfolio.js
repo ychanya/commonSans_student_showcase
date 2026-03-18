@@ -124,8 +124,8 @@ export function portfolio() {
         {
             id: 16, 
             img: "images/students-profile/AndreaDo.jpg",
-            alt: "Portait of Ngoc Nhu An Do",
-            name: "Ngoc Nhu An Do", 
+            alt: "Portait of Do, Ngoc Nhu An",
+            name: "Do, Ngoc Nhu An", 
             roles: ["Graphic"], 
             portfolio: "https://an-dodesign.ca/"
         },
@@ -164,8 +164,8 @@ export function portfolio() {
         {
             id: 21, 
             img: "images/students-profile/SimonDasilva.jpg",
-            alt: "Portait of Simon Dasilva",
-            name: "Simon Dasilva", 
+            alt: "Portait of Simon DaSilva",
+            name: "Simon DaSilva", 
             roles: ["Front-End"], 
             portfolio: "https://simon-dasilva.ca/"
         },
