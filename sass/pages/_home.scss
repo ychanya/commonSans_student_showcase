@@ -59,8 +59,10 @@ ___________________________________________ */
     h4 {
         font-size: 22px;
     }
+    .listStyleLi p {
+        font-size: 16px;
+    }
 }
-
 @media screen and (min-width: 75em) {
     .invitationText h3 {
         font-size: 40px;
@@ -105,6 +107,10 @@ ___________________________________________ */
 
 .listStyleLi {
     list-style-type: disc;
+}
+
+.listStyleLi p {
+    font-size: 14px;
 }
 
 /* ------------- Event Details Section -------------*/
