@@ -122,15 +122,9 @@ export function testimonial() {
         autoPlay = setInterval(nextTestimonial,4000);
     }
 
-    function stopAutoPlay() {
-        clearInterval(autoPlay);
-    }
-
     next.addEventListener("click", nextTestimonial);
     previous.addEventListener("click", previousTestimonial);
     trackingButtons.forEach((button) => {button.addEventListener("click" , showSlide);});
     displayTestimonials();
-    testimonialWrap.addEventListener("mouseenter", stopAutoPlay);
-    testimonialWrap.addEventListener("mouseleave", startAutoPlay);
-    
+    startAutoPlay();
 }
